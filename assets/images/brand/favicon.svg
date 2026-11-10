@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="none">
+  <defs>
+    <linearGradient id="favNavy" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#172B4D"/>
+      <stop offset="100%" stop-color="#101E35"/>
+    </linearGradient>
+    <linearGradient id="favGold" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#9E7E45"/>
+      <stop offset="50%" stop-color="#B99A62"/>
+      <stop offset="100%" stop-color="#D8BE8A"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="url(#favNavy)"/>
+  
+  <g transform="translate(13, 10)">
+    <!-- N Left Pillar -->
+    <rect x="1" y="4" width="6.5" height="36" rx="1.8" fill="#FFFFFF" />
+    
+    <!-- N Diagonal -->
+    <path d="M7 9 L25 35" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+    
+    <!-- N Right Pillar -->
+    <rect x="25" y="4" width="6.5" height="36" rx="1.8" fill="#FFFFFF" />
+
+    <!-- Rising Gold Growth Bars -->
+    <rect x="11" y="28" width="2.5" height="12" rx="1" fill="url(#favGold)" />
+    <rect x="15.5" y="22" width="2.5" height="18" rx="1" fill="url(#favGold)" />
+    <rect x="20" y="16" width="2.5" height="24" rx="1" fill="url(#favGold)" />
+
+    <!-- Bridge Arc -->
+    <path d="M0 38 Q 16 12, 33 38" fill="none" stroke="url(#favGold)" stroke-width="2.6" stroke-linecap="round" />
+    <circle cx="16.5" cy="12" r="2" fill="#D8BE8A" />
+  </g>
+</svg>

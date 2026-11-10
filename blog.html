@@ -1,0 +1,1305 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Insights &amp; Editorial Knowledge Hub | Northbridge Valuation &amp; Advisory</title>
+  <meta name="description" content="Explore educational articles, business valuation methodology, M&amp;A transaction guidance, financial due diligence and performance analysis from Northbridge Valuation &amp; Advisory.">
+
+  <!-- Open Graph Metadata -->
+  <meta property="og:title" content="Insights &amp; Editorial Knowledge Hub | Northbridge Valuation &amp; Advisory">
+  <meta property="og:description" content="Explore practical perspectives on business valuation, mergers and acquisitions, financial analysis and the decisions that shape business value.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/blog/insights-editorial-hero.webp">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/brand/favicon.svg">
+
+  <!-- Pre-render Theme & Direction Script (Prevents flash of unstyled theme/direction) -->
+  <script>
+    (function () {
+      try {
+        var theme = localStorage.getItem('northbridge_theme');
+        var dir = localStorage.getItem('northbridge_direction');
+        if (theme === 'dark') {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        } else {
+          document.documentElement.removeAttribute('data-theme');
+        }
+        if (dir === 'rtl') {
+          document.documentElement.setAttribute('dir', 'rtl');
+          document.documentElement.setAttribute('lang', 'ar');
+        } else {
+          document.documentElement.setAttribute('dir', 'ltr');
+          document.documentElement.setAttribute('lang', 'en');
+        }
+      } catch (e) {}
+    })();
+  </script>
+
+  <!-- Local Stylesheets Only (Offline Ready, No External CDN) -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/tailwind.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/blog.css">
+</head>
+<body>
+
+  <!-- ======================================================================
+       HEADER / SHARED STICKY NAVBAR (EXACT SAME AS INDEX.HTML)
+       Height: Desktop 88px | Tablet 78px | Mobile 72px
+       ====================================================================== -->
+  <header class="nb-header" role="banner">
+    <div class="nb-navbar-container">
+      
+      <!-- Brand Logo (Left) -->
+      <a href="index.html" class="nb-brand-link" aria-label="Northbridge Valuation &amp; Advisory Homepage">
+        <img src="assets/images/brand/logo.svg" alt="Northbridge Valuation &amp; Advisory" class="nb-brand-logo logo-light-mode" width="230" height="38">
+        <img src="assets/images/brand/logo-white.svg" alt="Northbridge Valuation &amp; Advisory" class="nb-brand-logo logo-dark-mode" width="230" height="38">
+      </a>
+
+      <!-- Desktop Navigation Menu (Centre - 1281px+) -->
+      <nav class="nb-desktop-nav" aria-label="Primary Navigation">
+        <!-- 1. Home Dropdown -->
+        <div class="nb-nav-item nb-dropdown">
+          <a href="index.html" class="nb-nav-link" id="homeDropdown" aria-haspopup="true" aria-expanded="false">
+            <span>Home</span>
+            <span class="nb-dropdown-icon" aria-hidden="true">&#9662;</span>
+          </a>
+          <ul class="nb-dropdown-menu" aria-labelledby="homeDropdown">
+            <li class="nb-dropdown-item"><a href="index.html" class="nb-dropdown-link">Home 1</a></li>
+            <li class="nb-dropdown-item"><a href="home2.html" class="nb-dropdown-link">Home 2</a></li>
+          </ul>
+        </div>
+
+        <!-- 2. About -->
+        <div class="nb-nav-item">
+          <a href="about.html" class="nb-nav-link">About</a>
+        </div>
+
+        <!-- 3. Services (Direct link, NO dropdown, NO dropdown arrow) -->
+        <div class="nb-nav-item">
+          <a href="services.html" class="nb-nav-link">Services</a>
+        </div>
+
+        <!-- 4. Case Studies -->
+        <div class="nb-nav-item">
+          <a href="case-studies.html" class="nb-nav-link">Case Studies</a>
+        </div>
+
+        <!-- 5. Insights Dropdown (Active State on Insights page) -->
+        <div class="nb-nav-item nb-dropdown">
+          <a href="blog.html" class="nb-nav-link active" id="insightsDropdown" aria-haspopup="true" aria-expanded="false">
+            <span>Insights</span>
+            <span class="nb-dropdown-icon" aria-hidden="true">&#9662;</span>
+          </a>
+          <ul class="nb-dropdown-menu" aria-labelledby="insightsDropdown">
+            <li class="nb-dropdown-item"><a href="blog.html" class="nb-dropdown-link active">Latest Insights / Blog</a></li>
+            <li class="nb-dropdown-item"><a href="resources.html" class="nb-dropdown-link">Business Resources</a></li>
+          </ul>
+        </div>
+
+        <!-- 6. FAQ -->
+        <div class="nb-nav-item">
+          <a href="faq.html" class="nb-nav-link">FAQ</a>
+        </div>
+
+        <!-- 7. Contact -->
+        <div class="nb-nav-item">
+          <a href="contact.html" class="nb-nav-link">Contact</a>
+        </div>
+      </nav>
+
+      <!-- Desktop Right Controls (EXACT ORDER: 1. LTR/RTL, 2. Dark/Light, 3. Book a Consultation) -->
+      <div class="nb-desktop-controls">
+        <!-- 1. LTR / RTL Toggle -->
+        <button type="button" class="nb-icon-btn dir-toggle-btn" id="dir-toggle" aria-label="Switch to RTL layout">
+          <span class="nb-dir-label">RTL</span>
+        </button>
+
+        <!-- 2. Dark Mode / Light Mode Toggle -->
+        <button type="button" class="nb-icon-btn theme-toggle-btn" id="theme-toggle" aria-label="Switch to dark mode">
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- 3. BOOK A CONSULTATION Button -->
+        <a href="contact.html#consultation" class="nb-nav-cta">Book a Consultation</a>
+      </div>
+
+      <!-- Mobile & Tablet Controls Bar (Logo on left, Dark + RTL + Hamburger on right) -->
+      <div class="nb-mobile-controls">
+        <button type="button" class="nb-icon-btn dir-toggle-btn" aria-label="Toggle text direction">
+          <span class="nb-dir-label">RTL</span>
+        </button>
+        <button type="button" class="nb-icon-btn theme-toggle-btn" aria-label="Toggle dark mode">
+          <svg class="icon-sun" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="icon-moon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+        <button type="button" class="nb-hamburger-btn" aria-label="Open navigation drawer" aria-expanded="false" aria-controls="mobileDrawer">
+          <span class="nb-hamburger-bar"></span>
+          <span class="nb-hamburger-bar"></span>
+          <span class="nb-hamburger-bar"></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ======================================================================
+       MOBILE & TABLET FULL NAVIGATION DRAWER (EXACT SAME AS INDEX.HTML)
+       ====================================================================== -->
+  <div class="nb-drawer-backdrop" aria-hidden="true"></div>
+  <aside class="nb-drawer" id="mobileDrawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation Menu">
+    <div class="nb-drawer-header">
+      <a href="index.html" class="nb-brand-link" aria-label="Northbridge Valuation &amp; Advisory Homepage">
+        <img src="assets/images/brand/logo.svg" alt="Northbridge Valuation &amp; Advisory" class="nb-brand-logo logo-light-mode" width="190" height="32">
+        <img src="assets/images/brand/logo-white.svg" alt="Northbridge Valuation &amp; Advisory" class="nb-brand-logo logo-dark-mode" width="190" height="32">
+      </a>
+      <button type="button" class="nb-drawer-close-btn" aria-label="Close navigation menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <div class="nb-drawer-body">
+      <ul class="nb-drawer-nav">
+        <!-- Home Accordion -->
+        <li class="nb-drawer-item">
+          <button type="button" class="nb-drawer-link nb-drawer-toggle-btn" data-target="drawerHomeSubnav" aria-expanded="false">
+            <span>Home</span>
+            <span class="nb-drawer-toggle-icon" aria-hidden="true">&#9662;</span>
+          </button>
+          <ul class="nb-drawer-subnav" id="drawerHomeSubnav">
+            <li><a href="index.html" class="nb-drawer-sublink">Home 1</a></li>
+            <li><a href="home2.html" class="nb-drawer-sublink">Home 2</a></li>
+          </ul>
+        </li>
+
+        <!-- About -->
+        <li class="nb-drawer-item">
+          <a href="about.html" class="nb-drawer-link">About</a>
+        </li>
+
+        <!-- Services -->
+        <li class="nb-drawer-item">
+          <a href="services.html" class="nb-drawer-link">Services</a>
+        </li>
+
+        <!-- Case Studies -->
+        <li class="nb-drawer-item">
+          <a href="case-studies.html" class="nb-drawer-link">Case Studies</a>
+        </li>
+
+        <!-- Insights Accordion (Active State) -->
+        <li class="nb-drawer-item">
+          <button type="button" class="nb-drawer-link active nb-drawer-toggle-btn" data-target="drawerInsightsSubnav" aria-expanded="true">
+            <span>Insights</span>
+            <span class="nb-drawer-toggle-icon" aria-hidden="true">&#9662;</span>
+          </button>
+          <ul class="nb-drawer-subnav" id="drawerInsightsSubnav" style="display: block;">
+            <li><a href="blog.html" class="nb-drawer-sublink active">Latest Insights / Blog</a></li>
+            <li><a href="resources.html" class="nb-drawer-sublink">Business Resources</a></li>
+          </ul>
+        </li>
+
+        <!-- FAQ -->
+        <li class="nb-drawer-item">
+          <a href="faq.html" class="nb-drawer-link">FAQ</a>
+        </li>
+
+        <!-- Contact -->
+        <li class="nb-drawer-item">
+          <a href="contact.html" class="nb-drawer-link">Contact</a>
+        </li>
+      </ul>
+
+      <!-- Drawer Controls & Action Buttons -->
+      <div class="nb-drawer-footer">
+        <div class="nb-drawer-toggles-row">
+          <button type="button" class="nb-drawer-toggle-item dir-toggle-btn" aria-label="Toggle layout direction">
+            <span class="dir-text-label">RTL Layout</span>
+          </button>
+          <button type="button" class="nb-drawer-toggle-item theme-toggle-btn" aria-label="Toggle dark mode">
+            <span class="theme-text-label">Dark Mode</span>
+          </button>
+        </div>
+        <a href="contact.html#consultation" class="nb-btn nb-btn-gold nb-drawer-cta">Book a Consultation</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ======================================================================
+       INSIGHTS PAGE MAIN CONTENT — NINE UNIQUE SECTIONS
+       01: #insights-hero (Editorial Knowledge Index Hero)
+       02: #featured-story (Featured Editorial Story)
+       03: #topic-directory (Browse Insights by Topic)
+       04: #latest-insights (Latest Insights / Article Library)
+       05: #valuation-explainer (Technical Valuation Concept Explainer)
+       06: #transaction-insight (Transaction Readiness: Before the Deal)
+       07: #knowledge-toolkit (Business Owner's Knowledge Toolkit)
+       08: #insights-newsletter (Insights Newsletter / Knowledge Updates)
+       09: #insights-cta (Final Editorial CTA)
+       ====================================================================== -->
+  <main id="main-content">
+
+    <!-- --------------------------------------------------------------------
+         SECTION 01: #insights-hero (Editorial Knowledge Index Hero)
+         Soft ivory background. Left title and content, right masthead card
+         with executive photo. All section headings, intros, and CTA groups centered.
+         -------------------------------------------------------------------- -->
+    <section id="insights-hero" aria-labelledby="insights-hero-title">
+      <div class="nb-container">
+        
+        <div class="insights-hero-grid">
+          
+          <!-- Content Left -->
+          <div class="insights-hero-content">
+            <span class="insights-hero-eyebrow">NORTHBRIDGE KNOWLEDGE SERIES</span>
+            <h1 id="insights-hero-title" class="insights-hero-title">
+              Insights That Inform Better Business Decisions.
+            </h1>
+            <p class="insights-hero-desc">
+              Explore practical perspectives on business valuation, mergers and acquisitions, financial analysis and the decisions that shape business value.
+            </p>
+            <div class="insights-editorial-divider" aria-hidden="true"></div>
+            <span class="insights-hero-label">VALUATION / TRANSACTIONS / BUSINESS STRATEGY</span>
+
+            <!-- CTA Group -->
+            <div class="d-flex flex-wrap gap-3 align-items-center">
+              <a href="#latest-insights" class="nb-btn nb-btn-gold">Explore Latest Insights</a>
+              <a href="resources.html" class="nb-btn nb-btn-outline">Explore Business Resources</a>
+            </div>
+          </div>
+
+          <!-- Vertical Publication Masthead Column (Right) -->
+          <div class="insights-hero-media">
+            <div class="insights-masthead-card">
+              <div class="insights-masthead-media">
+                <img 
+                  src="assets/images/blog/insights-editorial-hero.webp" 
+                  alt="Senior executive reviewing financial reports and portfolio documents in a calm, modern office setting" 
+                  class="insights-masthead-img"
+                  width="700"
+                  height="900"
+                  loading="eager"
+                  fetchpriority="high"
+                >
+              </div>
+              <div class="insights-masthead-meta">
+                <span class="masthead-vol">VOLUME IV &bull; EDITORIAL SERIES 2026</span>
+                <p class="masthead-desc">
+                  Independent analytical perspectives and educational frameworks published by Northbridge Valuation &amp; Advisory.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------
+         SECTION 02: #featured-story (Featured Editorial Story)
+         White background. Large horizontal editorial feature card.
+         -------------------------------------------------------------------- -->
+    <section id="featured-story" class="nb-section" aria-labelledby="featured-story-title">
+      <div class="nb-container">
+        
+        <!-- Centred Section Header -->
+        <div class="nb-section-header text-center">
+          <span class="section-eyebrow">FEATURED EDITORIAL</span>
+          <h2 id="featured-story-title" class="section-heading">
+            In-Depth Perspective on Corporate Valuation.
+          </h2>
+          <p class="section-intro">
+            An essential foundation for business owners, executives, and transaction advisors seeking clarity in enterprise valuation.
+          </p>
+        </div>
+
+        <!-- Featured Story Horizontal Card -->
+        <div class="featured-story-card">
+          <div class="featured-story-media">
+            <img 
+              src="assets/images/blog/featured-business-valuation.webp" 
+              alt="Financial analyst examining company financial statements, ledger sheets, and analytical charts at desk" 
+              class="featured-story-img"
+              width="1000"
+              height="650"
+              loading="lazy"
+            >
+          </div>
+          <div class="featured-story-body">
+            <div class="featured-meta-row">
+              <span class="featured-category-badge">BUSINESS VALUATION</span>
+              <span class="featured-reading-time">&bull; 7 MIN READ</span>
+            </div>
+            <h3 class="featured-story-title">
+              What Actually Determines the Value of a Business?
+            </h3>
+            <p class="featured-story-summary">
+              Business value is influenced by more than revenue or reported profit. Financial performance, future prospects, risk, market conditions and the nature of the business all contribute to how value is assessed.
+            </p>
+            <div>
+              <button type="button" class="featured-read-link" data-open-article="featured" aria-label="Read full article: What Actually Determines the Value of a Business?">
+                <span>Read Full Article</span>
+                <span aria-hidden="true">&rarr;</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------
+         SECTION 03: #topic-directory (Browse Insights by Topic)
+         Soft ivory background. Horizontal topic directory with 6 disciplines.
+         -------------------------------------------------------------------- -->
+    <section id="topic-directory" class="nb-section" aria-labelledby="topic-dir-title">
+      <div class="nb-container">
+        
+        <!-- Centred Section Header -->
+        <div class="nb-section-header text-center">
+          <span class="section-eyebrow">TOPIC DIRECTORY</span>
+          <h2 id="topic-dir-title" class="section-heading">
+            Explore Perspectives by Practice Discipline.
+          </h2>
+          <p class="section-intro">
+            Browse educational insights organized around the core strategic and financial challenges confronting modern enterprises.
+          </p>
+        </div>
+
+        <!-- 6 Topic Cards Grid -->
+        <div class="topic-cards-grid">
+          
+          <!-- Topic 1: Business Valuation -->
+          <div class="topic-item-card" data-topic-filter="valuation" role="button" tabindex="0" aria-label="Filter articles by Business Valuation">
+            <div class="topic-card-media">
+              <img src="assets/images/blog/topic-valuation.webp" alt="Business valuation financial documents on table" class="topic-card-img" width="600" height="450" loading="lazy">
+            </div>
+            <div class="topic-card-body">
+              <h3 class="topic-card-title">Business Valuation</h3>
+              <p class="topic-card-desc">Understanding value, valuation approaches and key financial drivers.</p>
+              <span class="topic-card-link-text">Browse Articles &rarr;</span>
+            </div>
+          </div>
+
+          <!-- Topic 2: Mergers & Acquisitions -->
+          <div class="topic-item-card" data-topic-filter="ma" role="button" tabindex="0" aria-label="Filter articles by Mergers and Acquisitions">
+            <div class="topic-card-media">
+              <img src="assets/images/blog/topic-ma.webp" alt="Corporate boardroom glass conference table prepared for transaction discussions" class="topic-card-img" width="600" height="450" loading="lazy">
+            </div>
+            <div class="topic-card-body">
+              <h3 class="topic-card-title">Mergers &amp; Acquisitions</h3>
+              <p class="topic-card-desc">Acquisition evaluation, transaction preparation and deal considerations.</p>
+              <span class="topic-card-link-text">Browse Articles &rarr;</span>
+            </div>
+          </div>
+
+          <!-- Topic 3: Financial Due Diligence -->
+          <div class="topic-item-card" data-topic-filter="due-diligence" role="button" tabindex="0" aria-label="Filter articles by Financial Due Diligence">
+            <div class="topic-card-media">
+              <img src="assets/images/blog/topic-due-diligence.webp" alt="Financial audit worksheets, checklists and pen on desk" class="topic-card-img" width="600" height="450" loading="lazy">
+            </div>
+            <div class="topic-card-body">
+              <h3 class="topic-card-title">Financial Due Diligence</h3>
+              <p class="topic-card-desc">Financial information, quality of earnings and transaction risk considerations.</p>
+              <span class="topic-card-link-text">Browse Articles &rarr;</span>
+            </div>
+          </div>
+
+          <!-- Topic 4: Financial Analysis -->
+          <div class="topic-item-card" data-topic-filter="analysis" role="button" tabindex="0" aria-label="Filter articles by Financial Analysis">
+            <div class="topic-card-media">
+              <img src="assets/images/blog/topic-financial-analysis.webp" alt="Financial analytics dashboard display on computer monitor" class="topic-card-img" width="600" height="450" loading="lazy">
+            </div>
+            <div class="topic-card-body">
+              <h3 class="topic-card-title">Financial Analysis</h3>
+              <p class="topic-card-desc">Financial performance, trends and business fundamentals.</p>
+              <span class="topic-card-link-text">Browse Articles &rarr;</span>
+            </div>
+          </div>
+
+          <!-- Topic 5: Financial Modelling -->
+          <div class="topic-item-card" data-topic-filter="modelling" role="button" tabindex="0" aria-label="Filter articles by Financial Modelling">
+            <div class="topic-card-media">
+              <img src="assets/images/blog/topic-financial-modelling.webp" alt="Laptop displaying complex financial forecast model alongside clean notepad" class="topic-card-img" width="600" height="450" loading="lazy">
+            </div>
+            <div class="topic-card-body">
+              <h3 class="topic-card-title">Financial Modelling</h3>
+              <p class="topic-card-desc">Forecasting, assumptions and scenario analysis.</p>
+              <span class="topic-card-link-text">Browse Articles &rarr;</span>
+            </div>
+          </div>
+
+          <!-- Topic 6: Business Strategy -->
+          <div class="topic-item-card" data-topic-filter="strategy" role="button" tabindex="0" aria-label="Filter articles by Business Strategy">
+            <div class="topic-card-media">
+              <img src="assets/images/blog/topic-business-strategy.webp" alt="Strategic business planning session in modern boardroom" class="topic-card-img" width="600" height="450" loading="lazy">
+            </div>
+            <div class="topic-card-body">
+              <h3 class="topic-card-title">Business Strategy</h3>
+              <p class="topic-card-desc">Strategic decisions, ownership transitions and long-term business planning.</p>
+              <span class="topic-card-link-text">Browse Articles &rarr;</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------
+         SECTION 04: #latest-insights (Article Library & Filtering)
+         White background. Search bar + category pill buttons + 9 articles.
+         -------------------------------------------------------------------- -->
+    <section id="latest-insights" class="nb-section" aria-labelledby="library-heading">
+      <div class="nb-container">
+        
+        <!-- Centred Section Header -->
+        <div class="nb-section-header text-center">
+          <span class="section-eyebrow">KNOWLEDGE ARCHIVE</span>
+          <h2 id="library-heading" class="section-heading">
+            Educational Perspectives &amp; Analytical Articles.
+          </h2>
+          <p class="section-intro">
+            A comprehensive library of practical frameworks, transaction guidance, and valuation methodology developed for corporate leaders.
+          </p>
+        </div>
+
+        <!-- Search & Filter Toolbar -->
+        <div class="article-toolbar">
+          
+          <!-- Live Search Bar -->
+          <div class="search-input-wrap">
+            <svg class="search-icon-left" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input 
+              type="text" 
+              id="articleSearchInput" 
+              class="search-input-field" 
+              placeholder="Search articles by title or keyword..." 
+              aria-label="Search articles by title or keyword"
+            >
+            <button type="button" id="searchClearBtn" class="search-clear-btn" aria-label="Clear search query">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+            </button>
+          </div>
+
+          <!-- Category Filter Pills -->
+          <div class="article-filter-pills" role="tablist" aria-label="Filter article library by topic">
+            <button type="button" class="filter-pill-btn active" data-filter="all" role="tab" aria-selected="true">All Topics</button>
+            <button type="button" class="filter-pill-btn" data-filter="valuation" role="tab" aria-selected="false">Business Valuation</button>
+            <button type="button" class="filter-pill-btn" data-filter="ma" role="tab" aria-selected="false">Mergers &amp; Acquisitions</button>
+            <button type="button" class="filter-pill-btn" data-filter="due-diligence" role="tab" aria-selected="false">Financial Due Diligence</button>
+            <button type="button" class="filter-pill-btn" data-filter="analysis" role="tab" aria-selected="false">Financial Analysis</button>
+            <button type="button" class="filter-pill-btn" data-filter="modelling" role="tab" aria-selected="false">Financial Modelling</button>
+            <button type="button" class="filter-pill-btn" data-filter="strategy" role="tab" aria-selected="false">Business Strategy</button>
+          </div>
+
+        </div>
+
+        <!-- Results Counter & Reset Action -->
+        <div class="results-status-bar">
+          <span id="resultsCount">Showing 9 of 9 Articles</span>
+          <button type="button" id="resetFiltersBtn" class="reset-filters-link">Reset all filters</button>
+        </div>
+
+        <!-- 9 Original Educational Articles Grid -->
+        <div class="articles-library-grid" id="articlesLibraryGrid">
+          
+          <!-- Article 01 -->
+          <article class="article-card" data-category="valuation">
+            <div class="article-card-header">
+              <span class="article-cat-badge">Business Valuation</span>
+              <span class="article-read-time">6 MIN</span>
+            </div>
+            <div class="article-card-body">
+              <h3 class="article-card-title">Understanding the Foundations of Business Valuation</h3>
+              <p class="article-card-summary">
+                An introduction to the principles, purpose and context behind assessing the value of an operating business.
+              </p>
+              <div class="article-card-footer">
+                <button type="button" class="article-read-btn" data-open-article="article-01" aria-label="Read full article: Understanding the Foundations of Business Valuation">
+                  <span>Read Article</span>
+                  <span aria-hidden="true">&rarr;</span>
+                </button>
+                <span class="article-number-badge">01</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Article 02 -->
+          <article class="article-card" data-category="valuation">
+            <div class="article-card-header">
+              <span class="article-cat-badge">Business Valuation</span>
+              <span class="article-read-time">5 MIN</span>
+            </div>
+            <div class="article-card-body">
+              <h3 class="article-card-title">Revenue, Profit and Cash Flow: Why the Differences Matter</h3>
+              <p class="article-card-summary">
+                Explore how different financial measures provide different perspectives on business performance and value.
+              </p>
+              <div class="article-card-footer">
+                <button type="button" class="article-read-btn" data-open-article="article-02" aria-label="Read full article: Revenue, Profit and Cash Flow: Why the Differences Matter">
+                  <span>Read Article</span>
+                  <span aria-hidden="true">&rarr;</span>
+                </button>
+                <span class="article-number-badge">02</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Article 03 -->
+          <article class="article-card" data-category="valuation">
+            <div class="article-card-header">
+              <span class="article-cat-badge">Business Valuation</span>
+              <span class="article-read-time">8 MIN</span>
+            </div>
+            <div class="article-card-body">
+              <h3 class="article-card-title">Understanding the Main Approaches to Business Valuation</h3>
+              <p class="article-card-summary">
+                Discover the income, market and asset-based approaches and the situations in which they may be considered.
+              </p>
+              <div class="article-card-footer">
+                <button type="button" class="article-read-btn" data-open-article="article-03" aria-label="Read full article: Understanding the Main Approaches to Business Valuation">
+                  <span>Read Article</span>
+                  <span aria-hidden="true">&rarr;</span>
+                </button>
+                <span class="article-number-badge">03</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Article 04 -->
+          <article class="article-card" data-category="ma">
+            <div class="article-card-header">
+              <span class="article-cat-badge">Mergers &amp; Acquisitions</span>
+              <span class="article-read-time">7 MIN</span>
+            </div>
+            <div class="article-card-body">
+              <h3 class="article-card-title">Preparing a Business for a Potential Sale</h3>
+              <p class="article-card-summary">
+                Consider the financial records, operational information and strategic questions that may arise during sale preparation.
+              </p>
+              <div class="article-card-footer">
+                <button type="button" class="article-read-btn" data-open-article="article-04" aria-label="Read full article: Preparing a Business for a Potential Sale">
+                  <span>Read Article</span>
+                  <span aria-hidden="true">&rarr;</span>
+                </button>
+                <span class="article-number-badge">04</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Article 05 -->
+          <article class="article-card" data-category="ma">
+            <div class="article-card-header">
+              <span class="article-cat-badge">Mergers &amp; Acquisitions</span>
+              <span class="article-read-time">6 MIN</span>
+            </div>
+            <div class="article-card-body">
+              <h3 class="article-card-title">What Buyers Consider Before an Acquisition</h3>
+              <p class="article-card-summary">
+                Explore financial performance, business risks, growth opportunities and other factors that can influence acquisition evaluation.
+              </p>
+              <div class="article-card-footer">
+                <button type="button" class="article-read-btn" data-open-article="article-05" aria-label="Read full article: What Buyers Consider Before an Acquisition">
+                  <span>Read Article</span>
+                  <span aria-hidden="true">&rarr;</span>
+                </button>
+                <span class="article-number-badge">05</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Article 06 -->
+          <article class="article-card" data-category="due-diligence">
+            <div class="article-card-header">
+              <span class="article-cat-badge">Financial Due Diligence</span>
+              <span class="article-read-time">7 MIN</span>
+            </div>
+            <div class="article-card-body">
+              <h3 class="article-card-title">Financial Due Diligence: An Overview for Business Owners</h3>
+              <p class="article-card-summary">
+                Understand the purpose of financial due diligence and why reliable financial information matters during transactions.
+              </p>
+              <div class="article-card-footer">
+                <button type="button" class="article-read-btn" data-open-article="article-06" aria-label="Read full article: Financial Due Diligence: An Overview for Business Owners">
+                  <span>Read Article</span>
+                  <span aria-hidden="true">&rarr;</span>
+                </button>
+                <span class="article-number-badge">06</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Article 07 -->
+          <article class="article-card" data-category="analysis">
+            <div class="article-card-header">
+              <span class="article-cat-badge">Financial Analysis</span>
+              <span class="article-read-time">6 MIN</span>
+            </div>
+            <div class="article-card-body">
+              <h3 class="article-card-title">Reading Financial Statements Beyond the Headline Numbers</h3>
+              <p class="article-card-summary">
+                Learn how the income statement, balance sheet and cash flow statement work together to explain business performance.
+              </p>
+              <div class="article-card-footer">
+                <button type="button" class="article-read-btn" data-open-article="article-07" aria-label="Read full article: Reading Financial Statements Beyond the Headline Numbers">
+                  <span>Read Article</span>
+                  <span aria-hidden="true">&rarr;</span>
+                </button>
+                <span class="article-number-badge">07</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Article 08 -->
+          <article class="article-card" data-category="modelling">
+            <div class="article-card-header">
+              <span class="article-cat-badge">Financial Modelling</span>
+              <span class="article-read-time">8 MIN</span>
+            </div>
+            <div class="article-card-body">
+              <h3 class="article-card-title">Financial Forecasting: Understanding Assumptions and Scenarios</h3>
+              <p class="article-card-summary">
+                Explore the role of assumptions, forecast drivers and alternative scenarios in financial planning.
+              </p>
+              <div class="article-card-footer">
+                <button type="button" class="article-read-btn" data-open-article="article-08" aria-label="Read full article: Financial Forecasting: Understanding Assumptions and Scenarios">
+                  <span>Read Article</span>
+                  <span aria-hidden="true">&rarr;</span>
+                </button>
+                <span class="article-number-badge">08</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Article 09 -->
+          <article class="article-card" data-category="strategy">
+            <div class="article-card-header">
+              <span class="article-cat-badge">Business Strategy</span>
+              <span class="article-read-time">6 MIN</span>
+            </div>
+            <div class="article-card-body">
+              <h3 class="article-card-title">Building a Stronger Foundation for Long-Term Business Value</h3>
+              <p class="article-card-summary">
+                Consider how operational discipline, financial visibility and strategic planning may support sustainable business development.
+              </p>
+              <div class="article-card-footer">
+                <button type="button" class="article-read-btn" data-open-article="article-09" aria-label="Read full article: Building a Stronger Foundation for Long-Term Business Value">
+                  <span>Read Article</span>
+                  <span aria-hidden="true">&rarr;</span>
+                </button>
+                <span class="article-number-badge">09</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Empty State When No Results Match -->
+        <div class="articles-empty-state" id="articlesEmptyState" role="region" aria-live="polite">
+          <h3 class="empty-state-title">No Matching Articles Found</h3>
+          <p class="empty-state-desc">
+            We couldn't find any articles matching your search query or selected topic. Try using a broader keyword or reset the filters.
+          </p>
+          <button type="button" class="nb-btn nb-btn-gold" onclick="document.getElementById('resetFiltersBtn').click()">
+            Reset All Filters
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------
+         SECTION 05: #valuation-explainer (Technical Valuation Concept Explainer)
+         Soft ivory background. Explanatory intro + context box left,
+         4-step concept flow right. Centred section header & centered CTA group.
+         -------------------------------------------------------------------- -->
+    <section id="valuation-explainer" class="nb-section" aria-labelledby="explainer-title">
+      <div class="nb-container">
+        
+        <!-- Centred Section Header -->
+        <div class="nb-section-header text-center">
+          <span class="section-eyebrow">TECHNICAL EXPLAINER</span>
+          <h2 id="explainer-title" class="section-heading">
+            Understanding How Business Value Is Assessed.
+          </h2>
+          <p class="section-intro">
+            Business valuation is context-specific. The appropriate approach depends on the nature of the business, available information and purpose of the assessment.
+          </p>
+        </div>
+
+        <!-- Explainer Layout Grid -->
+        <div class="explainer-layout-grid">
+          
+          <!-- Media & Narrative Left -->
+          <div class="explainer-left-media">
+            <div class="explainer-img-frame">
+              <img 
+                src="assets/images/blog/valuation-explainer.webp" 
+                alt="Close-up of financial analyst reviewing printed valuation model with calculator and handwritten notes" 
+                class="explainer-img"
+                width="800"
+                height="600"
+                loading="lazy"
+              >
+            </div>
+            <div class="explainer-context-box">
+              <p class="mb-0">
+                <strong>Important Principle:</strong> Independent business valuation harmonizes empirical calculation methodologies with qualitative comprehension of operating risks, competitive moats and capital reinvestment realities.
+              </p>
+            </div>
+            <div>
+              <a href="services.html#business-valuation" class="nb-btn nb-btn-gold">Explore Valuation Services</a>
+            </div>
+          </div>
+
+          <!-- 4-Step Vertical Flow Right -->
+          <div class="explainer-flow-list">
+            
+            <!-- Step 01 -->
+            <div class="explainer-step-card">
+              <span class="explainer-step-num">01</span>
+              <div class="explainer-step-body">
+                <h3 class="explainer-step-title">Financial Performance</h3>
+                <p class="explainer-step-desc">
+                  Reviewing historical financial statements, normalised profitability, recurring cash flow generation, working capital requirements and relevant multi-year trends.
+                </p>
+              </div>
+            </div>
+
+            <!-- Step 02 -->
+            <div class="explainer-step-card">
+              <span class="explainer-step-num">02</span>
+              <div class="explainer-step-body">
+                <h3 class="explainer-step-title">Future Prospects</h3>
+                <p class="explainer-step-desc">
+                  Considering business plans, forecast assumptions, growth opportunities, market dynamics, operational capacity limits and sector growth benchmarks.
+                </p>
+              </div>
+            </div>
+
+            <!-- Step 03 -->
+            <div class="explainer-step-card">
+              <span class="explainer-step-num">03</span>
+              <div class="explainer-step-body">
+                <h3 class="explainer-step-title">Risk and Dependencies</h3>
+                <p class="explainer-step-desc">
+                  Evaluating customer concentration, supplier reliance, key-person dependencies, regulatory obligations and specific enterprise risk premiums.
+                </p>
+              </div>
+            </div>
+
+            <!-- Step 04 -->
+            <div class="explainer-step-card">
+              <span class="explainer-step-num">04</span>
+              <div class="explainer-step-body">
+                <h3 class="explainer-step-title">Valuation Context</h3>
+                <p class="explainer-step-desc">
+                  Selecting and applying appropriate valuation approaches (DCF, comparable multiples, asset-based) tailored strictly to the purpose of the engagement.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------
+         SECTION 06: #transaction-insight (Transaction Readiness: Before the Deal)
+         Midnight Blue background. 4 preparation timeline areas left,
+         supporting professional meeting photo right.
+         -------------------------------------------------------------------- -->
+    <section id="transaction-insight" class="nb-section" aria-labelledby="tx-insight-title">
+      <div class="nb-container">
+        
+        <!-- Centred Section Header -->
+        <div class="nb-section-header text-center">
+          <span class="section-eyebrow text-gold">TRANSACTION READINESS</span>
+          <h2 id="tx-insight-title" class="section-heading">
+            Better Preparation Starts Before the Transaction.
+          </h2>
+          <p class="section-intro">
+            A well-informed transaction begins with a clear understanding of financial information, business operations and the questions that may arise during evaluation.
+          </p>
+        </div>
+
+        <!-- Readiness Grid -->
+        <div class="tx-readiness-grid">
+          
+          <!-- Sequential Timeline List Left -->
+          <div class="tx-timeline-list">
+            
+            <!-- Area 01 -->
+            <div class="tx-timeline-item">
+              <div class="tx-timeline-num">01</div>
+              <div class="tx-timeline-body">
+                <h3 class="tx-timeline-title">Organise Financial Information</h3>
+                <p class="tx-timeline-desc">
+                  Bring together reliable financial statements, reconciled management accounts, tax schedules and auditable working capital records.
+                </p>
+              </div>
+            </div>
+
+            <!-- Area 02 -->
+            <div class="tx-timeline-item">
+              <div class="tx-timeline-num">02</div>
+              <div class="tx-timeline-body">
+                <h3 class="tx-timeline-title">Understand Business Performance</h3>
+                <p class="tx-timeline-desc">
+                  Identify the key factors that influence revenue quality, gross margin stability, operational cash flow and sustainable run-rate earnings.
+                </p>
+              </div>
+            </div>
+
+            <!-- Area 03 -->
+            <div class="tx-timeline-item">
+              <div class="tx-timeline-num">03</div>
+              <div class="tx-timeline-body">
+                <h3 class="tx-timeline-title">Review Business Dependencies</h3>
+                <p class="tx-timeline-desc">
+                  Consider customer relationships, supplier commitments, key personnel contracts, operational processes and other critical dependencies.
+                </p>
+              </div>
+            </div>
+
+            <!-- Area 04 -->
+            <div class="tx-timeline-item">
+              <div class="tx-timeline-num">04</div>
+              <div class="tx-timeline-body">
+                <h3 class="tx-timeline-title">Define Strategic Objectives</h3>
+                <p class="tx-timeline-desc">
+                  Clarify the purpose of the transaction, preferred transaction structures, valuation expectations and long-term commercial goals.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Supporting Meeting Image Right -->
+          <div class="tx-media-column">
+            <div class="tx-media-frame">
+              <img 
+                src="assets/images/blog/transaction-preparation.webp" 
+                alt="Two business professionals discussing a transaction preparation document across a conference table in authentic setting" 
+                class="tx-media-img"
+                width="800"
+                height="600"
+                loading="lazy"
+              >
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Centred Section CTA -->
+        <div class="cta-group-centred section-cta-group">
+          <a href="services.html#transaction-support" class="nb-btn nb-btn-gold">Explore Transaction Support</a>
+          <a href="contact.html#consultation" class="nb-btn nb-btn-outline-light">Discuss a Transaction Mandate</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------
+         SECTION 07: #knowledge-toolkit (Business Owner's Knowledge Toolkit)
+         White background. Clean 4-item resource directory layout.
+         -------------------------------------------------------------------- -->
+    <section id="knowledge-toolkit" class="nb-section" aria-labelledby="toolkit-title">
+      <div class="nb-container">
+        
+        <!-- Centred Section Header -->
+        <div class="nb-section-header text-center">
+          <span class="section-eyebrow">PRACTICAL FRAMEWORKS</span>
+          <h2 id="toolkit-title" class="section-heading">
+            Business Owner&rsquo;s Knowledge Toolkit.
+          </h2>
+          <p class="section-intro">
+            Structured guides and preparation frameworks designed to help corporate leaders organize financial records and approach strategic transitions with confidence.
+          </p>
+        </div>
+
+        <!-- 4 Resource Items Grid -->
+        <div class="toolkit-grid">
+          
+          <!-- Resource 1 -->
+          <div class="toolkit-item-card">
+            <div class="toolkit-icon-wrap" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg>
+            </div>
+            <h3 class="toolkit-title">Business Valuation Preparation Checklist</h3>
+            <p class="toolkit-desc">
+              A practical overview of information and schedules that may be useful when preparing for a formal business valuation.
+            </p>
+          </div>
+
+          <!-- Resource 2 -->
+          <div class="toolkit-item-card">
+            <div class="toolkit-icon-wrap" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="20" x2="18" y2="10"></line>
+                <line x1="12" y1="20" x2="12" y2="4"></line>
+                <line x1="6" y1="20" x2="6" y2="14"></line>
+              </svg>
+            </div>
+            <h3 class="toolkit-title">Financial Information Checklist</h3>
+            <p class="toolkit-desc">
+              A guide to historical financial records, ledgers and supporting information that may be relevant to an analytical assessment.
+            </p>
+          </div>
+
+          <!-- Resource 3 -->
+          <div class="toolkit-item-card">
+            <div class="toolkit-icon-wrap" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+              </svg>
+            </div>
+            <h3 class="toolkit-title">Business Sale Readiness Guide</h3>
+            <p class="toolkit-desc">
+              Key operational and governance considerations for business owners beginning to explore a potential ownership divestiture.
+            </p>
+          </div>
+
+          <!-- Resource 4 -->
+          <div class="toolkit-item-card">
+            <div class="toolkit-icon-wrap" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+            </div>
+            <h3 class="toolkit-title">M&amp;A Readiness Overview</h3>
+            <p class="toolkit-desc">
+              An introduction to the documentation, diligence workflow and preparation that may be relevant to an acquisition or sale process.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Centred Section CTA -->
+        <div class="cta-group-centred section-cta-group">
+          <a href="resources.html" class="nb-btn nb-btn-gold">Visit Business Resources</a>
+          <a href="case-studies.html" class="nb-btn nb-btn-outline">Browse Illustrative Case Studies</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------
+         SECTION 08: #insights-newsletter (Insights Newsletter / Knowledge Updates)
+         Pale Blue background. Minimalist newsletter subscription form
+         with honest demo feedback message.
+         -------------------------------------------------------------------- -->
+    <section id="insights-newsletter" aria-labelledby="newsletter-title">
+      <div class="nb-container">
+        
+        <div class="newsletter-box">
+          <span class="section-eyebrow">STAY INFORMED</span>
+          <h2 id="newsletter-title" class="section-heading">
+            A Clearer Perspective on Business Value.
+          </h2>
+          <p class="section-intro">
+            Explore future perspectives on valuation, financial analysis, M&amp;A and the decisions that shape business value.
+          </p>
+
+          <form id="insightsNewsletterForm" class="newsletter-form-row" action="#" method="post" novalidate>
+            <input 
+              type="email" 
+              id="newsletterEmailInput" 
+              class="newsletter-input-email" 
+              placeholder="Enter your professional email address" 
+              required 
+              aria-label="Professional email address for insights updates"
+            >
+            <button type="submit" class="nb-btn nb-btn-gold" style="white-space: nowrap;">
+              Subscribe
+            </button>
+          </form>
+
+          <!-- Honest Truthful Feedback Message Area -->
+          <div id="newsletterStatusMsg" class="newsletter-status-message" role="status" aria-live="polite"></div>
+          
+          <p class="text-xs text-slate-500 dark:text-slate-400 mt-2">
+            We respect your privacy. No spam or commercial solicitations. Unsubscribe at any time.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------
+         SECTION 09: #insights-cta (Final Editorial CTA)
+         Deep Navy background. Architectural banner image + centered closing.
+         -------------------------------------------------------------------- -->
+    <section id="insights-cta" aria-labelledby="closing-cta-title">
+      <div class="nb-container">
+        
+        <div class="text-center max-w-3xl mx-auto">
+          <span class="section-eyebrow text-gold">STRATEGIC ADVISORY &amp; VALUATION</span>
+          <h2 id="closing-cta-title" class="section-heading">
+            Turn Better Information Into Better Decisions.
+          </h2>
+          <p class="section-intro">
+            Explore how structured valuation, financial analysis and transaction advisory perspectives can support important business decisions.
+          </p>
+
+          <!-- Architectural Detail Photo Banner -->
+          <div class="insights-closing-banner">
+            <img 
+              src="assets/images/blog/insights-closing-detail.webp" 
+              alt="Modern corporate architectural facade with bronze tones and geometric lines reflecting balance and permanence" 
+              class="insights-closing-img"
+              width="1200"
+              height="700"
+              loading="lazy"
+            >
+          </div>
+
+          <!-- Centred CTA Group -->
+          <div class="cta-group-centred section-cta-group">
+            <a href="services.html" class="nb-btn nb-btn-gold">Explore Our Services</a>
+            <a href="contact.html#consultation" class="nb-btn nb-btn-outline-light">Book a Consultation</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================================================================
+       ACCESSIBLE ARTICLE READING DIALOG / MODAL
+       ====================================================================== -->
+  <div class="article-modal-backdrop" id="articleModalBackdrop" role="dialog" aria-modal="true" aria-labelledby="modalArticleTitle">
+    <div class="article-modal-dialog">
+      <div class="article-modal-header">
+        <span class="modal-cat-tag" id="modalCatTag">Business Valuation</span>
+        <button type="button" class="modal-close-btn" id="articleModalCloseBtn" aria-label="Close reading view">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="article-modal-body">
+        <h2 class="article-modal-title" id="modalArticleTitle">Article Title</h2>
+        <div class="article-modal-meta">
+          <span id="modalReadTime">6 MIN READ</span>
+          <span>&bull;</span>
+          <span>NORTHBRIDGE KNOWLEDGE SERIES</span>
+        </div>
+        <div class="article-modal-content" id="modalArticleContent">
+          <!-- Full article paragraphs loaded dynamically via blog.js -->
+        </div>
+      </div>
+      <div class="article-modal-footer">
+        <a href="contact.html#consultation" class="nb-btn nb-btn-gold" style="font-size: 0.85rem; padding: 0.5rem 1.25rem;">
+          Discuss With An Advisor
+        </a>
+        <button type="button" class="nb-btn nb-btn-outline" id="articleModalFooterClose" style="font-size: 0.85rem; padding: 0.5rem 1.25rem;">
+          Close Reading View
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       FOOTER (EXACT SAME AS INDEX.HTML, ABOUT.HTML, SERVICES.HTML & CASE-STUDIES.HTML)
+       ====================================================================== -->
+  <footer class="nb-footer" role="contentinfo">
+    <div class="nb-footer-container">
+
+      <!-- Top 4 Columns & Brand Column -->
+      <div class="nb-footer-top">
+        
+        <!-- Brand Info Column -->
+        <div class="nb-footer-brand-col">
+          <a href="index.html" aria-label="Northbridge Valuation &amp; Advisory Homepage">
+            <img src="assets/images/brand/logo-white.svg" alt="Northbridge Valuation &amp; Advisory" class="nb-footer-logo" width="220" height="36">
+          </a>
+          <p class="nb-footer-tagline">CLARITY IN VALUE. CONFIDENCE IN EVERY DECISION.</p>
+          <p class="nb-footer-desc">
+            Independent thinking, financial insight and strategic guidance for important business valuation and transaction decisions.
+          </p>
+        </div>
+
+        <!-- Column 1: Quick Links -->
+        <div>
+          <h3 class="nb-footer-col-title">Quick Links</h3>
+          <ul class="nb-footer-links">
+            <li><a href="index.html" class="nb-footer-link">Home</a></li>
+            <li><a href="home2.html" class="nb-footer-link">Home 2</a></li>
+            <li><a href="about.html" class="nb-footer-link">About Us</a></li>
+            <li><a href="services.html" class="nb-footer-link">Services</a></li>
+            <li><a href="case-studies.html" class="nb-footer-link">Case Studies</a></li>
+            <li><a href="contact.html" class="nb-footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 2: Our Services -->
+        <div>
+          <h3 class="nb-footer-col-title">Our Services</h3>
+          <ul class="nb-footer-links">
+            <li><a href="services.html#business-valuation" class="nb-footer-link">Business Valuation</a></li>
+            <li><a href="services.html#ma-advisory" class="nb-footer-link">M&amp;A Advisory</a></li>
+            <li><a href="services.html#financial-due-diligence" class="nb-footer-link">Financial Due Diligence</a></li>
+            <li><a href="services.html#financial-analysis" class="nb-footer-link">Financial Analysis</a></li>
+            <li><a href="services.html#financial-modelling" class="nb-footer-link">Financial Modelling</a></li>
+            <li><a href="services.html#transaction-support" class="nb-footer-link">Transaction Support</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Insights -->
+        <div>
+          <h3 class="nb-footer-col-title">Insights</h3>
+          <ul class="nb-footer-links">
+            <li><a href="blog.html" class="nb-footer-link">Latest Insights</a></li>
+            <li><a href="blog.html#valuation" class="nb-footer-link">Valuation Insights</a></li>
+            <li><a href="blog.html#ma" class="nb-footer-link">M&amp;A Insights</a></li>
+            <li><a href="resources.html" class="nb-footer-link">Business Resources</a></li>
+            <li><a href="faq.html" class="nb-footer-link">Frequently Asked Questions</a></li>
+            <li><a href="about.html#approach" class="nb-footer-link">Our Approach</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Get In Touch -->
+        <div>
+          <h3 class="nb-footer-col-title">Get In Touch</h3>
+          <ul class="nb-footer-links">
+            <li><a href="contact.html#enquiries" class="nb-footer-link">General Enquiries</a></li>
+            <li><a href="contact.html#valuation" class="nb-footer-link">Valuation Enquiries</a></li>
+            <li><a href="contact.html#ma" class="nb-footer-link">M&amp;A Enquiries</a></li>
+            <li><a href="contact.html#consultation" class="nb-footer-link">Consultation Requests</a></li>
+            <li><a href="contact.html" class="nb-footer-link">Contact Us</a></li>
+            <li><a href="contact.html#consultation" class="nb-footer-link">Book a Consultation</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Newsletter Card -->
+      <div class="nb-footer-newsletter-card">
+        <div>
+          <h3 class="nb-newsletter-heading">STAY INFORMED.</h3>
+          <p class="nb-newsletter-desc">
+            Receive occasional perspectives on valuation, transactions and business strategy.
+          </p>
+        </div>
+        <div>
+          <form class="nb-newsletter-form" action="#" method="post">
+            <input 
+              type="email" 
+              class="nb-newsletter-input" 
+              placeholder="Your professional email address" 
+              required 
+              aria-label="Professional email address for newsletter"
+            >
+            <button type="submit" class="nb-newsletter-btn">Subscribe</button>
+            <span class="nb-newsletter-notice" role="status"></span>
+          </form>
+        </div>
+      </div>
+
+      <!-- Social Media Links & Divider Bar -->
+      <div class="nb-footer-middle">
+        <div class="nb-social-group">
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com" class="nb-social-link" target="_blank" rel="noopener noreferrer" aria-label="Northbridge on LinkedIn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+            </svg>
+          </a>
+          <!-- Instagram -->
+          <a href="https://www.instagram.com" class="nb-social-link" target="_blank" rel="noopener noreferrer" aria-label="Northbridge on Instagram">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+          </a>
+          <!-- Facebook -->
+          <a href="https://www.facebook.com" class="nb-social-link" target="_blank" rel="noopener noreferrer" aria-label="Northbridge on Facebook">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.374 14.5 5 15.5 5H18V0h-3.808C10.595 0 9 1.583 9 4.615V8z"/>
+            </svg>
+          </a>
+          <!-- YouTube -->
+          <a href="https://www.youtube.com" class="nb-social-link" target="_blank" rel="noopener noreferrer" aria-label="Northbridge on YouTube">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Bottom Bar: Copyright & Legal -->
+      <div class="nb-footer-bottom">
+        <div>
+          &copy; 2026 Northbridge Valuation &amp; Advisory. All rights reserved.
+        </div>
+        <div class="nb-footer-legal-links">
+          <a href="privacy.html" class="nb-footer-link">Privacy Policy</a>
+          <a href="terms.html" class="nb-footer-link">Terms &amp; Conditions</a>
+          <a href="cookies.html" class="nb-footer-link">Cookie Policy</a>
+          <button type="button" class="nb-back-to-top" aria-label="Scroll back to top of page">
+            <span>Back to Top</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="18 15 12 9 6 15"></polyline>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Local Scripts (Bootstrap Bundle, Shared Main JS, Insights Page JS) -->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/blog.js"></script>
+</body>
+</html>

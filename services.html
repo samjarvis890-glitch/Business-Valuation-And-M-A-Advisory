@@ -1,0 +1,1191 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advisory Services | Northbridge Valuation &amp; Advisory</title>
+  <meta name="description" content="Explore Northbridge Valuation &amp; Advisory's six core disciplines: Business Valuation, M&amp;A Advisory, Financial Due Diligence, Financial Analysis, Financial Modelling, and Transaction Support.">
+
+  <!-- Open Graph Metadata -->
+  <meta property="og:title" content="Advisory Services | Northbridge Valuation &amp; Advisory">
+  <meta property="og:description" content="Defensible business valuations, strategic M&amp;A advisory, audit-grade financial due diligence, and robust financial modelling for decisive corporate leaders.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/services/services-hero.webp">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/brand/favicon.svg">
+
+  <!-- Pre-render Theme & Direction Script (Prevents flash of unstyled theme/direction) -->
+  <script>
+    (function () {
+      try {
+        var theme = localStorage.getItem('northbridge_theme');
+        var dir = localStorage.getItem('northbridge_direction');
+        if (theme === 'dark') {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        } else {
+          document.documentElement.removeAttribute('data-theme');
+        }
+        if (dir === 'rtl') {
+          document.documentElement.setAttribute('dir', 'rtl');
+          document.documentElement.setAttribute('lang', 'ar');
+        } else {
+          document.documentElement.setAttribute('dir', 'ltr');
+          document.documentElement.setAttribute('lang', 'en');
+        }
+      } catch (e) {}
+    })();
+  </script>
+
+  <!-- Local Stylesheets Only (Offline Ready, No External CDN) -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/tailwind.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/services.css">
+</head>
+<body>
+
+  <!-- ======================================================================
+       HEADER / SHARED STICKY NAVBAR (EXACT SAME AS INDEX.HTML & ABOUT.HTML)
+       Height: Desktop 88px | Tablet 78px | Mobile 72px
+       ====================================================================== -->
+  <header class="nb-header" role="banner">
+    <div class="nb-navbar-container">
+      
+      <!-- Brand Logo (Left) -->
+      <a href="index.html" class="nb-brand-link" aria-label="Northbridge Valuation &amp; Advisory Homepage">
+        <img src="assets/images/brand/logo.svg" alt="Northbridge Valuation &amp; Advisory" class="nb-brand-logo logo-light-mode" width="230" height="38">
+        <img src="assets/images/brand/logo-white.svg" alt="Northbridge Valuation &amp; Advisory" class="nb-brand-logo logo-dark-mode" width="230" height="38">
+      </a>
+
+      <!-- Desktop Navigation Menu (Centre - 1281px+) -->
+      <nav class="nb-desktop-nav" aria-label="Primary Navigation">
+        <!-- 1. Home Dropdown -->
+        <div class="nb-nav-item nb-dropdown">
+          <a href="index.html" class="nb-nav-link" id="homeDropdown" aria-haspopup="true" aria-expanded="false">
+            <span>Home</span>
+            <span class="nb-dropdown-icon" aria-hidden="true">&#9662;</span>
+          </a>
+          <ul class="nb-dropdown-menu" aria-labelledby="homeDropdown">
+            <li class="nb-dropdown-item"><a href="index.html" class="nb-dropdown-link">Home 1</a></li>
+            <li class="nb-dropdown-item"><a href="home2.html" class="nb-dropdown-link">Home 2</a></li>
+          </ul>
+        </div>
+
+        <!-- 2. About -->
+        <div class="nb-nav-item">
+          <a href="about.html" class="nb-nav-link">About</a>
+        </div>
+
+        <!-- 3. Services (Active State — Direct link, NO dropdown, NO dropdown arrow) -->
+        <div class="nb-nav-item">
+          <a href="services.html" class="nb-nav-link active">Services</a>
+        </div>
+
+        <!-- 4. Case Studies -->
+        <div class="nb-nav-item">
+          <a href="case-studies.html" class="nb-nav-link">Case Studies</a>
+        </div>
+
+        <!-- 5. Insights Dropdown -->
+        <div class="nb-nav-item nb-dropdown">
+          <a href="blog.html" class="nb-nav-link" id="insightsDropdown" aria-haspopup="true" aria-expanded="false">
+            <span>Insights</span>
+            <span class="nb-dropdown-icon" aria-hidden="true">&#9662;</span>
+          </a>
+          <ul class="nb-dropdown-menu" aria-labelledby="insightsDropdown">
+            <li class="nb-dropdown-item"><a href="blog.html" class="nb-dropdown-link">Latest Insights / Blog</a></li>
+            <li class="nb-dropdown-item"><a href="resources.html" class="nb-dropdown-link">Business Resources</a></li>
+          </ul>
+        </div>
+
+        <!-- 6. FAQ -->
+        <div class="nb-nav-item">
+          <a href="faq.html" class="nb-nav-link">FAQ</a>
+        </div>
+
+        <!-- 7. Contact -->
+        <div class="nb-nav-item">
+          <a href="contact.html" class="nb-nav-link">Contact</a>
+        </div>
+      </nav>
+
+      <!-- Desktop Right Controls (EXACT ORDER: 1. LTR/RTL, 2. Dark/Light, 3. Book a Consultation) -->
+      <div class="nb-desktop-controls">
+        <!-- 1. LTR / RTL Toggle -->
+        <button type="button" class="nb-icon-btn dir-toggle-btn" id="dir-toggle" aria-label="Switch to RTL layout">
+          <span class="nb-dir-label">RTL</span>
+        </button>
+
+        <!-- 2. Dark Mode / Light Mode Toggle -->
+        <button type="button" class="nb-icon-btn theme-toggle-btn" id="theme-toggle" aria-label="Switch to dark mode">
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- 3. BOOK A CONSULTATION Button -->
+        <a href="contact.html#consultation" class="nb-nav-cta">Book a Consultation</a>
+      </div>
+
+      <!-- Mobile & Tablet Controls Bar (Logo on left, Dark + RTL + Hamburger on right) -->
+      <div class="nb-mobile-controls">
+        <button type="button" class="nb-icon-btn dir-toggle-btn" aria-label="Toggle text direction">
+          <span class="nb-dir-label">RTL</span>
+        </button>
+        <button type="button" class="nb-icon-btn theme-toggle-btn" aria-label="Toggle dark mode">
+          <svg class="icon-sun" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="icon-moon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+        <button type="button" class="nb-hamburger-btn" aria-label="Open navigation drawer" aria-expanded="false" aria-controls="mobileDrawer">
+          <span class="nb-hamburger-bar"></span>
+          <span class="nb-hamburger-bar"></span>
+          <span class="nb-hamburger-bar"></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ======================================================================
+       MOBILE & TABLET FULL NAVIGATION DRAWER (EXACT SAME AS INDEX.HTML)
+       ====================================================================== -->
+  <div class="nb-drawer-backdrop" aria-hidden="true"></div>
+  <aside class="nb-drawer" id="mobileDrawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation Menu">
+    <div class="nb-drawer-header">
+      <a href="index.html" class="nb-brand-link" aria-label="Northbridge Valuation &amp; Advisory Homepage">
+        <img src="assets/images/brand/logo.svg" alt="Northbridge Valuation &amp; Advisory" class="nb-brand-logo logo-light-mode" width="190" height="32">
+        <img src="assets/images/brand/logo-white.svg" alt="Northbridge Valuation &amp; Advisory" class="nb-brand-logo logo-dark-mode" width="190" height="32">
+      </a>
+      <button type="button" class="nb-drawer-close-btn" aria-label="Close navigation menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <div class="nb-drawer-body">
+      <ul class="nb-drawer-nav">
+        <!-- Home Accordion -->
+        <li class="nb-drawer-item">
+          <button type="button" class="nb-drawer-link nb-drawer-toggle-btn" data-target="drawerHomeSubnav" aria-expanded="false">
+            <span>Home</span>
+            <span class="nb-drawer-toggle-icon" aria-hidden="true">&#9662;</span>
+          </button>
+          <ul class="nb-drawer-subnav" id="drawerHomeSubnav">
+            <li><a href="index.html" class="nb-drawer-sublink">Home 1</a></li>
+            <li><a href="home2.html" class="nb-drawer-sublink">Home 2</a></li>
+          </ul>
+        </li>
+
+        <!-- About -->
+        <li class="nb-drawer-item">
+          <a href="about.html" class="nb-drawer-link">About</a>
+        </li>
+
+        <!-- Services (Active State — Direct Link) -->
+        <li class="nb-drawer-item">
+          <a href="services.html" class="nb-drawer-link active">Services</a>
+        </li>
+
+        <!-- Case Studies -->
+        <li class="nb-drawer-item">
+          <a href="case-studies.html" class="nb-drawer-link">Case Studies</a>
+        </li>
+
+        <!-- Insights Accordion -->
+        <li class="nb-drawer-item">
+          <button type="button" class="nb-drawer-link nb-drawer-toggle-btn" data-target="drawerInsightsSubnav" aria-expanded="false">
+            <span>Insights</span>
+            <span class="nb-drawer-toggle-icon" aria-hidden="true">&#9662;</span>
+          </button>
+          <ul class="nb-drawer-subnav" id="drawerInsightsSubnav">
+            <li><a href="blog.html" class="nb-drawer-sublink">Latest Insights / Blog</a></li>
+            <li><a href="resources.html" class="nb-drawer-sublink">Business Resources</a></li>
+          </ul>
+        </li>
+
+        <!-- FAQ -->
+        <li class="nb-drawer-item">
+          <a href="faq.html" class="nb-drawer-link">FAQ</a>
+        </li>
+
+        <!-- Contact -->
+        <li class="nb-drawer-item">
+          <a href="contact.html" class="nb-drawer-link">Contact</a>
+        </li>
+      </ul>
+
+      <!-- Drawer Controls & Action Buttons -->
+      <div class="nb-drawer-footer">
+        <div class="nb-drawer-toggles-row">
+          <button type="button" class="nb-drawer-toggle-item dir-toggle-btn" aria-label="Toggle layout direction">
+            <span class="dir-text-label">RTL Layout</span>
+          </button>
+          <button type="button" class="nb-drawer-toggle-item theme-toggle-btn" aria-label="Toggle dark mode">
+            <span class="theme-text-label">Dark Mode</span>
+          </button>
+        </div>
+        <a href="contact.html#consultation" class="nb-btn nb-btn-gold nb-drawer-cta">Book a Consultation</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ======================================================================
+       SERVICES PAGE MAIN CONTENT — EIGHT UNIQUE SECTIONS
+       01: #services-hero (Service Directory Hero)
+       02: #service-directory (Service Directory Catalogue)
+       03: #business-valuation (Discipline 01: Business Valuation)
+       04: #ma-advisory (Discipline 02: Mergers & Acquisitions Advisory)
+       05: #financial-due-diligence (Discipline 03: Financial Due Diligence)
+       06: #financial-analysis (Disciplines 04 & 05: Financial Analysis & Modelling)
+       07: #transaction-support (Discipline 06: Transaction Support)
+       08: #services-consultation (Closing Consultation Statement)
+       ====================================================================== -->
+  <main id="main-content">
+
+    <!-- --------------------------------------------------------------------
+         SECTION 01: #services-hero (Service Directory Hero)
+         Deep navy background, vertical architectural photograph right,
+         service index motif left, white heading.
+         -------------------------------------------------------------------- -->
+    <section id="services-hero" aria-labelledby="services-hero-title">
+      <div class="nb-container">
+        <div class="services-hero-grid">
+          
+          <!-- Content Left -->
+          <div class="services-hero-content">
+            <span class="services-hero-eyebrow">PRACTICE AREAS &amp; ADVISORY CAPABILITIES</span>
+            <h1 id="services-hero-title" class="services-hero-title">
+              Navigating Corporate Value with Analytical Rigour.
+            </h1>
+            <p class="services-hero-desc">
+              Northbridge provides independent business valuation, strategic transaction advisory, and forensic financial modelling. Every mandate is delivered with the precision and depth required to support board decisions, corporate negotiations, and capital transitions.
+            </p>
+
+            <!-- Service Quick Index Motif (Clickable anchor pills) -->
+            <div class="services-hero-index-motif" role="navigation" aria-label="Service index quick links">
+              <a href="#business-valuation" class="hero-index-pill">
+                <span class="hero-index-pill-num">01</span>
+                <span>Business Valuation</span>
+              </a>
+              <a href="#ma-advisory" class="hero-index-pill">
+                <span class="hero-index-pill-num">02</span>
+                <span>M&amp;A Advisory</span>
+              </a>
+              <a href="#financial-due-diligence" class="hero-index-pill">
+                <span class="hero-index-pill-num">03</span>
+                <span>Financial Due Diligence</span>
+              </a>
+              <a href="#financial-analysis" class="hero-index-pill">
+                <span class="hero-index-pill-num">04</span>
+                <span>Financial Analysis</span>
+              </a>
+              <a href="#financial-modelling" class="hero-index-pill">
+                <span class="hero-index-pill-num">05</span>
+                <span>Financial Modelling</span>
+              </a>
+              <a href="#transaction-support" class="hero-index-pill">
+                <span class="hero-index-pill-num">06</span>
+                <span>Transaction Support</span>
+              </a>
+            </div>
+
+            <div class="d-flex flex-wrap gap-3 align-items-center">
+              <a href="contact.html#consultation" class="nb-btn nb-btn-gold">Book a Consultation</a>
+              <a href="#service-directory" class="nb-btn nb-btn-outline-light">Browse All Services</a>
+            </div>
+          </div>
+
+          <!-- Vertical Architectural Image Right -->
+          <div class="services-hero-media">
+            <div class="services-hero-img-frame">
+              <img 
+                src="assets/images/services/services-hero.webp" 
+                alt="Towering architectural modern corporate headquarters in sharp vertical perspective" 
+                class="services-hero-img"
+                width="800"
+                height="1067"
+                loading="eager"
+                fetchpriority="high"
+              >
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------
+         SECTION 02: #service-directory (Service Directory Catalogue)
+         Soft ivory background. Two-column editorial directory with large gold numbers.
+         All section headings, intros, and CTA groups centered.
+         -------------------------------------------------------------------- -->
+    <section id="service-directory" class="nb-section" aria-labelledby="dir-section-title">
+      <div class="nb-container">
+        
+        <!-- Centred Section Header -->
+        <div class="nb-section-header text-center">
+          <span class="section-eyebrow">OUR CORE DISCIPLINES</span>
+          <h2 id="dir-section-title" class="section-heading">
+            Six Focused Capabilities. One Uncompromising Standard.
+          </h2>
+          <p class="section-intro">
+            From early-stage enterprise appraisals to intensive transaction execution, our multidisciplinary team provides actionable financial clarity for business leaders, investors, and legal counsel.
+          </p>
+        </div>
+
+        <!-- 2-Column Catalogue Grid -->
+        <div class="service-directory-grid">
+          
+          <!-- 01: Business Valuation -->
+          <a href="#business-valuation" class="dir-card-item" aria-label="Jump to Business Valuation discipline">
+            <span class="dir-num">01</span>
+            <div class="dir-body">
+              <div class="dir-title-row">
+                <h3 class="dir-title">Business Valuation</h3>
+                <span class="dir-arrow" aria-hidden="true">&rarr;</span>
+              </div>
+              <p class="dir-desc">
+                Defensible enterprise appraisals incorporating DCF analysis, capital structure diagnostics, and market multiples for transactions, tax planning, and reporting.
+              </p>
+            </div>
+          </a>
+
+          <!-- 02: M&A Advisory -->
+          <a href="#ma-advisory" class="dir-card-item" aria-label="Jump to M&A Advisory discipline">
+            <span class="dir-num">02</span>
+            <div class="dir-body">
+              <div class="dir-title-row">
+                <h3 class="dir-title">Mergers &amp; Acquisitions Advisory</h3>
+                <span class="dir-arrow" aria-hidden="true">&rarr;</span>
+              </div>
+              <p class="dir-desc">
+                Strategic buy-side and sell-side advisory navigating valuation positioning, synergy quantification, bidder dynamics, and transaction terms.
+              </p>
+            </div>
+          </a>
+
+          <!-- 03: Financial Due Diligence -->
+          <a href="#financial-due-diligence" class="dir-card-item" aria-label="Jump to Financial Due Diligence discipline">
+            <span class="dir-num">03</span>
+            <div class="dir-body">
+              <div class="dir-title-row">
+                <h3 class="dir-title">Financial Due Diligence</h3>
+                <span class="dir-arrow" aria-hidden="true">&rarr;</span>
+              </div>
+              <p class="dir-desc">
+                Rigorous quality of earnings (QofE) audits, normalised working capital peg calculations, balance sheet integrity tests, and liability discovery.
+              </p>
+            </div>
+          </a>
+
+          <!-- 04: Financial Analysis -->
+          <a href="#financial-analysis" class="dir-card-item" aria-label="Jump to Financial Analysis discipline">
+            <span class="dir-num">04</span>
+            <div class="dir-body">
+              <div class="dir-title-row">
+                <h3 class="dir-title">Financial Analysis</h3>
+                <span class="dir-arrow" aria-hidden="true">&rarr;</span>
+              </div>
+              <p class="dir-desc">
+                Deep historical margin diagnostics, unit economics evaluation, operational efficiency ratios, and peer comparative benchmarking.
+              </p>
+            </div>
+          </a>
+
+          <!-- 05: Financial Modelling -->
+          <a href="#financial-modelling" class="dir-card-item" aria-label="Jump to Financial Modelling discipline">
+            <span class="dir-num">05</span>
+            <div class="dir-body">
+              <div class="dir-title-row">
+                <h3 class="dir-title">Financial Modelling</h3>
+                <span class="dir-arrow" aria-hidden="true">&rarr;</span>
+              </div>
+              <p class="dir-desc">
+                Dynamic, fully integrated three-statement financial models with multi-case scenario switching, debt sculpting, and sensitivity stress testing.
+              </p>
+            </div>
+          </a>
+
+          <!-- 06: Transaction Support -->
+          <a href="#transaction-support" class="dir-card-item" aria-label="Jump to Transaction Support discipline">
+            <span class="dir-num">06</span>
+            <div class="dir-body">
+              <div class="dir-title-row">
+                <h3 class="dir-title">Transaction Support</h3>
+                <span class="dir-arrow" aria-hidden="true">&rarr;</span>
+              </div>
+              <p class="dir-desc">
+                End-to-end execution assistance, virtual dataroom governance, technical review of accounting warranties, and post-closing completion accounts true-ups.
+              </p>
+            </div>
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------
+         SECTION 03: #business-valuation (Discipline 01: Business Valuation)
+         White background. Asymmetric financial report-inspired layout.
+         4 report-style cards + 6 relevant situations pills + centered CTA.
+         -------------------------------------------------------------------- -->
+    <section id="business-valuation" class="nb-section" aria-labelledby="bv-title">
+      <div class="nb-container">
+        
+        <!-- Centred Section Header -->
+        <div class="nb-section-header text-center">
+          <span class="section-eyebrow">DISCIPLINE 01 — ENTERPRISE VALUATION</span>
+          <h2 id="bv-title" class="section-heading">
+            Defensible Appraisals Grounded in Evidence.
+          </h2>
+          <p class="section-intro">
+            Determining the true economic value of an operating business requires harmonizing historical operational facts with forward-looking risk assessment and market dynamics.
+          </p>
+        </div>
+
+        <!-- Asymmetric Report Feature Grid -->
+        <div class="service-feature-grid">
+          
+          <!-- Media Left -->
+          <div class="service-feature-media">
+            <div class="service-feature-img-frame">
+              <img 
+                src="assets/images/services/business-valuation.webp" 
+                alt="Senior financial analyst reviewing structured business valuation report binders with graphs and financial data" 
+                class="service-feature-img"
+                width="800"
+                height="600"
+                loading="lazy"
+              >
+              <div class="service-feature-badge">
+                <div class="service-badge-label">VALUATION METHODOLOGY</div>
+                <p class="service-badge-text">DCF, Comparable Multiples &amp; Asset-Based Approaches</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Content Right -->
+          <div class="service-feature-content">
+            <h3 class="service-subheading">Analytical Valuation Pillars</h3>
+            
+            <div class="service-points-grid">
+              <!-- Point 1 -->
+              <div class="service-point-card">
+                <div class="service-point-title">Historical Performance</div>
+                <p class="service-point-desc">
+                  Granular multi-year dissection of recurring earnings, revenue consistency, owner adjustments, and capital expenditure reinvestment rates.
+                </p>
+              </div>
+
+              <!-- Point 2 -->
+              <div class="service-point-card">
+                <div class="service-point-title">Asset &amp; Operating Profile</div>
+                <p class="service-point-desc">
+                  Examination of tangible equipment, intangible IP, working capital requirements, vendor dependencies, and key employee concentration.
+                </p>
+              </div>
+
+              <!-- Point 3 -->
+              <div class="service-point-card">
+                <div class="service-point-title">Cost of Capital &amp; WACC</div>
+                <p class="service-point-desc">
+                  Empirically supported discount rate derivation incorporating size premiums, specific company risk factors, and realistic capital structures.
+                </p>
+              </div>
+
+              <!-- Point 4 -->
+              <div class="service-point-card">
+                <div class="service-point-title">Peer &amp; Transaction Multiples</div>
+                <p class="service-point-desc">
+                  Benchmarking against verified public trading comparables and precedent transaction multiples adjusted for growth, size, and geography.
+                </p>
+              </div>
+            </div>
+
+            <!-- Relevant Business Situations -->
+            <h4 class="text-sm font-semibold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-2">When This Service Is Required:</h4>
+            <div class="service-situations-wrap">
+              <span class="service-situation-pill"><span class="service-situation-dot"></span>Mergers &amp; Acquisitions</span>
+              <span class="service-situation-pill"><span class="service-situation-dot"></span>Shareholder Restructuring</span>
+              <span class="service-situation-pill"><span class="service-situation-dot"></span>Financial Reporting (IFRS / GAAP)</span>
+              <span class="service-situation-pill"><span class="service-situation-dot"></span>Tax &amp; Estate Reorganisation</span>
+              <span class="service-situation-pill"><span class="service-situation-dot"></span>Dispute Resolution &amp; Expert Witness</span>
+              <span class="service-situation-pill"><span class="service-situation-dot"></span>Succession Planning</span>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Centred Section CTA -->
+        <div class="cta-group-centred section-cta-group">
+          <a href="contact.html#consultation" class="nb-btn nb-btn-gold">Request a Valuation Consultation</a>
+          <a href="case-studies.html" class="nb-btn nb-btn-outline">View Related Case Studies</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------
+         SECTION 04: #ma-advisory (Discipline 02: Mergers & Acquisitions Advisory)
+         Pale Blue background. Two opposing perspectives (Buy-side vs Sell-side)
+         + central meeting room photo banner + centered CTA.
+         -------------------------------------------------------------------- -->
+    <section id="ma-advisory" class="nb-section" aria-labelledby="ma-title">
+      <div class="nb-container">
+        
+        <!-- Centred Section Header -->
+        <div class="nb-section-header text-center">
+          <span class="section-eyebrow">DISCIPLINE 02 — TRANSACTION ADVISORY</span>
+          <h2 id="ma-title" class="section-heading">
+            Balanced Perspectives on Corporate Acquisitions and Divestitures.
+          </h2>
+          <p class="section-intro">
+            Successful transactions demand an objective advisor who understands the opposing incentives of both sides of the negotiating table. We align valuation analysis with real-world execution.
+          </p>
+        </div>
+
+        <!-- Opposing Perspectives Grid -->
+        <div class="ma-perspectives-grid">
+          
+          <!-- Buy-Side Panel -->
+          <div class="ma-side-panel">
+            <div class="ma-side-header">
+              <h3 class="ma-side-title">Buy-Side Strategic Advisory</h3>
+              <span class="ma-side-tag">ACQUISITION MANDATE</span>
+            </div>
+            <p class="text-sm text-slate-600 dark:text-slate-300 mb-4 leading-relaxed">
+              We assist corporate acquirers, private equity sponsors, and family offices in identifying valuation risks, testing growth synergies, and formulating disciplined offer structures.
+            </p>
+            <ul class="ma-checklist">
+              <li class="ma-check-item">
+                <svg class="ma-check-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Target financial vetting &amp; valuation range modelling</span>
+              </li>
+              <li class="ma-check-item">
+                <svg class="ma-check-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Synergy quantification &amp; post-merger integration costs</span>
+              </li>
+              <li class="ma-check-item">
+                <svg class="ma-check-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Non-binding offer (LOI / Term Sheet) structure design</span>
+              </li>
+              <li class="ma-check-item">
+                <svg class="ma-check-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Debt capacity evaluation &amp; transaction financing analysis</span>
+              </li>
+              <li class="ma-check-item">
+                <svg class="ma-check-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Definitive agreement financial mechanics negotiation</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Sell-Side Panel -->
+          <div class="ma-side-panel">
+            <div class="ma-side-header">
+              <h3 class="ma-side-title">Sell-Side Divestiture Advisory</h3>
+              <span class="ma-side-tag">DIVESTITURE MANDATE</span>
+            </div>
+            <p class="text-sm text-slate-600 dark:text-slate-300 mb-4 leading-relaxed">
+              We guide business owners and boards through readiness assessments, defensible valuation positioning, and structured dataroom preparation to preserve transaction momentum.
+            </p>
+            <ul class="ma-checklist">
+              <li class="ma-check-item">
+                <svg class="ma-check-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Pre-sale readiness review &amp; EBITDA normalization</span>
+              </li>
+              <li class="ma-check-item">
+                <svg class="ma-check-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Confidential Information Memorandum (CIM) financial narrative</span>
+              </li>
+              <li class="ma-check-item">
+                <svg class="ma-check-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Buyer qualification criteria &amp; competitive bidding dynamics</span>
+              </li>
+              <li class="ma-check-item">
+                <svg class="ma-check-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Virtual dataroom management &amp; bidder inquiry protocol</span>
+              </li>
+              <li class="ma-check-item">
+                <svg class="ma-check-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Purchase price adjustments &amp; working capital peg defense</span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- Central Meeting Room Photo Banner -->
+        <div class="ma-banner-wrap">
+          <img 
+            src="assets/images/services/ma-advisory.webp" 
+            alt="Corporate boardroom with glass walls and large conference table prepared for transaction negotiations" 
+            class="ma-banner-img"
+            width="1400"
+            height="600"
+            loading="lazy"
+          >
+        </div>
+
+        <!-- Centred Section CTA -->
+        <div class="cta-group-centred section-cta-group">
+          <a href="contact.html#consultation" class="nb-btn nb-btn-gold">Discuss an M&amp;A Mandate</a>
+          <a href="about.html" class="nb-btn nb-btn-outline">Learn About Our Principles</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------
+         SECTION 05: #financial-due-diligence (Discipline 03: Financial Due Diligence)
+         White background. Document-led 5 information rows + accounting workspace photo.
+         Centred section header & centered CTA group.
+         -------------------------------------------------------------------- -->
+    <section id="financial-due-diligence" class="nb-section" aria-labelledby="fdd-title">
+      <div class="nb-container">
+        
+        <!-- Centred Section Header -->
+        <div class="nb-section-header text-center">
+          <span class="section-eyebrow">DISCIPLINE 03 — FINANCIAL DUE DILIGENCE</span>
+          <h2 id="fdd-title" class="section-heading">
+            Granular Quality of Earnings &amp; Financial Integrity Reviews.
+          </h2>
+          <p class="section-intro">
+            Transactions succeed or falter based on the veracity of underlying financial statements. Our diligence identifies unrecorded liabilities, tests earnings sustainability, and exposes hidden balance sheet exposures.
+          </p>
+        </div>
+
+        <!-- Diligence Layout Grid -->
+        <div class="diligence-layout-grid">
+          
+          <!-- 5 Report Review Rows Left -->
+          <div class="diligence-rows-list">
+            
+            <!-- Row 1 -->
+            <div class="diligence-row-card">
+              <span class="diligence-num">01</span>
+              <div class="diligence-body">
+                <h3 class="diligence-title">Quality of Earnings (QofE) Analysis</h3>
+                <p class="diligence-desc">
+                  Systematic identification and removal of non-recurring revenue, owner discretionary expenses, pro-forma synergies, and non-operating windfalls to establish sustainable run-rate EBITDA.
+                </p>
+              </div>
+            </div>
+
+            <!-- Row 2 -->
+            <div class="diligence-row-card">
+              <span class="diligence-num">02</span>
+              <div class="diligence-body">
+                <h3 class="diligence-title">Revenue Quality &amp; Customer Concentration</h3>
+                <p class="diligence-desc">
+                  Verification of contract durations, customer churn patterns, recurring subscription vs. one-time project revenues, pricing elasticity, and top-ten customer margin contribution.
+                </p>
+              </div>
+            </div>
+
+            <!-- Row 3 -->
+            <div class="diligence-row-card">
+              <span class="diligence-num">03</span>
+              <div class="diligence-body">
+                <h3 class="diligence-title">Working Capital Peg &amp; Cash Flow Dynamics</h3>
+                <p class="diligence-desc">
+                  Twelve-month historical working capital trends, seasonality cycles, inventory obsolescence provisions, and establishing a fair, defensible working capital target for closing.
+                </p>
+              </div>
+            </div>
+
+            <!-- Row 4 -->
+            <div class="diligence-row-card">
+              <span class="diligence-num">04</span>
+              <div class="diligence-body">
+                <h3 class="diligence-title">Debt &amp; Debt-Like Items Scrutiny</h3>
+                <p class="diligence-desc">
+                  Forensic search for off-balance-sheet commitments, underfunded pension liabilities, overdue tax liabilities, earnout overhangs, litigation exposures, and deferred capital expenditures.
+                </p>
+              </div>
+            </div>
+
+            <!-- Row 5 -->
+            <div class="diligence-row-card">
+              <span class="diligence-num">05</span>
+              <div class="diligence-body">
+                <h3 class="diligence-title">Forecast &amp; Budget Feasibility Testing</h3>
+                <p class="diligence-desc">
+                  Critique of management projections against historical budget achievement track records, industry growth benchmarks, and available operational capacity.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Media Right -->
+          <div class="service-feature-media">
+            <div class="service-feature-img-frame">
+              <img 
+                src="assets/images/services/financial-due-diligence.webp" 
+                alt="Detailed financial audit worksheets, calculation notes and analytical checklists on executive desk" 
+                class="service-feature-img"
+                width="800"
+                height="600"
+                loading="lazy"
+              >
+              <div class="service-feature-badge">
+                <div class="service-badge-label">FORENSIC PRECISION</div>
+                <p class="service-badge-text">Audit-Grade Quality of Earnings &amp; Working Capital Review</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Centred Section CTA -->
+        <div class="cta-group-centred section-cta-group">
+          <a href="contact.html#consultation" class="nb-btn nb-btn-gold">Commission Due Diligence</a>
+          <a href="resources.html" class="nb-btn nb-btn-outline">Browse Diligence Frameworks</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------
+         SECTION 06: #financial-analysis & #financial-modelling
+         Soft Ivory background. Dual-panel showcase contrasting Financial Analysis
+         and Financial Modelling with distinct WebP imagery.
+         -------------------------------------------------------------------- -->
+    <section id="financial-analysis" class="nb-section" aria-labelledby="fa-section-title">
+      <div class="nb-container">
+        
+        <!-- Centred Section Header -->
+        <div class="nb-section-header text-center">
+          <span class="section-eyebrow">DISCIPLINES 04 &amp; 05 — DIAGNOSTICS &amp; FORECASTING</span>
+          <h2 id="fa-section-title" class="section-heading">
+            Evidence-Based Diagnostics &amp; Dynamic Scenario Models.
+          </h2>
+          <p class="section-intro">
+            Transforming complex operational and accounting data into transparent, stress-tested analytical tools that illuminate financial realities and empower confident leadership decisions.
+          </p>
+        </div>
+
+        <!-- Dual Panel Showcase Grid -->
+        <div class="analysis-dual-grid">
+          
+          <!-- Panel 1: Financial Analysis -->
+          <div class="analysis-panel-card">
+            <div class="analysis-panel-media">
+              <img 
+                src="assets/images/services/financial-analysis.webp" 
+                alt="Financial performance dashboards and multi-year comparative analytical charts on screen" 
+                class="analysis-panel-img"
+                width="800"
+                height="500"
+                loading="lazy"
+              >
+            </div>
+            <div class="analysis-panel-body">
+              <span class="analysis-panel-cat">DISCIPLINE 04</span>
+              <h3 class="analysis-panel-title">In-Depth Financial Analysis</h3>
+              <p class="analysis-panel-desc">
+                Comprehensive diagnostic review of historical operating performance, capital efficiency, margin behavior, and peer benchmarks to uncover true drivers of economic return.
+              </p>
+
+              <div class="analysis-considerations-box">
+                <div class="analysis-considerations-title">Key Analytical Dimensions:</div>
+                <ul class="analysis-considerations-list">
+                  <li class="analysis-consideration-item">
+                    <span class="analysis-bullet"></span>
+                    <span>Gross and operating margin volatility tracking</span>
+                  </li>
+                  <li class="analysis-consideration-item">
+                    <span class="analysis-bullet"></span>
+                    <span>Return on Invested Capital (ROIC) decomposition</span>
+                  </li>
+                  <li class="analysis-consideration-item">
+                    <span class="analysis-bullet"></span>
+                    <span>Operating cash flow conversion cycle dynamics</span>
+                  </li>
+                  <li class="analysis-consideration-item">
+                    <span class="analysis-bullet"></span>
+                    <span>Fixed vs. variable cost structure leverage</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Panel 2: Financial Modelling (Anchored with #financial-modelling) -->
+          <div class="analysis-panel-card" id="financial-modelling">
+            <div class="analysis-panel-media">
+              <img 
+                src="assets/images/services/financial-modelling.webp" 
+                alt="Complex financial modelling spreadsheets with multi-case sensitivity tables and cash flow projections" 
+                class="analysis-panel-img"
+                width="800"
+                height="500"
+                loading="lazy"
+              >
+            </div>
+            <div class="analysis-panel-body">
+              <span class="analysis-panel-cat">DISCIPLINE 05</span>
+              <h3 class="analysis-panel-title">Dynamic Financial Modelling</h3>
+              <p class="analysis-panel-desc">
+                Institutional-grade three-statement forecasting models with scenario toggles, dynamic debt sculpting, and sensitivity analysis engineered for executive confidence.
+              </p>
+
+              <div class="analysis-considerations-box">
+                <div class="analysis-considerations-title">Modelling Capabilities:</div>
+                <ul class="analysis-considerations-list">
+                  <li class="analysis-consideration-item">
+                    <span class="analysis-bullet"></span>
+                    <span>Three-statement integration (P&amp;L, Balance Sheet, Cash Flow)</span>
+                  </li>
+                  <li class="analysis-consideration-item">
+                    <span class="analysis-bullet"></span>
+                    <span>Multi-scenario toggles (Base, Upside, Downside, Stress)</span>
+                  </li>
+                  <li class="analysis-consideration-item">
+                    <span class="analysis-bullet"></span>
+                    <span>Debt amortization waterfalls &amp; covenant monitoring</span>
+                  </li>
+                  <li class="analysis-consideration-item">
+                    <span class="analysis-bullet"></span>
+                    <span>Valuation output link (DCF, IRR &amp; LBO returns)</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Centred Section CTA -->
+        <div class="cta-group-centred section-cta-group">
+          <a href="contact.html#consultation" class="nb-btn nb-btn-gold">Explore Custom Financial Modelling</a>
+          <a href="faq.html" class="nb-btn nb-btn-outline">Frequently Asked Questions</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------
+         SECTION 07: #transaction-support (Discipline 06: Transaction Support)
+         Deep Navy background. 4 horizontal information rows + document folder photo.
+         Centred section header & centered CTA group.
+         -------------------------------------------------------------------- -->
+    <section id="transaction-support" class="nb-section" aria-labelledby="ts-title">
+      <div class="nb-container">
+        
+        <!-- Centred Section Header -->
+        <div class="nb-section-header text-center">
+          <span class="section-eyebrow text-gold">DISCIPLINE 06 — TRANSACTION SUPPORT</span>
+          <h2 id="ts-title" class="section-heading">
+            Technical Governance for High-Stakes Deal Execution.
+          </h2>
+          <p class="section-intro">
+            From preliminary letters of intent through closing completion mechanisms, Northbridge serves as an objective technical partner safeguarding deal integrity across every milestone.
+          </p>
+        </div>
+
+        <!-- Support Layout Grid -->
+        <div class="support-layout-grid">
+          
+          <!-- 4 Horizontal Information Rows Left -->
+          <div class="support-rows-list">
+            
+            <!-- Row 1 -->
+            <div class="support-row-item">
+              <div class="support-num">01</div>
+              <div class="support-body">
+                <h3 class="support-title">Deal Architecture &amp; Term Sheet Structuring</h3>
+                <p class="support-desc">
+                  Providing quantitative advisory on consideration structures, earnout mechanics, vendor take-back loans, net debt definitions, and closing conditionality.
+                </p>
+              </div>
+            </div>
+
+            <!-- Row 2 -->
+            <div class="support-row-item">
+              <div class="support-num">02</div>
+              <div class="support-body">
+                <h3 class="support-title">Virtual Data Room Governance &amp; Q&amp;A Protocol</h3>
+                <p class="support-desc">
+                  Structuring, indexing, and actively managing secure dataroom repositories, tracking counterparty inquiries, and ensuring rapid, auditable document disclosure.
+                </p>
+              </div>
+            </div>
+
+            <!-- Row 3 -->
+            <div class="support-row-item">
+              <div class="support-num">03</div>
+              <div class="support-body">
+                <h3 class="support-title">Definitive Agreement Financial Clauses</h3>
+                <p class="support-desc">
+                  Technical advisory on financial representations, warranty schedules, indemnity caps, leakage definitions in locked-box deals, and escrow retention parameters.
+                </p>
+              </div>
+            </div>
+
+            <!-- Row 4 -->
+            <div class="support-row-item">
+              <div class="support-num">04</div>
+              <div class="support-body">
+                <h3 class="support-title">Completion Accounts &amp; Post-Closing Settlement</h3>
+                <p class="support-desc">
+                  Preparing or reviewing final closing completion accounts, calculating final working capital true-ups, net cash adjustments, and resolving technical accounting discrepancies.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Media Right -->
+          <div class="service-feature-media">
+            <div class="service-feature-img-frame">
+              <img 
+                src="assets/images/services/transaction-support.webp" 
+                alt="Senior transaction advisory partners and corporate counsel reviewing deal governance terms, closing mechanisms, and diligence binders" 
+                class="service-feature-img"
+                width="800"
+                height="600"
+                loading="lazy"
+              >
+              <div class="service-feature-badge">
+                <div class="service-badge-label">EXECUTION INTEGRITY</div>
+                <p class="service-badge-text">Technical Advisory Across Signing, Diligence &amp; Closing</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Centred Section CTA -->
+        <div class="cta-group-centred section-cta-group">
+          <a href="contact.html#consultation" class="nb-btn nb-btn-gold">Enquire on Transaction Support</a>
+          <a href="contact.html#ma" class="nb-btn nb-btn-outline-light">Discuss a Specific Mandate</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------
+         SECTION 08: #services-consultation (Closing Consultation Statement)
+         Soft ivory background. Centered content with abstract architectural
+         materials photo banner.
+         -------------------------------------------------------------------- -->
+    <section id="services-consultation" aria-labelledby="consultation-heading">
+      <div class="nb-container">
+        
+        <div class="services-closing-frame">
+          <span class="section-eyebrow">COMMENCE A CONFIDENTIAL ENGAGEMENT</span>
+          <h2 id="consultation-heading" class="section-heading">
+            Bring Clarity and Confidence to Your Next Strategic Decision.
+          </h2>
+          <p class="section-intro">
+            Whether your organisation is preparing for a transaction, commissioning an independent valuation, or requiring audit-grade financial due diligence, Northbridge offers the senior analytical rigour your board demands.
+          </p>
+
+          <!-- Executive Transaction Signing Media Banner -->
+          <div class="closing-media-banner">
+            <img 
+              src="assets/images/services/services-closing.webp" 
+              alt="Executive transaction signing suite and private conference room overlooking metropolitan financial district at twilight" 
+              class="closing-media-img"
+              width="1400"
+              height="788"
+              loading="lazy"
+            >
+          </div>
+
+          <!-- Centred CTA Group -->
+          <div class="cta-group-centred section-cta-group">
+            <a href="contact.html#consultation" class="nb-btn nb-btn-gold">Schedule an Initial Consultation</a>
+            <a href="blog.html" class="nb-btn nb-btn-outline">Browse Our Latest Perspectives</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================================================================
+       FOOTER (EXACT SAME AS INDEX.HTML & ABOUT.HTML)
+       ====================================================================== -->
+  <footer class="nb-footer" role="contentinfo">
+    <div class="nb-footer-container">
+
+      <!-- Top 4 Columns & Brand Column -->
+      <div class="nb-footer-top">
+        
+        <!-- Brand Info Column -->
+        <div class="nb-footer-brand-col">
+          <a href="index.html" aria-label="Northbridge Valuation &amp; Advisory Homepage">
+            <img src="assets/images/brand/logo-white.svg" alt="Northbridge Valuation &amp; Advisory" class="nb-footer-logo" width="220" height="36">
+          </a>
+          <p class="nb-footer-tagline">CLARITY IN VALUE. CONFIDENCE IN EVERY DECISION.</p>
+          <p class="nb-footer-desc">
+            Independent thinking, financial insight and strategic guidance for important business valuation and transaction decisions.
+          </p>
+        </div>
+
+        <!-- Column 1: Quick Links -->
+        <div>
+          <h3 class="nb-footer-col-title">Quick Links</h3>
+          <ul class="nb-footer-links">
+            <li><a href="index.html" class="nb-footer-link">Home</a></li>
+            <li><a href="home2.html" class="nb-footer-link">Home 2</a></li>
+            <li><a href="about.html" class="nb-footer-link">About Us</a></li>
+            <li><a href="services.html" class="nb-footer-link">Services</a></li>
+            <li><a href="case-studies.html" class="nb-footer-link">Case Studies</a></li>
+            <li><a href="contact.html" class="nb-footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 2: Our Services -->
+        <div>
+          <h3 class="nb-footer-col-title">Our Services</h3>
+          <ul class="nb-footer-links">
+            <li><a href="services.html#business-valuation" class="nb-footer-link">Business Valuation</a></li>
+            <li><a href="services.html#ma-advisory" class="nb-footer-link">M&amp;A Advisory</a></li>
+            <li><a href="services.html#financial-due-diligence" class="nb-footer-link">Financial Due Diligence</a></li>
+            <li><a href="services.html#financial-analysis" class="nb-footer-link">Financial Analysis</a></li>
+            <li><a href="services.html#financial-modelling" class="nb-footer-link">Financial Modelling</a></li>
+            <li><a href="services.html#transaction-support" class="nb-footer-link">Transaction Support</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Insights -->
+        <div>
+          <h3 class="nb-footer-col-title">Insights</h3>
+          <ul class="nb-footer-links">
+            <li><a href="blog.html" class="nb-footer-link">Latest Insights</a></li>
+            <li><a href="blog.html#valuation" class="nb-footer-link">Valuation Insights</a></li>
+            <li><a href="blog.html#ma" class="nb-footer-link">M&amp;A Insights</a></li>
+            <li><a href="resources.html" class="nb-footer-link">Business Resources</a></li>
+            <li><a href="faq.html" class="nb-footer-link">Frequently Asked Questions</a></li>
+            <li><a href="about.html#approach" class="nb-footer-link">Our Approach</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Get In Touch -->
+        <div>
+          <h3 class="nb-footer-col-title">Get In Touch</h3>
+          <ul class="nb-footer-links">
+            <li><a href="contact.html#enquiries" class="nb-footer-link">General Enquiries</a></li>
+            <li><a href="contact.html#valuation" class="nb-footer-link">Valuation Enquiries</a></li>
+            <li><a href="contact.html#ma" class="nb-footer-link">M&amp;A Enquiries</a></li>
+            <li><a href="contact.html#consultation" class="nb-footer-link">Consultation Requests</a></li>
+            <li><a href="contact.html" class="nb-footer-link">Contact Us</a></li>
+            <li><a href="contact.html#consultation" class="nb-footer-link">Book a Consultation</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Newsletter Card -->
+      <div class="nb-footer-newsletter-card">
+        <div>
+          <h3 class="nb-newsletter-heading">STAY INFORMED.</h3>
+          <p class="nb-newsletter-desc">
+            Receive occasional perspectives on valuation, transactions and business strategy.
+          </p>
+        </div>
+        <div>
+          <form class="nb-newsletter-form" action="#" method="post">
+            <input 
+              type="email" 
+              class="nb-newsletter-input" 
+              placeholder="Your professional email address" 
+              required 
+              aria-label="Professional email address for newsletter"
+            >
+            <button type="submit" class="nb-newsletter-btn">Subscribe</button>
+            <span class="nb-newsletter-notice" role="status"></span>
+          </form>
+        </div>
+      </div>
+
+      <!-- Social Media Links & Divider Bar -->
+      <div class="nb-footer-middle">
+        <div class="nb-social-group">
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com" class="nb-social-link" target="_blank" rel="noopener noreferrer" aria-label="Northbridge on LinkedIn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+            </svg>
+          </a>
+          <!-- Instagram -->
+          <a href="https://www.instagram.com" class="nb-social-link" target="_blank" rel="noopener noreferrer" aria-label="Northbridge on Instagram">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+          </a>
+          <!-- Facebook -->
+          <a href="https://www.facebook.com" class="nb-social-link" target="_blank" rel="noopener noreferrer" aria-label="Northbridge on Facebook">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.374 14.5 5 15.5 5H18V0h-3.808C10.595 0 9 1.583 9 4.615V8z"/>
+            </svg>
+          </a>
+          <!-- YouTube -->
+          <a href="https://www.youtube.com" class="nb-social-link" target="_blank" rel="noopener noreferrer" aria-label="Northbridge on YouTube">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Bottom Bar: Copyright & Legal -->
+      <div class="nb-footer-bottom">
+        <div>
+          &copy; 2026 Northbridge Valuation &amp; Advisory. All rights reserved.
+        </div>
+        <div class="nb-footer-legal-links">
+          <a href="privacy.html" class="nb-footer-link">Privacy Policy</a>
+          <a href="terms.html" class="nb-footer-link">Terms &amp; Conditions</a>
+          <a href="cookies.html" class="nb-footer-link">Cookie Policy</a>
+          <button type="button" class="nb-back-to-top" aria-label="Scroll back to top of page">
+            <span>Back to Top</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="18 15 12 9 6 15"></polyline>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Local Scripts (Bootstrap Bundle, Shared Main JS, Services Page JS) -->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/services.js"></script>
+</body>
+</html>

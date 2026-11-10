@@ -1,0 +1,1316 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact / Book a Consultation | Northbridge Valuation &amp; Advisory</title>
+  <meta name="description" content="Begin a private consultation with Northbridge Valuation &amp; Advisory. Discuss business valuation, M&amp;A advisory, financial due diligence, and financial analysis with senior advisors.">
+
+  <!-- Open Graph Metadata -->
+  <meta property="og:title" content="Contact / Book a Consultation | Northbridge Valuation &amp; Advisory">
+  <meta property="og:description" content="Start a conversation with our senior advisory team regarding business valuation, corporate transactions, due diligence, and financial clarity.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/contact/contact-private-advisory-hero.webp">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/brand/favicon.svg">
+
+  <!-- Pre-render Theme & Direction Script (Prevents flash of unstyled theme/direction) -->
+  <script>
+    (function () {
+      try {
+        var theme = localStorage.getItem('northbridge_theme');
+        var dir = localStorage.getItem('northbridge_direction');
+        if (theme === 'dark') {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        } else {
+          document.documentElement.removeAttribute('data-theme');
+        }
+        if (dir === 'rtl') {
+          document.documentElement.setAttribute('dir', 'rtl');
+          document.documentElement.setAttribute('lang', 'ar');
+        } else {
+          document.documentElement.setAttribute('dir', 'ltr');
+          document.documentElement.setAttribute('lang', 'en');
+        }
+      } catch (e) {}
+    })();
+  </script>
+
+  <!-- Local Stylesheets Only (Offline Ready, No External CDN) -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/tailwind.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/contact.css">
+</head>
+<body>
+
+  <!-- ======================================================================
+       HEADER / SHARED STICKY NAVBAR (EXACT SAME AS INDEX.HTML)
+       Height: Desktop 88px | Tablet 78px | Mobile 72px
+       ====================================================================== -->
+  <header class="nb-header" role="banner">
+    <div class="nb-navbar-container">
+      
+      <!-- Brand Logo (Left) -->
+      <a href="index.html" class="nb-brand-link" aria-label="Northbridge Valuation &amp; Advisory Homepage">
+        <img src="assets/images/brand/logo.svg" alt="Northbridge Valuation &amp; Advisory" class="nb-brand-logo logo-light-mode" width="230" height="38">
+        <img src="assets/images/brand/logo-white.svg" alt="Northbridge Valuation &amp; Advisory" class="nb-brand-logo logo-dark-mode" width="230" height="38">
+      </a>
+
+      <!-- Desktop Navigation Menu (Centre - 1281px+) -->
+      <nav class="nb-desktop-nav" aria-label="Primary Navigation">
+        <!-- 1. Home Dropdown -->
+        <div class="nb-nav-item nb-dropdown">
+          <a href="index.html" class="nb-nav-link" id="homeDropdown" aria-haspopup="true" aria-expanded="false">
+            <span>Home</span>
+            <span class="nb-dropdown-icon" aria-hidden="true">&#9662;</span>
+          </a>
+          <ul class="nb-dropdown-menu" aria-labelledby="homeDropdown">
+            <li class="nb-dropdown-item"><a href="index.html" class="nb-dropdown-link">Home 1</a></li>
+            <li class="nb-dropdown-item"><a href="home2.html" class="nb-dropdown-link">Home 2</a></li>
+          </ul>
+        </div>
+
+        <!-- 2. About -->
+        <div class="nb-nav-item">
+          <a href="about.html" class="nb-nav-link">About</a>
+        </div>
+
+        <!-- 3. Services (Direct link, NO dropdown, NO dropdown arrow) -->
+        <div class="nb-nav-item">
+          <a href="services.html" class="nb-nav-link">Services</a>
+        </div>
+
+        <!-- 4. Case Studies -->
+        <div class="nb-nav-item">
+          <a href="case-studies.html" class="nb-nav-link">Case Studies</a>
+        </div>
+
+        <!-- 5. Insights Dropdown -->
+        <div class="nb-nav-item nb-dropdown">
+          <a href="blog.html" class="nb-nav-link" id="insightsDropdown" aria-haspopup="true" aria-expanded="false">
+            <span>Insights</span>
+            <span class="nb-dropdown-icon" aria-hidden="true">&#9662;</span>
+          </a>
+          <ul class="nb-dropdown-menu" aria-labelledby="insightsDropdown">
+            <li class="nb-dropdown-item"><a href="blog.html" class="nb-dropdown-link">Latest Insights / Blog</a></li>
+            <li class="nb-dropdown-item"><a href="resources.html" class="nb-dropdown-link">Business Resources</a></li>
+          </ul>
+        </div>
+
+        <!-- 6. FAQ -->
+        <div class="nb-nav-item">
+          <a href="faq.html" class="nb-nav-link">FAQ</a>
+        </div>
+
+        <!-- 7. Contact (Active on this page) -->
+        <div class="nb-nav-item">
+          <a href="contact.html" class="nb-nav-link active" aria-current="page">Contact</a>
+        </div>
+      </nav>
+
+      <!-- Desktop Right Controls (EXACT ORDER: 1. LTR/RTL, 2. Dark/Light, 3. Book a Consultation) -->
+      <div class="nb-desktop-controls">
+        <!-- 1. LTR / RTL Toggle -->
+        <button type="button" class="nb-icon-btn dir-toggle-btn" id="dir-toggle" aria-label="Switch to RTL layout">
+          <span class="nb-dir-label">RTL</span>
+        </button>
+
+        <!-- 2. Dark Mode / Light Mode Toggle -->
+        <button type="button" class="nb-icon-btn theme-toggle-btn" id="theme-toggle" aria-label="Switch to dark mode">
+          <!-- Sun Icon (for dark theme active) -->
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <!-- Moon Icon (for light theme active) -->
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- 3. BOOK A CONSULTATION Button -->
+        <a href="contact.html#consultation" class="nb-nav-cta">Book a Consultation</a>
+      </div>
+
+      <!-- Mobile & Tablet Controls Bar (Logo on left, Dark + RTL + Hamburger on right) -->
+      <div class="nb-mobile-controls">
+        <button type="button" class="nb-icon-btn dir-toggle-btn" aria-label="Toggle text direction">
+          <span class="nb-dir-label">RTL</span>
+        </button>
+        <button type="button" class="nb-icon-btn theme-toggle-btn" aria-label="Toggle dark mode">
+          <svg class="icon-sun" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="icon-moon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+        <button type="button" class="nb-hamburger-btn" aria-label="Open navigation drawer" aria-expanded="false" aria-controls="mobileDrawer">
+          <span class="nb-hamburger-bar"></span>
+          <span class="nb-hamburger-bar"></span>
+          <span class="nb-hamburger-bar"></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ======================================================================
+       MOBILE & TABLET FULL NAVIGATION DRAWER
+       Contains ALL navigation items, dropdowns, controls & consultation button
+       ====================================================================== -->
+  <div class="nb-drawer-backdrop" aria-hidden="true"></div>
+  <aside class="nb-drawer" id="mobileDrawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation Menu">
+    <div class="nb-drawer-header">
+      <a href="index.html" class="nb-brand-link" aria-label="Northbridge Valuation &amp; Advisory Homepage">
+        <img src="assets/images/brand/logo.svg" alt="Northbridge Valuation &amp; Advisory" class="nb-brand-logo logo-light-mode" width="190" height="32">
+        <img src="assets/images/brand/logo-white.svg" alt="Northbridge Valuation &amp; Advisory" class="nb-brand-logo logo-dark-mode" width="190" height="32">
+      </a>
+      <button type="button" class="nb-drawer-close-btn" aria-label="Close navigation menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <div class="nb-drawer-body">
+      <ul class="nb-drawer-nav">
+        <!-- Home Accordion -->
+        <li class="nb-drawer-item">
+          <button type="button" class="nb-drawer-link nb-drawer-toggle-btn" data-target="drawerHomeSubnav" aria-expanded="false">
+            <span>Home</span>
+            <span class="nb-drawer-toggle-icon" aria-hidden="true">&#9662;</span>
+          </button>
+          <ul class="nb-drawer-subnav" id="drawerHomeSubnav">
+            <li><a href="index.html" class="nb-drawer-sublink">Home 1</a></li>
+            <li><a href="home2.html" class="nb-drawer-sublink">Home 2</a></li>
+          </ul>
+        </li>
+
+        <!-- About -->
+        <li class="nb-drawer-item">
+          <a href="about.html" class="nb-drawer-link">About</a>
+        </li>
+
+        <!-- Services (Direct Link) -->
+        <li class="nb-drawer-item">
+          <a href="services.html" class="nb-drawer-link">Services</a>
+        </li>
+
+        <!-- Case Studies -->
+        <li class="nb-drawer-item">
+          <a href="case-studies.html" class="nb-drawer-link">Case Studies</a>
+        </li>
+
+        <!-- Insights Accordion -->
+        <li class="nb-drawer-item">
+          <button type="button" class="nb-drawer-link nb-drawer-toggle-btn" data-target="drawerInsightsSubnav" aria-expanded="false">
+            <span>Insights</span>
+            <span class="nb-drawer-toggle-icon" aria-hidden="true">&#9662;</span>
+          </button>
+          <ul class="nb-drawer-subnav" id="drawerInsightsSubnav">
+            <li><a href="blog.html" class="nb-drawer-sublink">Latest Insights / Blog</a></li>
+            <li><a href="resources.html" class="nb-drawer-sublink">Business Resources</a></li>
+          </ul>
+        </li>
+
+        <!-- FAQ -->
+        <li class="nb-drawer-item">
+          <a href="faq.html" class="nb-drawer-link">FAQ</a>
+        </li>
+
+        <!-- Contact (Active on this page) -->
+        <li class="nb-drawer-item">
+          <a href="contact.html" class="nb-drawer-link active" aria-current="page">Contact</a>
+        </li>
+      </ul>
+
+      <!-- Drawer Controls & Action Buttons -->
+      <div class="nb-drawer-footer">
+        <div class="nb-drawer-toggles-row">
+          <button type="button" class="nb-drawer-toggle-item dir-toggle-btn" aria-label="Toggle layout direction">
+            <span class="dir-text-label">RTL Layout</span>
+          </button>
+          <button type="button" class="nb-drawer-toggle-item theme-toggle-btn" aria-label="Toggle dark mode">
+            <span class="theme-text-label">Dark Mode</span>
+          </button>
+        </div>
+        <a href="contact.html#consultation" class="nb-btn nb-btn-gold nb-drawer-cta">Book a Consultation</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ======================================================================
+       MAIN CONTENT: CONTACT & CONSULTATION (EXACTLY 9 UNIQUE SECTIONS)
+       ====================================================================== -->
+  <main id="main-content">
+
+    <!-- --------------------------------------------------------------------
+         SECTION 01: #contact-hero (The Private Advisory Desk)
+         Full-width midnight-blue background, centered H1, gold divider,
+         wide horizontal architectural photo strip, editorial label, centered CTAs.
+         -------------------------------------------------------------------- -->
+    <section id="contact-hero" aria-labelledby="contactHeroTitle">
+      <div class="container-custom">
+        <div class="contact-hero-container">
+          
+          <div class="contact-hero-eyebrow">START A CONVERSATION WITH NORTHBRIDGE</div>
+          
+          <h1 id="contactHeroTitle" class="contact-hero-title">LET'S DISCUSS WHAT MATTERS TO YOUR BUSINESS.</h1>
+          
+          <div class="contact-hero-divider" aria-hidden="true"></div>
+
+          <p class="contact-hero-desc">
+            Whether you are considering a business valuation, exploring a transaction or seeking financial clarity, begin with a conversation about your objectives and requirements.
+          </p>
+
+          <!-- Wide Horizontal Architectural Media Strip -->
+          <div class="contact-hero-media-strip">
+            <img 
+              src="assets/images/contact/contact-private-advisory-hero.webp" 
+              alt="Sophisticated private corporate consultation suite with boardroom table, leather chairs, and daylight architectural glass" 
+              class="contact-hero-img" 
+              width="1600" 
+              height="700"
+              loading="eager"
+            >
+          </div>
+
+          <!-- Small Consultation Indicator / Editorial Label -->
+          <div class="contact-hero-sublabel">
+            BUSINESS VALUATION &bull; M&amp;A &bull; FINANCIAL ADVISORY
+          </div>
+
+          <!-- Two Centered CTAs -->
+          <div class="cta-group-centred">
+            <a href="#consultation" class="nb-btn nb-btn-gold">Book a Consultation</a>
+            <a href="services.html" class="nb-btn nb-btn-secondary">Explore Our Services</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------
+         SECTION 02: #choose-enquiry (Choose Your Enquiry)
+         Soft ivory background, 5 distinctive horizontal enquiry panels.
+         Clicking preselects form and scrolls smoothly to #consultation.
+         -------------------------------------------------------------------- -->
+    <section id="choose-enquiry" class="py-20 md:py-24" aria-labelledby="chooseEnquiryHeading">
+      <div class="container-custom">
+        
+        <!-- Centered Section Header -->
+        <div class="nb-section-header">
+          <span class="section-tag">ENQUIRY SELECTION</span>
+          <h2 id="chooseEnquiryHeading" class="section-heading">HOW CAN WE HELP YOU MOVE FORWARD?</h2>
+          <p class="section-intro">
+            Choose the area that best reflects your current requirement. You can share more details in the enquiry form below.
+          </p>
+        </div>
+
+        <!-- 5 Horizontal Enquiry Panels Stack -->
+        <div class="enquiry-panels-stack" role="list" aria-label="Advisory Enquiry Options">
+          
+          <!-- Panel 01: Business Valuation -->
+          <div class="enquiry-panel-item" data-enquiry-val="Business Valuation" role="listitem" tabindex="0" aria-label="Select Business Valuation Enquiry">
+            <div class="enquiry-panel-left">
+              <span class="enquiry-panel-num">01</span>
+              <div class="enquiry-panel-text">
+                <h3 class="enquiry-panel-title">BUSINESS VALUATION</h3>
+                <p class="enquiry-panel-desc">For owners and stakeholders seeking to understand the value of a business or ownership interest.</p>
+              </div>
+            </div>
+            <div class="enquiry-panel-action">
+              <span class="enquiry-select-btn">
+                <span>Select Enquiry</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </span>
+            </div>
+          </div>
+
+          <!-- Panel 02: Mergers & Acquisitions -->
+          <div class="enquiry-panel-item" data-enquiry-val="Mergers & Acquisitions" role="listitem" tabindex="0" aria-label="Select Mergers and Acquisitions Enquiry">
+            <div class="enquiry-panel-left">
+              <span class="enquiry-panel-num">02</span>
+              <div class="enquiry-panel-text">
+                <h3 class="enquiry-panel-title">MERGERS &amp; ACQUISITIONS</h3>
+                <p class="enquiry-panel-desc">For businesses exploring a potential acquisition, sale or transaction-related advisory requirement.</p>
+              </div>
+            </div>
+            <div class="enquiry-panel-action">
+              <span class="enquiry-select-btn">
+                <span>Select Enquiry</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </span>
+            </div>
+          </div>
+
+          <!-- Panel 03: Financial Due Diligence -->
+          <div class="enquiry-panel-item" data-enquiry-val="Financial Due Diligence" role="listitem" tabindex="0" aria-label="Select Financial Due Diligence Enquiry">
+            <div class="enquiry-panel-left">
+              <span class="enquiry-panel-num">03</span>
+              <div class="enquiry-panel-text">
+                <h3 class="enquiry-panel-title">FINANCIAL DUE DILIGENCE</h3>
+                <p class="enquiry-panel-desc">For stakeholders seeking a structured review of relevant financial information in a transaction context.</p>
+              </div>
+            </div>
+            <div class="enquiry-panel-action">
+              <span class="enquiry-select-btn">
+                <span>Select Enquiry</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </span>
+            </div>
+          </div>
+
+          <!-- Panel 04: Financial Analysis & Modelling -->
+          <div class="enquiry-panel-item" data-enquiry-val="Financial Analysis & Modelling" role="listitem" tabindex="0" aria-label="Select Financial Analysis and Modelling Enquiry">
+            <div class="enquiry-panel-left">
+              <span class="enquiry-panel-num">04</span>
+              <div class="enquiry-panel-text">
+                <h3 class="enquiry-panel-title">FINANCIAL ANALYSIS &amp; MODELLING</h3>
+                <p class="enquiry-panel-desc">For businesses requiring financial analysis, forecasting or scenario-based financial modelling support.</p>
+              </div>
+            </div>
+            <div class="enquiry-panel-action">
+              <span class="enquiry-select-btn">
+                <span>Select Enquiry</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </span>
+            </div>
+          </div>
+
+          <!-- Panel 05: General Advisory Enquiry -->
+          <div class="enquiry-panel-item" data-enquiry-val="General Advisory Enquiry" role="listitem" tabindex="0" aria-label="Select General Advisory Enquiry">
+            <div class="enquiry-panel-left">
+              <span class="enquiry-panel-num">05</span>
+              <div class="enquiry-panel-text">
+                <h3 class="enquiry-panel-title">GENERAL ADVISORY ENQUIRY</h3>
+                <p class="enquiry-panel-desc">For questions or requirements that do not fit the categories above.</p>
+              </div>
+            </div>
+            <div class="enquiry-panel-action">
+              <span class="enquiry-select-btn">
+                <span>Select Enquiry</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------
+         SECTION 03: #consultation (Book a Consultation / Enquiry Form)
+         Anchor id="consultation". Pure white background, wide 2-column layout.
+         Left: Guidance & confidentiality. Right: Form with frontend validation.
+         -------------------------------------------------------------------- -->
+    <section id="consultation" class="py-20 md:py-24" aria-labelledby="consultationHeading">
+      <div class="container-custom">
+        
+        <div class="consultation-layout-grid">
+          
+          <!-- Left Column: Consultation Introduction & Preparation Guide -->
+          <div class="consultation-info-col">
+            <span class="section-tag">PRIVATE CONSULTATION</span>
+            <h2 id="consultationHeading" class="consultation-info-title">START WITH A CLEAR CONVERSATION.</h2>
+            <p class="consultation-info-intro">
+              Tell us a little about your business and the support you are exploring. The information will help structure an initial discussion.
+            </p>
+
+            <!-- What to Prepare Checklist -->
+            <div class="prepare-checklist">
+              <div class="prepare-item">
+                <span class="prepare-bullet" aria-hidden="true">1</span>
+                <div class="prepare-text-block">
+                  <strong>Overview of Operations</strong>
+                  <p>A concise summary of your business activities, operating model, products or services.</p>
+                </div>
+              </div>
+
+              <div class="prepare-item">
+                <span class="prepare-bullet" aria-hidden="true">2</span>
+                <div class="prepare-text-block">
+                  <strong>Context &amp; Objectives</strong>
+                  <p>The underlying reason for your enquiry — such as valuation purpose, acquisition plans, or divestiture readiness.</p>
+                </div>
+              </div>
+
+              <div class="prepare-item">
+                <span class="prepare-bullet" aria-hidden="true">3</span>
+                <div class="prepare-text-block">
+                  <strong>Indicative Financial Scale</strong>
+                  <p>Approximate revenue ranges, historical EBITDA consistency, and capital structure details.</p>
+                </div>
+              </div>
+
+              <div class="prepare-item">
+                <span class="prepare-bullet" aria-hidden="true">4</span>
+                <div class="prepare-text-block">
+                  <strong>Shareholder Timeline</strong>
+                  <p>Target timeframes for completing an appraisal, launching a transaction, or reporting to directors.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Confidentiality Notice Callout -->
+            <div class="confidentiality-notice-box">
+              <div class="confidentiality-title">Strict Confidentiality Protocol</div>
+              <p class="confidentiality-desc">
+                All initial enquiries and business information are treated with complete professional discretion. Bilateral Non-Disclosure Agreements (NDAs) are executed prior to reviewing sensitive financial statements or proprietary data.
+              </p>
+            </div>
+          </div>
+
+          <!-- Right Column: Refined Bordered Enquiry Form Panel -->
+          <div class="consultation-form-card">
+            
+            <form id="enquiryForm" novalidate aria-label="Advisory Consultation Enquiry Form">
+              
+              <!-- Personal Details Section -->
+              <div class="form-fieldset-header">1. Personal &amp; Organisational Details</div>
+
+              <div class="form-row-2col">
+                <!-- Full Name -->
+                <div class="form-group-custom">
+                  <label for="fullName" class="form-label-custom">
+                    <span>Full Name <span class="label-req">*</span></span>
+                  </label>
+                  <input 
+                    type="text" 
+                    id="fullName" 
+                    name="fullName" 
+                    class="form-input-custom" 
+                    placeholder="Enter your full name" 
+                    required 
+                    autocomplete="name"
+                  >
+                  <span class="field-error-msg" id="fullNameError"></span>
+                </div>
+
+                <!-- Business / Organisation -->
+                <div class="form-group-custom">
+                  <label for="businessName" class="form-label-custom">
+                    <span>Business / Organisation <span class="label-opt">(Optional)</span></span>
+                  </label>
+                  <input 
+                    type="text" 
+                    id="businessName" 
+                    name="businessName" 
+                    class="form-input-custom" 
+                    placeholder="Enter your business or organisation name" 
+                    autocomplete="organization"
+                  >
+                </div>
+              </div>
+
+              <div class="form-row-2col">
+                <!-- Work Email Address -->
+                <div class="form-group-custom">
+                  <label for="workEmail" class="form-label-custom">
+                    <span>Work Email Address <span class="label-req">*</span></span>
+                  </label>
+                  <input 
+                    type="email" 
+                    id="workEmail" 
+                    name="workEmail" 
+                    class="form-input-custom" 
+                    placeholder="name@company.com" 
+                    required 
+                    autocomplete="email"
+                  >
+                  <span class="field-error-msg" id="workEmailError"></span>
+                </div>
+
+                <!-- Contact Number -->
+                <div class="form-group-custom">
+                  <label for="contactNumber" class="form-label-custom">
+                    <span>Contact Number <span class="label-opt">(Optional)</span></span>
+                  </label>
+                  <input 
+                    type="tel" 
+                    id="contactNumber" 
+                    name="contactNumber" 
+                    class="form-input-custom" 
+                    placeholder="Enter your contact number" 
+                    autocomplete="tel"
+                  >
+                </div>
+              </div>
+
+              <!-- Enquiry Details Section -->
+              <div class="form-fieldset-header mt-6">2. Advisory Enquiry Details</div>
+
+              <div class="form-row-2col">
+                <!-- Type of Enquiry -->
+                <div class="form-group-custom">
+                  <label for="enquiryType" class="form-label-custom">
+                    <span>Type of Enquiry <span class="label-req">*</span></span>
+                  </label>
+                  <select id="enquiryType" name="enquiryType" class="form-select-custom" required>
+                    <option value="" disabled selected>Select an advisory service area</option>
+                    <option value="Business Valuation">Business Valuation</option>
+                    <option value="Mergers & Acquisitions">Mergers &amp; Acquisitions</option>
+                    <option value="Financial Due Diligence">Financial Due Diligence</option>
+                    <option value="Financial Analysis & Modelling">Financial Analysis &amp; Modelling</option>
+                    <option value="General Advisory Enquiry">General Advisory Enquiry</option>
+                  </select>
+                  <span class="field-error-msg" id="enquiryTypeError"></span>
+                </div>
+
+                <!-- Business Stage -->
+                <div class="form-group-custom">
+                  <label for="businessStage" class="form-label-custom">
+                    <span>Business Stage <span class="label-opt">(Optional)</span></span>
+                  </label>
+                  <select id="businessStage" name="businessStage" class="form-select-custom">
+                    <option value="" selected>Select stage (if applicable)</option>
+                    <option value="Established Business">Established Business</option>
+                    <option value="Preparing for a Sale">Preparing for a Sale</option>
+                    <option value="Exploring an Acquisition">Exploring an Acquisition</option>
+                    <option value="Planning a Strategic Transaction">Planning a Strategic Transaction</option>
+                    <option value="Early-Stage Discussion">Early-Stage Discussion</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-row-2col">
+                <!-- Expected Timeframe -->
+                <div class="form-group-custom">
+                  <label for="timeframe" class="form-label-custom">
+                    <span>Expected Timeframe <span class="label-opt">(Optional)</span></span>
+                  </label>
+                  <select id="timeframe" name="timeframe" class="form-select-custom">
+                    <option value="" selected>Select expected timeframe</option>
+                    <option value="As soon as possible">As soon as possible</option>
+                    <option value="Within 1–3 months">Within 1–3 months</option>
+                    <option value="Within 3–6 months">Within 3–6 months</option>
+                    <option value="More than 6 months">More than 6 months</option>
+                    <option value="Still exploring">Still exploring</option>
+                  </select>
+                </div>
+
+                <!-- Estimated Business Size -->
+                <div class="form-group-custom">
+                  <label for="businessSize" class="form-label-custom">
+                    <span>Estimated Business Size <span class="label-opt">(Optional)</span></span>
+                  </label>
+                  <select id="businessSize" name="businessSize" class="form-select-custom">
+                    <option value="" selected>Indicative revenue range</option>
+                    <option value="Prefer not to disclose">Prefer not to disclose</option>
+                    <option value="Under ₹1 Crore">Under ₹1 Crore</option>
+                    <option value="₹1–5 Crore">₹1–5 Crore</option>
+                    <option value="₹5–25 Crore">₹5–25 Crore</option>
+                    <option value="₹25–100 Crore">₹25–100 Crore</option>
+                    <option value="Above ₹100 Crore">Above ₹100 Crore</option>
+                  </select>
+                  <span class="form-field-helper">Indicative optional ranges, not a valuation estimate or eligibility test.</span>
+                </div>
+              </div>
+
+              <!-- Message -->
+              <div class="form-group-custom">
+                <label for="enquiryMessage" class="form-label-custom">
+                  <span>Requirement Summary <span class="label-req">*</span></span>
+                </label>
+                <textarea 
+                  id="enquiryMessage" 
+                  name="enquiryMessage" 
+                  rows="4" 
+                  class="form-textarea-custom" 
+                  placeholder="Briefly describe your business, objectives and the support you are looking for." 
+                  required
+                ></textarea>
+                <span class="field-error-msg" id="enquiryMessageError"></span>
+              </div>
+
+              <!-- Privacy Acknowledgement Checkbox -->
+              <div class="privacy-checkbox-wrapper">
+                <input 
+                  type="checkbox" 
+                  id="privacyAgree" 
+                  name="privacyAgree" 
+                  class="privacy-checkbox-input" 
+                  required
+                >
+                <label for="privacyAgree" class="privacy-checkbox-label">
+                  I understand that this is a demonstration enquiry form and that my information will not be transmitted or stored.
+                </label>
+              </div>
+              <span class="field-error-msg mb-4" id="privacyAgreeError"></span>
+
+              <!-- Form Action Buttons -->
+              <div class="form-actions-row">
+                <button type="submit" class="nb-btn nb-btn-gold btn-form-submit" id="submitEnquiryBtn">
+                  Prepare My Enquiry
+                </button>
+                <button type="button" class="btn-form-clear" id="clearFormBtn">
+                  Clear Form
+                </button>
+              </div>
+
+              <!-- Honest Frontend Demonstration Notice Box -->
+              <div class="enquiry-demo-notice" id="enquiryDemoNotice" role="region" aria-live="polite">
+                <h3 class="demo-notice-title">YOUR ENQUIRY DETAILS ARE READY.</h3>
+                <p class="demo-notice-desc">
+                  This is a frontend demonstration only. Your information has not been transmitted or stored. Please connect a secure enquiry service before using this form for real submissions.
+                </p>
+                <div class="demo-summary-box" id="demoSummaryContent"></div>
+              </div>
+
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------
+         SECTION 04: #consultation-process (What Happens Next?)
+         Deep navy background (#172B4D), 4-stage pathway + architectural media
+         -------------------------------------------------------------------- -->
+    <section id="consultation-process" class="py-20 md:py-24" aria-labelledby="processHeading">
+      <div class="container-custom">
+        
+        <!-- Centered Header -->
+        <div class="nb-section-header">
+          <span class="section-tag">CONSULTATION PATHWAY</span>
+          <h2 id="processHeading" class="section-heading">A CLEAR PROCESS FROM THE FIRST CONVERSATION.</h2>
+          <p class="section-intro">
+            An initial enquiry provides an opportunity to understand your requirements and consider the appropriate next steps.
+          </p>
+        </div>
+
+        <!-- 4-Stage Pathway Grid -->
+        <div class="process-pathway-grid">
+          
+          <!-- Stage 01 -->
+          <div class="process-step-card">
+            <span class="step-num-pill">Stage 01</span>
+            <h3 class="step-title">SHARE YOUR REQUIREMENT</h3>
+            <p class="step-desc">Provide a short overview of your business, objectives and the support you are exploring.</p>
+          </div>
+
+          <!-- Stage 02 -->
+          <div class="process-step-card">
+            <span class="step-num-pill">Stage 02</span>
+            <h3 class="step-title">UNDERSTAND THE CONTEXT</h3>
+            <p class="step-desc">Discuss the nature of the requirement, relevant circumstances and the information that may be needed.</p>
+          </div>
+
+          <!-- Stage 03 -->
+          <div class="process-step-card">
+            <span class="step-num-pill">Stage 03</span>
+            <h3 class="step-title">DEFINE THE SCOPE</h3>
+            <p class="step-desc">Where appropriate, clarify the proposed work, information requirements, responsibilities and commercial terms.</p>
+          </div>
+
+          <!-- Stage 04 -->
+          <div class="process-step-card">
+            <span class="step-num-pill">Stage 04</span>
+            <h3 class="step-title">AGREE THE NEXT STEPS</h3>
+            <p class="step-desc">Any advisory engagement proceeds only after the relevant scope and terms have been discussed and agreed.</p>
+          </div>
+
+        </div>
+
+        <!-- Architectural Meeting Detail Accent -->
+        <div class="process-media-accent">
+          <img 
+            src="assets/images/contact/contact-next-steps.webp" 
+            alt="Corporate meeting desk prepared with a bound notebook, fountain pen, and transaction documents" 
+            class="process-accent-img" 
+            width="600" 
+            height="450"
+            loading="lazy"
+          >
+        </div>
+
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------
+         SECTION 05: #advisory-approach (Why Start with Northbridge?)
+         Warm pale-blue background (#EAF0F7), 4 editorial principles surrounding
+         architectural imagery.
+         -------------------------------------------------------------------- -->
+    <section id="advisory-approach" class="py-20 md:py-24" aria-labelledby="approachHeading">
+      <div class="container-custom">
+        
+        <!-- Centered Header -->
+        <div class="nb-section-header">
+          <span class="section-tag">ADVISORY PERSPECTIVE</span>
+          <h2 id="approachHeading" class="section-heading">A THOUGHTFUL APPROACH TO IMPORTANT BUSINESS DECISIONS.</h2>
+          <p class="section-intro">
+            We focus on methodical analysis, realistic transaction parameters, and clear commercial guidance grounded in verified financial evidence.
+          </p>
+        </div>
+
+        <!-- 3-Column Surround Layout: 2 Principles Left | Media Center | 2 Principles Right -->
+        <div class="approach-surround-grid">
+          
+          <!-- Left Column (Principles 01 & 02) -->
+          <div class="approach-col">
+            <div class="approach-card">
+              <span class="section-tag">PRINCIPLE 01</span>
+              <h3 class="approach-card-title">CLARITY OF PURPOSE</h3>
+              <p class="approach-card-desc">Understand the reason behind the valuation, financial review or transaction enquiry.</p>
+            </div>
+
+            <div class="approach-card">
+              <span class="section-tag">PRINCIPLE 02</span>
+              <h3 class="approach-card-title">STRUCTURED THINKING</h3>
+              <p class="approach-card-desc">Consider relevant financial information, business characteristics and the scope of the requirement.</p>
+            </div>
+          </div>
+
+          <!-- Center Column (Architectural Media Frame) -->
+          <div class="approach-media-frame">
+            <img 
+              src="assets/images/contact/contact-advisory-approach.webp" 
+              alt="Refined contemporary architectural office interior with geometric wood paneling, stone flooring, and clean daylight" 
+              class="approach-media-img" 
+              width="700" 
+              height="500"
+              loading="lazy"
+            >
+          </div>
+
+          <!-- Right Column (Principles 03 & 04) -->
+          <div class="approach-col">
+            <div class="approach-card">
+              <span class="section-tag">PRINCIPLE 03</span>
+              <h3 class="approach-card-title">CONTEXTUAL PERSPECTIVE</h3>
+              <p class="approach-card-desc">Recognise that every business and transaction situation has its own circumstances.</p>
+            </div>
+
+            <div class="approach-card">
+              <span class="section-tag">PRINCIPLE 04</span>
+              <h3 class="approach-card-title">CLEAR COMMUNICATION</h3>
+              <p class="approach-card-desc">Focus on understandable information and well-defined next steps.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------
+         SECTION 06: #location-map (Location & Map Section)
+         Soft ivory background, 2-column layout with address panel left,
+         and responsive interactive map panel right (honest placeholder state).
+         -------------------------------------------------------------------- -->
+    <section id="location-map" class="py-20 md:py-24" aria-labelledby="locationHeading">
+      <div class="container-custom">
+        
+        <div class="location-grid-layout">
+          
+          <!-- Left Column: Location Information -->
+          <div class="location-info-panel">
+            <span class="section-tag">OFFICE LOCATION</span>
+            <h2 id="locationHeading" class="location-section-title">FIND OUR LOCATION.</h2>
+            <p class="location-section-desc">
+              Use this section to locate the Northbridge office and plan your visit. Initial consultations may be arranged virtually or in person by appointment.
+            </p>
+
+            <div class="location-meta-list">
+              <!-- Physical Address -->
+              <div class="location-meta-item">
+                <div class="location-meta-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div>
+                  <div class="location-meta-title">Corporate Office Address</div>
+                  <p class="location-meta-text" id="officeAddressText">Northbridge Advisory Tower, Level 34, 100 Financial Centre Boulevard, Financial District</p>
+                </div>
+              </div>
+
+              <!-- Consultation Hours -->
+              <div class="location-meta-item">
+                <div class="location-meta-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <div class="location-meta-title">Advisory Hours</div>
+                  <p class="location-meta-text">Monday – Friday: 9:00 AM – 6:00 PM<br><span class="text-xs text-secondary">Private meetings scheduled by appointment</span></p>
+                </div>
+              </div>
+
+              <!-- Confidential Visits -->
+              <div class="location-meta-item">
+                <div class="location-meta-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                  </svg>
+                </div>
+                <div>
+                  <div class="location-meta-title">Confidential Access</div>
+                  <p class="location-meta-text">Dedicated private consultation suites protecting executive discretion.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Verified Directions Link (Dynamic) -->
+            <div>
+              <a href="https://maps.google.com" class="nb-btn nb-btn-secondary" id="openGoogleMapsLink" target="_blank" rel="noopener noreferrer">
+                Open in Maps / Directions
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: Responsive Map Container with Configurable Support -->
+          <div class="location-map-container" role="region" aria-label="Northbridge Office Map">
+            
+            <!-- Map View Card -->
+            <div class="map-placeholder-view" id="mapPlaceholderView">
+              <img 
+                src="assets/images/contact/contact-location-detail.webp" 
+                alt="Architectural exterior facade of corporate office building" 
+                class="map-placeholder-bg" 
+                width="600" 
+                height="500"
+                loading="lazy"
+              >
+              <div class="map-placeholder-content">
+                <div class="map-pin-icon-wrap" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <h3 class="map-placeholder-title">NORTHBRIDGE ADVISORY TOWER</h3>
+                <p class="map-placeholder-desc">
+                  Level 34, 100 Financial Centre Boulevard, Financial District.<br>
+                  Executive arrival with secure concierge, private elevator access, and reserved client parking.
+                </p>
+                <a href="#consultation" class="nb-btn nb-btn-gold text-xs">Schedule an In-Person Consultation</a>
+              </div>
+            </div>
+
+            <!-- Live Embed Iframe (Activated dynamically when NORTHBRIDGE_MAP_EMBED_URL is configured) -->
+            <iframe 
+              id="mapLiveIframe" 
+              class="map-live-iframe" 
+              title="Verified Northbridge Office Location Map" 
+              loading="lazy" 
+              allowfullscreen
+            ></iframe>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------
+         SECTION 07: #contact-faq (Common Contact Questions)
+         Cool-white background, 2-column compact editorial FAQ layout.
+         -------------------------------------------------------------------- -->
+    <section id="contact-faq" class="py-20 md:py-24" aria-labelledby="contactFaqHeading">
+      <div class="container-custom">
+        
+        <!-- Centered Header -->
+        <div class="nb-section-header">
+          <span class="section-tag">COMMON QUESTIONS</span>
+          <h2 id="contactFaqHeading" class="section-heading">A FEW THINGS TO KNOW BEFORE GETTING IN TOUCH.</h2>
+          <p class="section-intro">
+            Practical clarity regarding initial communication, financial data readiness, and how early conversations are structured.
+          </p>
+        </div>
+
+        <!-- 2-Column Grid of 5 Q&A Items -->
+        <div class="contact-faq-columns">
+          
+          <!-- Q1 -->
+          <div class="contact-faq-item">
+            <button type="button" class="contact-faq-btn" aria-expanded="false" aria-controls="cfaq-ans-1">
+              <h3 class="contact-faq-title">What information should I include in my enquiry?</h3>
+              <span class="contact-faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div id="cfaq-ans-1" class="contact-faq-panel" role="region">
+              <div class="contact-faq-content">
+                A short description of your business, the reason for your enquiry and the type of support you are considering is a useful starting point.
+              </div>
+            </div>
+          </div>
+
+          <!-- Q2 -->
+          <div class="contact-faq-item">
+            <button type="button" class="contact-faq-btn" aria-expanded="false" aria-controls="cfaq-ans-2">
+              <h3 class="contact-faq-title">Do I need to provide detailed financial statements immediately?</h3>
+              <span class="contact-faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div id="cfaq-ans-2" class="contact-faq-panel" role="region">
+              <div class="contact-faq-content">
+                Not necessarily. Initial discussions can help clarify the requirement and determine which financial information may be relevant.
+              </div>
+            </div>
+          </div>
+
+          <!-- Q3 -->
+          <div class="contact-faq-item">
+            <button type="button" class="contact-faq-btn" aria-expanded="false" aria-controls="cfaq-ans-3">
+              <h3 class="contact-faq-title">Can I enquire about a potential business sale?</h3>
+              <span class="contact-faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div id="cfaq-ans-3" class="contact-faq-panel" role="region">
+              <div class="contact-faq-content">
+                Yes. You can select Mergers &amp; Acquisitions and describe your objectives and circumstances in the enquiry form.
+              </div>
+            </div>
+          </div>
+
+          <!-- Q4 -->
+          <div class="contact-faq-item">
+            <button type="button" class="contact-faq-btn" aria-expanded="false" aria-controls="cfaq-ans-4">
+              <h3 class="contact-faq-title">Can I discuss a business valuation without committing to an engagement?</h3>
+              <span class="contact-faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div id="cfaq-ans-4" class="contact-faq-panel" role="region">
+              <div class="contact-faq-content">
+                An initial enquiry is an opportunity to explain your requirement. Any formal engagement would require further discussion and agreement on the scope and terms.
+              </div>
+            </div>
+          </div>
+
+          <!-- Q5 (Spans across or cleanly positioned) -->
+          <div class="contact-faq-item">
+            <button type="button" class="contact-faq-btn" aria-expanded="false" aria-controls="cfaq-ans-5">
+              <h3 class="contact-faq-title">Does the online form currently send an enquiry?</h3>
+              <span class="contact-faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div id="cfaq-ans-5" class="contact-faq-panel" role="region">
+              <div class="contact-faq-content">
+                No. This website is a static frontend demonstration. The form validates information in the browser but does not transmit or store it.
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Centered Link to Full FAQ Page -->
+        <div class="text-center">
+          <a href="faq.html" class="nb-card-link font-semibold text-sm">
+            <span>VIEW ALL FREQUENTLY ASKED QUESTIONS</span>
+            <svg class="nb-arrow-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------
+         SECTION 08: #advisory-services-nav (Explore the Right Advisory Service)
+         Soft ivory background, 3 horizontal pathways with distinct thumbnails.
+         -------------------------------------------------------------------- -->
+    <section id="advisory-services-nav" class="py-20 md:py-24" aria-labelledby="servicesNavHeading">
+      <div class="container-custom">
+        
+        <!-- Centered Header -->
+        <div class="nb-section-header">
+          <span class="section-tag">SERVICE DIRECTORY</span>
+          <h2 id="servicesNavHeading" class="section-heading">EXPLORE THE SUPPORT THAT FITS YOUR REQUIREMENT.</h2>
+          <p class="section-intro">
+            Navigate to our comprehensive advisory practice areas to understand methodologies, transaction support, and financial modelling scopes.
+          </p>
+        </div>
+
+        <!-- 3 Horizontal Pathways Stack -->
+        <div class="services-pathways-stack">
+          
+          <!-- Pathway 01: Business Valuation -->
+          <a href="services.html#business-valuation" class="service-pathway-card">
+            <div class="pathway-thumb-frame">
+              <img 
+                src="assets/images/contact/contact-business-valuation.webp" 
+                alt="Business valuation appraisal reports, financial models, and analytical tools on desk" 
+                class="pathway-thumb-img" 
+                width="600" 
+                height="450"
+                loading="lazy"
+              >
+            </div>
+            <div class="pathway-body">
+              <div class="pathway-category-tag">CORE DISCIPLINE 01</div>
+              <h3 class="pathway-title">BUSINESS VALUATION</h3>
+              <p class="pathway-desc">Understand the financial and business considerations relevant to assessing business value.</p>
+            </div>
+            <div class="pathway-action-arrow" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </div>
+          </a>
+
+          <!-- Pathway 02: Transaction Advisory -->
+          <a href="services.html#ma-advisory" class="service-pathway-card">
+            <div class="pathway-thumb-frame">
+              <img 
+                src="assets/images/contact/contact-ma-discussion.webp" 
+                alt="Corporate executives in transaction advisory discussion around conference table" 
+                class="pathway-thumb-img" 
+                width="600" 
+                height="450"
+                loading="lazy"
+              >
+            </div>
+            <div class="pathway-body">
+              <div class="pathway-category-tag">CORE DISCIPLINE 02</div>
+              <h3 class="pathway-title">TRANSACTION ADVISORY</h3>
+              <p class="pathway-desc">Explore support related to mergers, acquisitions and transaction preparation.</p>
+            </div>
+            <div class="pathway-action-arrow" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </div>
+          </a>
+
+          <!-- Pathway 03: Financial Insight -->
+          <a href="services.html#financial-due-diligence" class="service-pathway-card">
+            <div class="pathway-thumb-frame">
+              <img 
+                src="assets/images/contact/contact-financial-consultation.webp" 
+                alt="Advisor reviewing financial due diligence metrics and cash flow models on laptop" 
+                class="pathway-thumb-img" 
+                width="600" 
+                height="450"
+                loading="lazy"
+              >
+            </div>
+            <div class="pathway-body">
+              <div class="pathway-category-tag">CORE DISCIPLINE 03</div>
+              <h3 class="pathway-title">FINANCIAL INSIGHT</h3>
+              <p class="pathway-desc">Explore financial analysis, due diligence and modelling-related services.</p>
+            </div>
+            <div class="pathway-action-arrow" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </div>
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------
+         SECTION 09: #contact-closing-cta (Final Consultation CTA)
+         Midnight Blue background (#101E35), centered header, architectural banner, CTAs.
+         -------------------------------------------------------------------- -->
+    <section id="contact-closing-cta" aria-labelledby="closingContactHeading">
+      <div class="container-custom">
+        
+        <!-- Centered Header -->
+        <div class="nb-section-header">
+          <span class="section-tag">STRATEGIC PERSPECTIVE</span>
+          <h2 id="closingContactHeading" class="section-heading">IMPORTANT BUSINESS DECISIONS DESERVE A CLEARER CONVERSATION.</h2>
+          <p class="section-intro">
+            Start by sharing the question you are working through. The appropriate next step begins with understanding your requirements.
+          </p>
+        </div>
+
+        <!-- Architectural Banner Detail -->
+        <div class="contact-closing-banner">
+          <img 
+            src="assets/images/contact/contact-closing-architecture.webp" 
+            alt="Contemporary glass business tower reflecting natural light and geometric stability" 
+            class="contact-closing-img" 
+            width="1200" 
+            height="600"
+            loading="lazy"
+          >
+        </div>
+
+        <!-- Centered CTA Buttons -->
+        <div class="cta-group-centred">
+          <a href="#consultation" class="nb-btn nb-btn-gold">Book a Consultation</a>
+          <a href="about.html" class="nb-btn nb-btn-secondary">Explore Our Approach</a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================================================================
+       FOOTER (EXACT SAME AS INDEX.HTML)
+       4-Column Corporate Layout with Logo, Navigation, Services, Newsletter, Socials
+       ====================================================================== -->
+  <footer class="nb-footer" role="contentinfo">
+    <div class="nb-footer-container">
+      
+      <!-- Top 4 Columns & Brand Column -->
+      <div class="nb-footer-top">
+        
+        <!-- Brand Info Column -->
+        <div class="nb-footer-brand-col">
+          <a href="index.html" aria-label="Northbridge Valuation &amp; Advisory Homepage">
+            <img src="assets/images/brand/logo-white.svg" alt="Northbridge Valuation &amp; Advisory" class="nb-footer-logo" width="220" height="36" loading="lazy">
+          </a>
+          <p class="nb-footer-tagline">CLARITY IN VALUE. CONFIDENCE IN EVERY DECISION.</p>
+          <p class="nb-footer-desc">
+            Independent thinking, financial insight and strategic guidance for important business valuation and transaction decisions.
+          </p>
+        </div>
+
+        <!-- Column 1: Quick Links -->
+        <div>
+          <h3 class="nb-footer-col-title">Quick Links</h3>
+          <ul class="nb-footer-links">
+            <li><a href="index.html" class="nb-footer-link">Home</a></li>
+            <li><a href="home2.html" class="nb-footer-link">Home 2</a></li>
+            <li><a href="about.html" class="nb-footer-link">About Us</a></li>
+            <li><a href="services.html" class="nb-footer-link">Services</a></li>
+            <li><a href="case-studies.html" class="nb-footer-link">Case Studies</a></li>
+            <li><a href="contact.html" class="nb-footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 2: Our Services -->
+        <div>
+          <h3 class="nb-footer-col-title">Our Services</h3>
+          <ul class="nb-footer-links">
+            <li><a href="services.html#business-valuation" class="nb-footer-link">Business Valuation</a></li>
+            <li><a href="services.html#ma-advisory" class="nb-footer-link">M&amp;A Advisory</a></li>
+            <li><a href="services.html#financial-due-diligence" class="nb-footer-link">Financial Due Diligence</a></li>
+            <li><a href="services.html#financial-analysis" class="nb-footer-link">Financial Analysis</a></li>
+            <li><a href="services.html#financial-modelling" class="nb-footer-link">Financial Modelling</a></li>
+            <li><a href="services.html#transaction-support" class="nb-footer-link">Transaction Support</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Insights -->
+        <div>
+          <h3 class="nb-footer-col-title">Insights</h3>
+          <ul class="nb-footer-links">
+            <li><a href="blog.html" class="nb-footer-link">Latest Insights</a></li>
+            <li><a href="blog.html#valuation" class="nb-footer-link">Valuation Insights</a></li>
+            <li><a href="blog.html#ma" class="nb-footer-link">M&amp;A Insights</a></li>
+            <li><a href="resources.html" class="nb-footer-link">Business Resources</a></li>
+            <li><a href="faq.html" class="nb-footer-link">Frequently Asked Questions</a></li>
+            <li><a href="about.html#approach" class="nb-footer-link">Our Approach</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Get In Touch -->
+        <div>
+          <h3 class="nb-footer-col-title">Get In Touch</h3>
+          <ul class="nb-footer-links">
+            <li><a href="contact.html#enquiries" class="nb-footer-link">General Enquiries</a></li>
+            <li><a href="contact.html#valuation" class="nb-footer-link">Valuation Enquiries</a></li>
+            <li><a href="contact.html#ma" class="nb-footer-link">M&amp;A Enquiries</a></li>
+            <li><a href="contact.html#consultation" class="nb-footer-link">Consultation Requests</a></li>
+            <li><a href="contact.html" class="nb-footer-link">Contact Us</a></li>
+            <li><a href="contact.html#consultation" class="nb-footer-link">Book a Consultation</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Newsletter Card -->
+      <div class="nb-footer-newsletter-card">
+        <div>
+          <h3 class="nb-newsletter-heading">STAY INFORMED.</h3>
+          <p class="nb-newsletter-desc">
+            Receive occasional perspectives on valuation, transactions and business strategy.
+          </p>
+        </div>
+        <div>
+          <form class="nb-newsletter-form" action="#" method="post">
+            <input 
+              type="email" 
+              class="nb-newsletter-input" 
+              placeholder="Your professional email address" 
+              required 
+              aria-label="Professional email address for newsletter"
+            >
+            <button type="submit" class="nb-newsletter-btn">Subscribe</button>
+            <span class="nb-newsletter-notice" role="status"></span>
+          </form>
+        </div>
+      </div>
+
+      <!-- Social Media Links & Divider Bar -->
+      <div class="nb-footer-middle">
+        <div class="nb-social-group">
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com" class="nb-social-link" target="_blank" rel="noopener noreferrer" aria-label="Northbridge on LinkedIn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+            </svg>
+          </a>
+          <!-- Instagram -->
+          <a href="https://www.instagram.com" class="nb-social-link" target="_blank" rel="noopener noreferrer" aria-label="Northbridge on Instagram">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+          </a>
+          <!-- Facebook -->
+          <a href="https://www.facebook.com" class="nb-social-link" target="_blank" rel="noopener noreferrer" aria-label="Northbridge on Facebook">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.374 14.5 5 15.5 5H18V0h-3.808C10.595 0 9 1.583 9 4.615V8z"/>
+            </svg>
+          </a>
+          <!-- YouTube -->
+          <a href="https://www.youtube.com" class="nb-social-link" target="_blank" rel="noopener noreferrer" aria-label="Northbridge on YouTube">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Bottom Bar: Copyright & Legal -->
+      <div class="nb-footer-bottom">
+        <div>
+          &copy; 2026 Northbridge Valuation &amp; Advisory. All rights reserved.
+        </div>
+        <div class="nb-footer-legal-links">
+          <a href="privacy.html" class="nb-footer-link">Privacy Policy</a>
+          <a href="terms.html" class="nb-footer-link">Terms &amp; Conditions</a>
+          <a href="cookies.html" class="nb-footer-link">Cookie Policy</a>
+          <button type="button" class="nb-back-to-top" aria-label="Scroll back to top of page">
+            <span>Back to Top</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="18 15 12 9 6 15"></polyline>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Local Scripts (Bootstrap Bundle, Shared Main JS, Contact Controller JS) -->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/contact.js"></script>
+</body>
+</html>

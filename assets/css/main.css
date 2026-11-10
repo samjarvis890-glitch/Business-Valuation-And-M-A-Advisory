@@ -1,0 +1,1561 @@
+/* ==========================================================================
+   NORTHBRIDGE VALUATION & ADVISORY — MAIN SHARED STYLESHEET
+   Includes: Design Tokens, Typography, Themes (Light/Dark), RTL Logical Rules,
+   Shared Sticky Navbar, Shared Mobile Drawer, Shared Footer & Core Components
+   ========================================================================== */
+
+@import url("fonts.css");
+
+/* --------------------------------------------------------------------------
+   1. DESIGN TOKENS & CSS VARIABLES
+   -------------------------------------------------------------------------- */
+:root {
+  /* Brand Exact Color Palette */
+  --color-primary-navy: #172B4D;
+  --color-midnight-blue: #101E35;
+  --color-professional-blue: #315B8A;
+  --color-muted-gold: #B99A62;
+  --color-muted-gold-hover: #A68852;
+  --color-soft-ivory: #F7F7F3;
+  --color-cool-white: #FFFFFF;
+  --color-slate-grey: #657184;
+  --color-charcoal: #252D38;
+  --color-soft-border: #E1E5EA;
+  --color-pale-blue: #EAF0F7;
+  --color-success-green: #3D8065;
+
+  /* Typography */
+  --font-heading: 'DM Serif Display', Georgia, 'Times New Roman', serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+
+  /* Semantic Light Theme Defaults */
+  --bg-primary: #F7F7F3;
+  --bg-surface: #FFFFFF;
+  --bg-card: #FFFFFF;
+  --bg-card-hover: #FCFCFA;
+  --bg-secondary: #EAF0F7;
+  --bg-muted: #F2F4F7;
+  
+  --text-main: #1D2530;
+  --text-secondary: #4A5668;
+  --text-muted: #627184;
+  --text-heading: #101E35;
+  --text-on-dark: #FFFFFF;
+  
+  --border-color: #DDE2E8;
+  --border-subtle: rgba(23, 43, 77, 0.08);
+  --border-focus: #B99A62;
+
+  --accent-brand: #172B4D;
+  --accent-gold: #B99A62;
+  --accent-gold-hover: #A68852;
+  --accent-gold-text: #8C6826;
+  --accent-gold-subtle: rgba(185, 154, 98, 0.12);
+
+  --nav-height: 88px;
+  --nav-height-tablet: 78px;
+  --nav-height-mobile: 72px;
+  --nav-bg: rgba(255, 255, 255, 0.94);
+  --nav-scrolled-bg: rgba(247, 247, 243, 0.98);
+  --nav-border: rgba(23, 43, 77, 0.08);
+  --nav-link-color: #1D2530;
+  --nav-link-hover: #101E35;
+
+  --footer-bg: #172B4D;
+  --footer-border: rgba(225, 229, 234, 0.12);
+  --footer-text: #C4CFDC;
+  --footer-heading: #FFFFFF;
+
+  --input-bg: #FFFFFF;
+  --input-border: #CBD2DC;
+  --input-text: #1D2530;
+  --input-placeholder: #627184;
+
+  --shadow-xs: 0 1px 3px rgba(16, 30, 53, 0.04);
+  --shadow-sm: 0 4px 12px rgba(16, 30, 53, 0.05);
+  --shadow-md: 0 12px 32px rgba(16, 30, 53, 0.08);
+  --shadow-lg: 0 20px 48px rgba(16, 30, 53, 0.12);
+
+  --transition-fast: 0.18s ease;
+  --transition-base: 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-smooth: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* --------------------------------------------------------------------------
+   DARK THEME VARIABLES
+   -------------------------------------------------------------------------- */
+[data-theme="dark"] {
+  --bg-primary: #111A27;
+  --bg-surface: #172438;
+  --bg-card: #1D2C41;
+  --bg-card-hover: #22334B;
+  --bg-secondary: #172438;
+  --bg-muted: #1E2D44;
+
+  --text-main: #F4F7FB;
+  --text-secondary: #C0CBD9;
+  --text-muted: #8E9FA8;
+  --text-heading: #F4F7FB;
+
+  --border-color: #384A62;
+  --border-subtle: rgba(192, 203, 217, 0.16);
+  --border-focus: #D5B984;
+
+  --accent-brand: #9FB5D1;
+  --accent-gold: #C8AA75;
+  --accent-gold-hover: #DBBD88;
+  --accent-gold-text: #D5B984;
+  --accent-gold-subtle: rgba(200, 170, 117, 0.18);
+
+  --nav-bg: rgba(17, 26, 39, 0.94);
+  --nav-scrolled-bg: rgba(23, 36, 56, 0.98);
+  --nav-border: rgba(64, 81, 106, 0.5);
+  --nav-link-color: #F4F7FB;
+  --nav-link-hover: #D5B984;
+
+  --footer-bg: #0D1520;
+  --footer-border: rgba(64, 81, 106, 0.4);
+  --footer-text: #C0CBD9;
+  --footer-heading: #F4F7FB;
+
+  --input-bg: #172438;
+  --input-border: #384A62;
+  --input-text: #F4F7FB;
+  --input-placeholder: #8E9FA8;
+
+  --shadow-xs: 0 1px 3px rgba(0, 0, 0, 0.25);
+  --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.35);
+  --shadow-md: 0 12px 32px rgba(0, 0, 0, 0.45);
+  --shadow-lg: 0 20px 48px rgba(0, 0, 0, 0.55);
+}
+
+/* --------------------------------------------------------------------------
+   2. GLOBAL RESET & BASE STYLES
+   -------------------------------------------------------------------------- */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: clip;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  padding-top: var(--nav-height) !important;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.65;
+  color: var(--text-main);
+  background-color: var(--bg-primary);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: clip;
+  transition: background-color var(--transition-base), color var(--transition-base);
+}
+
+@media (max-width: 1280px) {
+  body {
+    padding-top: var(--nav-height-tablet) !important;
+  }
+}
+
+@media (max-width: 767px) {
+  body {
+    padding-top: var(--nav-height-mobile) !important;
+  }
+}
+
+body.drawer-open {
+  overflow: hidden;
+  touch-action: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--text-heading);
+  font-weight: 400;
+  line-height: 1.25;
+  margin-top: 0;
+  letter-spacing: -0.015em;
+  transition: color var(--transition-base);
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--transition-fast), border-color var(--transition-fast);
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* --------------------------------------------------------------------------
+   3. TYPOGRAPHY HIERARCHY & UTILITIES
+   -------------------------------------------------------------------------- */
+.font-heading {
+  font-family: var(--font-heading);
+}
+
+.font-body {
+  font-family: var(--font-body);
+}
+
+/* --------------------------------------------------------------------------
+   3A. UNIVERSAL CONTAINER & SECTION WRAPPERS (ALL PAGES)
+   Ensures consistent padding, zero edge-bleed, and perfect responsive alignment
+   -------------------------------------------------------------------------- */
+.nb-container,
+.container-custom,
+.container {
+  width: 100%;
+  max-width: 1320px;
+  margin-inline: auto;
+  padding-inline: clamp(1.25rem, 3.5vw, 2.5rem);
+}
+
+.nb-container-narrow,
+.container-narrow {
+  width: 100%;
+  max-width: 960px;
+  margin-inline: auto;
+  padding-inline: clamp(1.25rem, 3.5vw, 2.5rem);
+}
+
+/* ==========================================================================
+   UNIVERSAL SECTION SPACING (ALL PAGES)
+   Guarantees refined vertical breathing room across all pages without excessive gapping.
+   Prevents adjacent sections from colliding while maintaining clean rhythm.
+   ========================================================================== */
+.nb-section,
+section.nb-section,
+main > section:not([id*="hero"]):not([class*="hero"]):not([id*="closing"]):not([id*="cta"]):not([id*="consultation"]) {
+  padding-block: clamp(3.5rem, 5vw, 4.75rem) !important;
+  position: relative;
+  overflow: hidden;
+  scroll-margin-top: calc(var(--nav-height) + 16px);
+}
+
+/* Specific closing/CTA sections get balanced breathing room */
+.nb-section-cta,
+#about-closing,
+#services-consultation,
+#case-studies-cta,
+#insights-cta,
+#faq-closing-cta,
+#contact-closing-cta,
+#home2-contact,
+#home-consultation,
+#resources-cta {
+  padding-block: clamp(4.5rem, 6.5vw, 6.25rem) !important;
+  position: relative;
+  overflow: hidden;
+  scroll-margin-top: calc(var(--nav-height) + 16px);
+}
+
+/* Hero sections preserve their deliberate top/bottom proportion */
+#home-hero,
+#home2-hero,
+#about-hero,
+#services-hero,
+#case-studies-hero,
+#insights-hero,
+#faq-hero,
+#contact-hero,
+#resources-hero {
+  padding-top: clamp(3.5rem, 5.5vw, 5rem) !important;
+  padding-bottom: clamp(3rem, 4.5vw, 4.25rem) !important;
+  position: relative;
+  overflow: hidden;
+}
+
+section[id] {
+  scroll-margin-top: calc(var(--nav-height) + 16px);
+}
+
+/* --------------------------------------------------------------------------
+   3B. CENTRED SECTION HEADINGS, INTROS & CTAS (ALL PAGES)
+   Guarantees 100% strict adherence to mandatory centering rules
+   -------------------------------------------------------------------------- */
+.nb-section-header,
+.section-header-centred,
+.section-header {
+  text-align: center !important;
+  max-width: 840px !important;
+  margin-inline: auto !important;
+  margin-bottom: clamp(1.75rem, 3vw, 2.5rem) !important;
+}
+
+/* Section Eyebrow / Tag (Centred with high contrast) */
+.section-eyebrow,
+.section-tag,
+.nb-section-tag {
+  display: inline-block !important;
+  font-family: var(--font-body) !important;
+  font-size: 0.8rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.18em !important;
+  text-transform: uppercase !important;
+  color: var(--accent-gold-text);
+  text-align: center !important;
+  margin-inline: auto !important;
+  margin-bottom: 0.85rem !important;
+  position: relative !important;
+}
+
+[data-theme="dark"] .section-eyebrow,
+[data-theme="dark"] .section-tag,
+[data-theme="dark"] .nb-section-tag {
+  color: var(--accent-gold) !important;
+}
+
+.section-eyebrow::after {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 2px;
+  background-color: currentColor;
+  margin: 0.5rem auto 0;
+  border-radius: 1px;
+}
+
+/* Centred Section Heading (Mandatory Rule) */
+.section-heading {
+  font-family: var(--font-heading) !important;
+  font-size: clamp(2rem, 3.6vw, 2.85rem) !important;
+  font-weight: 400 !important;
+  color: var(--text-heading);
+  line-height: 1.25 !important;
+  text-align: center !important;
+  max-width: 840px !important;
+  margin-inline: auto !important;
+  margin-bottom: 1rem !important;
+  letter-spacing: -0.015em !important;
+}
+
+/* Centred Section Intro (Mandatory Rule) */
+.section-intro {
+  font-family: var(--font-body) !important;
+  font-size: clamp(1rem, 1.3vw, 1.15rem) !important;
+  line-height: 1.75 !important;
+  color: var(--text-secondary);
+  text-align: center !important;
+  max-width: 720px !important;
+  margin-inline: auto !important;
+  margin-bottom: 0 !important;
+}
+
+.nb-section-header .section-intro,
+.section-header .section-intro {
+  margin-bottom: 0 !important;
+}
+
+/* ==========================================================================
+   HIGH CONTRAST & VISIBILITY FOR ALL DARK / NAVY SECTIONS (LIGHT & DARK MODES)
+   Guarantees brilliant white headings & readable silver intros on dark backgrounds.
+   ========================================================================== */
+#our-philosophy .section-heading,
+#transaction-journey .section-heading,
+#transaction-support .section-heading,
+#common-themes .section-heading,
+#about-closing .section-heading,
+#insights-cta .section-heading,
+#faq-closing-cta .section-heading,
+#contact-closing-cta .section-heading,
+#home2-contact .section-heading,
+#home-consultation .section-heading,
+#resources-cta .section-heading,
+.bg-color-primary-navy .section-heading,
+.bg-navy .section-heading,
+[class*="bg-color-primary-navy"] .section-heading,
+[class*="bg-navy"] .section-heading {
+  color: #FFFFFF !important;
+}
+
+#our-philosophy .section-intro,
+#transaction-journey .section-intro,
+#transaction-support .section-intro,
+#common-themes .section-intro,
+#about-closing .section-intro,
+#insights-cta .section-intro,
+#faq-closing-cta .section-intro,
+#contact-closing-cta .section-intro,
+#home2-contact .section-intro,
+#home-consultation .section-intro,
+#resources-cta .section-intro,
+.bg-color-primary-navy .section-intro,
+.bg-navy .section-intro,
+[class*="bg-color-primary-navy"] .section-intro,
+[class*="bg-navy"] .section-intro {
+  color: #E2E8F0 !important;
+  opacity: 0.95 !important;
+}
+
+#our-philosophy .section-eyebrow,
+#transaction-journey .section-eyebrow,
+#transaction-support .section-eyebrow,
+#common-themes .section-eyebrow,
+#about-closing .section-eyebrow,
+#insights-cta .section-eyebrow,
+#faq-closing-cta .section-eyebrow,
+#contact-closing-cta .section-eyebrow,
+#home2-contact .section-eyebrow,
+#home-consultation .section-eyebrow,
+#resources-cta .section-eyebrow {
+  color: var(--accent-gold) !important;
+}
+
+/* Centred CTA Container (Mandatory Rule) */
+.cta-group-centred,
+.section-cta-group,
+.hero-cta-wrapper .cta-group-centred {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 1rem !important;
+  flex-wrap: wrap !important;
+  margin-inline: auto !important;
+  text-align: center !important;
+  width: 100% !important;
+}
+
+/* --------------------------------------------------------------------------
+   3C. UNIVERSAL CARD FLEX & EQUAL HEIGHT ALIGNMENT (ALL PAGES)
+   Ensures cards in any grid row have equal heights, aligned text & pinned actions
+   -------------------------------------------------------------------------- */
+.dir-card-item,
+.case-index-card,
+.case-challenge-item,
+.article-card,
+.faq-category-card-btn,
+.service-pathway-card,
+.process-step-card,
+.approach-card,
+.topic-item-card,
+.scenario-card,
+.specialisation-card,
+.industry-card,
+.thumb-card,
+.enquiry-panel-item,
+.triptych-panel {
+  display: flex !important;
+  flex-direction: column !important;
+  height: 100% !important;
+}
+
+.dir-body,
+.case-index-content,
+.article-card-body,
+.topic-card-body,
+.approach-card-desc,
+.step-desc,
+.pathway-body,
+.cat-btn-desc,
+.case-challenge-desc,
+.specialisation-card p,
+.industry-card p,
+.scenario-card p {
+  flex: 1 1 auto !important;
+}
+
+.dir-arrow,
+.case-index-action,
+.article-card-footer,
+.topic-card-link-text,
+.pathway-action-arrow,
+.triptych-footer {
+  margin-top: auto !important;
+}
+
+/* --------------------------------------------------------------------------
+   4. BUTTONS & INTERACTIVE ELEMENTS
+   -------------------------------------------------------------------------- */
+.nb-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 0.85rem 1.85rem;
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  text-decoration: none;
+  line-height: 1.2;
+}
+
+.nb-btn-primary {
+  background-color: var(--color-primary-navy);
+  color: #FFFFFF;
+  border-color: var(--color-primary-navy);
+}
+
+.nb-btn-primary:hover {
+  background-color: var(--color-midnight-blue);
+  border-color: var(--color-midnight-blue);
+  color: #FFFFFF;
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-sm);
+}
+
+[data-theme="dark"] .nb-btn-primary {
+  background-color: var(--accent-gold);
+  color: #111A27;
+  border-color: var(--accent-gold);
+}
+
+[data-theme="dark"] .nb-btn-primary:hover {
+  background-color: var(--accent-gold-hover);
+  border-color: var(--accent-gold-hover);
+  color: #111A27;
+}
+
+.nb-btn-gold {
+  background-color: var(--accent-gold);
+  color: #101E35 !important;
+  font-weight: 700;
+  border: 1.5px solid var(--accent-gold);
+  box-shadow: 0 2px 6px rgba(185, 154, 98, 0.25);
+}
+
+.nb-btn-gold:hover {
+  background-color: var(--accent-gold-hover);
+  border-color: var(--accent-gold-hover);
+  color: #FFFFFF !important;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(185, 154, 98, 0.35);
+}
+
+.nb-btn-outline {
+  background-color: transparent;
+  color: var(--text-heading);
+  border: 1.5px solid rgba(23, 43, 77, 0.32);
+  font-weight: 600;
+}
+
+.nb-btn-outline:hover {
+  border-color: var(--accent-gold);
+  color: var(--accent-gold);
+  background-color: var(--accent-gold-subtle);
+  transform: translateY(-1px);
+}
+
+/* Outline Buttons on Dark Navy Sections */
+.bg-navy .nb-btn-outline,
+.bg-color-primary-navy .nb-btn-outline,
+#our-philosophy .nb-btn-outline,
+#transaction-journey .nb-btn-outline,
+#transaction-support .nb-btn-outline,
+#home-consultation .nb-btn-outline,
+#home2-contact .nb-btn-outline,
+#about-closing .nb-btn-outline,
+#insights-cta .nb-btn-outline,
+#faq-closing-cta .nb-btn-outline,
+#contact-closing-cta .nb-btn-outline,
+#resources-cta .nb-btn-outline {
+  color: #FFFFFF !important;
+  border: 1.5px solid rgba(255, 255, 255, 0.5) !important;
+}
+
+.bg-navy .nb-btn-outline:hover,
+.bg-color-primary-navy .nb-btn-outline:hover,
+#our-philosophy .nb-btn-outline:hover,
+#transaction-journey .nb-btn-outline:hover,
+#transaction-support .nb-btn-outline:hover,
+#home-consultation .nb-btn-outline:hover,
+#home2-contact .nb-btn-outline:hover,
+#about-closing .nb-btn-outline:hover,
+#insights-cta .nb-btn-outline:hover,
+#faq-closing-cta .nb-btn-outline:hover,
+#contact-closing-cta .nb-btn-outline:hover,
+#resources-cta .nb-btn-outline:hover {
+  border-color: var(--accent-gold) !important;
+  color: var(--accent-gold) !important;
+  background-color: rgba(185, 154, 98, 0.18) !important;
+}
+
+.nb-btn-outline-white {
+  background-color: transparent;
+  color: #FFFFFF;
+  border-color: rgba(255, 255, 255, 0.45);
+}
+
+.nb-btn-outline-white:hover {
+  border-color: #FFFFFF;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #FFFFFF;
+}
+
+/* Subtle Link with Arrow */
+.nb-arrow-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--color-professional-blue);
+  transition: color var(--transition-fast), gap var(--transition-fast);
+}
+
+[data-theme="dark"] .nb-arrow-link {
+  color: var(--accent-gold);
+}
+
+.nb-arrow-link svg {
+  transition: transform var(--transition-fast);
+}
+
+.nb-arrow-link:hover {
+  color: var(--accent-gold);
+}
+
+.nb-arrow-link:hover svg {
+  transform: translateX(4px);
+}
+
+[dir="rtl"] .nb-arrow-link:hover svg {
+  transform: translateX(-4px);
+}
+
+/* --------------------------------------------------------------------------
+   5. SHARED STICKY NAVBAR (DESKTOP: 88PX)
+   -------------------------------------------------------------------------- */
+.nb-header {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  width: 100% !important;
+  z-index: 1000 !important;
+  background-color: var(--nav-bg);
+  border-bottom: 1px solid var(--nav-border);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: background-color var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-base);
+}
+
+.nb-header.scrolled {
+  background-color: var(--nav-scrolled-bg);
+  box-shadow: var(--shadow-sm);
+  border-bottom-color: var(--border-color);
+}
+
+.nb-navbar-container {
+  max-width: 1440px;
+  height: var(--nav-height);
+  margin-inline: auto;
+  padding-inline: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+/* Brand Logo */
+.nb-brand-link {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  text-decoration: none;
+}
+
+.nb-brand-logo {
+  height: 42px;
+  width: auto;
+  display: block;
+  transition: opacity var(--transition-fast);
+}
+
+.nb-brand-logo.logo-dark-mode {
+  display: none;
+}
+
+[data-theme="dark"] .nb-brand-logo.logo-light-mode {
+  display: none;
+}
+
+[data-theme="dark"] .nb-brand-logo.logo-dark-mode {
+  display: block;
+}
+
+/* Desktop Navigation Menu (Center) */
+.nb-desktop-nav {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  gap: 1.85rem;
+}
+
+.nb-nav-item {
+  position: relative;
+}
+
+.nb-nav-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--nav-link-color);
+  padding: 0.6rem 0.2rem;
+  transition: color var(--transition-fast);
+  position: relative;
+}
+
+.nb-nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  inset-inline-start: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--accent-gold);
+  transition: width var(--transition-fast);
+}
+
+.nb-nav-link:hover,
+.nb-nav-link.active {
+  color: var(--color-primary-navy);
+}
+
+[data-theme="dark"] .nb-nav-link:hover,
+[data-theme="dark"] .nb-nav-link.active {
+  color: var(--accent-gold);
+}
+
+.nb-nav-link:hover::after,
+.nb-nav-link.active::after {
+  width: 100%;
+}
+
+/* Dropdown Arrow */
+.nb-dropdown-icon {
+  font-size: 0.75rem;
+  transition: transform var(--transition-fast);
+  display: inline-block;
+}
+
+.nb-dropdown:hover .nb-dropdown-icon {
+  transform: rotate(180deg);
+}
+
+/* Desktop Dropdown Menus */
+.nb-dropdown-menu {
+  position: absolute;
+  top: 100%;
+  inset-inline-start: 0;
+  min-width: 230px;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 0.6rem 0;
+  margin: 0;
+  list-style: none;
+  box-shadow: var(--shadow-md);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px);
+  transition: opacity var(--transition-fast), transform var(--transition-fast), visibility var(--transition-fast);
+  z-index: 1050;
+}
+
+.nb-dropdown:hover .nb-dropdown-menu,
+.nb-dropdown:focus-within .nb-dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.nb-dropdown-item {
+  display: block;
+}
+
+.nb-dropdown-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.65rem 1.25rem;
+  font-size: 0.86rem;
+  font-weight: 500;
+  color: var(--text-main);
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.nb-dropdown-link:hover,
+.nb-dropdown-link.active {
+  background-color: var(--bg-secondary);
+  color: var(--color-primary-navy);
+}
+
+[data-theme="dark"] .nb-dropdown-link:hover,
+[data-theme="dark"] .nb-dropdown-link.active {
+  background-color: var(--bg-card-hover);
+  color: var(--accent-gold);
+}
+
+/* Desktop Right Controls In EXACT Order:
+   1. LTR/RTL Toggle
+   2. Dark/Light Mode Toggle
+   3. Book a Consultation Button */
+.nb-desktop-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  flex-shrink: 0;
+}
+
+/* Icon Buttons for Mode & Direction */
+.nb-icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--bg-surface);
+  border: 1.5px solid rgba(23, 43, 77, 0.28);
+  color: var(--text-heading);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  position: relative;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.nb-icon-btn:hover {
+  background-color: var(--accent-gold-subtle);
+  border-color: var(--accent-gold);
+  color: var(--accent-gold);
+  transform: translateY(-1px);
+  box-shadow: 0 3px 8px rgba(185, 154, 98, 0.22);
+}
+
+[data-theme="dark"] .nb-icon-btn {
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1.5px solid rgba(185, 154, 98, 0.5);
+  color: #F8FAFC;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .nb-icon-btn:hover {
+  background-color: rgba(185, 154, 98, 0.22);
+  border-color: var(--accent-gold);
+  color: var(--accent-gold);
+}
+
+.nb-dir-label {
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: inherit;
+}
+
+/* Consultation Nav Button */
+.nb-nav-cta {
+  padding: 0.7rem 1.4rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  background-color: var(--color-primary-navy);
+  color: #FFFFFF !important;
+  border: 1.5px solid var(--color-primary-navy);
+  border-radius: 4px;
+  transition: all var(--transition-fast);
+  box-shadow: 0 2px 5px rgba(16, 30, 53, 0.18);
+}
+
+.nb-nav-cta:hover {
+  background-color: var(--color-midnight-blue);
+  border-color: var(--color-midnight-blue);
+  color: #FFFFFF !important;
+  box-shadow: 0 4px 12px rgba(16, 30, 53, 0.3);
+  transform: translateY(-1px);
+}
+
+[data-theme="dark"] .nb-nav-cta {
+  background-color: var(--accent-gold);
+  color: #111A27 !important;
+  border-color: var(--accent-gold);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+[data-theme="dark"] .nb-nav-cta:hover {
+  background-color: var(--accent-gold-hover);
+  border-color: var(--accent-gold-hover);
+  color: #111A27 !important;
+}
+
+/* --------------------------------------------------------------------------
+   6. TABLET & MOBILE NAVBAR RESPONSIVE RULES (COLLAPSE <= 1280PX)
+   Per User Rules:
+   - Desktop (1281px+): Logo | All Menus | Dark | RTL | Consultation
+   - Tablet (768px - 1280px): Logo | Dark | RTL | Hamburger
+   - Mobile (< 768px): Logo | Dark | RTL | Hamburger
+   -------------------------------------------------------------------------- */
+.nb-mobile-controls {
+  display: none;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nb-hamburger-btn {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 42px;
+  height: 42px;
+  background-color: var(--bg-surface);
+  border: 1.5px solid rgba(23, 43, 77, 0.28);
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 0;
+  gap: 5px;
+  color: var(--text-heading);
+  transition: all var(--transition-fast);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.nb-hamburger-btn:hover {
+  background-color: var(--accent-gold-subtle);
+  border-color: var(--accent-gold);
+  color: var(--accent-gold);
+}
+
+[data-theme="dark"] .nb-hamburger-btn {
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1.5px solid rgba(185, 154, 98, 0.5);
+  color: #F8FAFC;
+}
+
+[data-theme="dark"] .nb-hamburger-btn:hover {
+  background-color: rgba(185, 154, 98, 0.22);
+  border-color: var(--accent-gold);
+  color: var(--accent-gold);
+}
+
+.nb-hamburger-bar {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: currentColor;
+  border-radius: 1px;
+  transition: transform var(--transition-fast), opacity var(--transition-fast);
+}
+
+@media (max-width: 1280px) {
+  .nb-navbar-container {
+    height: var(--nav-height-tablet);
+    padding-inline: 1.5rem;
+  }
+
+  .nb-desktop-nav {
+    display: none !important;
+  }
+
+  .nb-desktop-controls {
+    display: none !important;
+  }
+
+  .nb-mobile-controls {
+    display: flex;
+  }
+}
+
+@media (max-width: 767px) {
+  .nb-navbar-container {
+    height: var(--nav-height-mobile);
+    padding-inline: 1rem;
+    gap: 0.5rem;
+  }
+
+  .nb-brand-logo {
+    height: 32px;
+    max-width: 175px;
+  }
+
+  .nb-icon-btn {
+    width: 36px;
+    height: 36px;
+  }
+
+  .nb-hamburger-btn {
+    width: 38px;
+    height: 38px;
+  }
+}
+
+@media (max-width: 420px) {
+  .nb-navbar-container {
+    padding-inline: 0.75rem;
+  }
+
+  .nb-brand-logo {
+    height: 28px;
+    max-width: 140px;
+  }
+
+  .nb-mobile-controls {
+    gap: 0.35rem;
+  }
+
+  .nb-icon-btn {
+    width: 32px;
+    height: 32px;
+  }
+
+  .nb-hamburger-btn {
+    width: 34px;
+    height: 34px;
+  }
+}
+
+@media (max-width: 340px) {
+  .nb-brand-logo {
+    height: 25px;
+    max-width: 120px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   7. FULL DRAWER HAMBURGER MENU (MOBILE & TABLET)
+   Per Global User Rules:
+   - Full Width Drawer Menu
+   - Smooth Slide Animation
+   - Scrollable Menu
+   - Contains ALL navigation items & dropdowns
+   - Dark Mode & RTL Toggles inside drawer as well
+   - Consultation Button
+   - Close Button (X)
+   -------------------------------------------------------------------------- */
+.nb-drawer-backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(16, 30, 53, 0.6);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  z-index: 1998;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--transition-smooth), visibility var(--transition-smooth);
+}
+
+.nb-drawer-backdrop.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.nb-drawer {
+  position: fixed;
+  top: 0;
+  inset-inline-end: 0;
+  width: 100%;
+  max-width: 440px;
+  height: 100vh;
+  height: 100dvh;
+  background-color: var(--bg-surface);
+  border-inline-start: 1px solid var(--border-color);
+  box-shadow: var(--shadow-lg);
+  z-index: 1999;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(100%);
+  visibility: hidden;
+  pointer-events: none;
+  transition: transform var(--transition-smooth), visibility var(--transition-smooth);
+  overflow: hidden;
+}
+
+[dir="rtl"] .nb-drawer {
+  transform: translateX(-100%);
+}
+
+.nb-drawer.active {
+  transform: translateX(0);
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.nb-drawer-header {
+  height: var(--nav-height-mobile);
+  padding-inline: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border-color);
+  flex-shrink: 0;
+}
+
+.nb-drawer-close-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid var(--border-color);
+  color: var(--text-main);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.nb-drawer-close-btn:hover {
+  background-color: var(--bg-secondary);
+  border-color: var(--accent-gold);
+  color: var(--accent-gold);
+}
+
+.nb-drawer-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.nb-drawer-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.nb-drawer-item {
+  border-bottom: 1px solid var(--border-subtle);
+  padding-bottom: 0.35rem;
+}
+
+.nb-drawer-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 0.5rem;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--text-main);
+  border-radius: 4px;
+  transition: all var(--transition-fast);
+}
+
+.nb-drawer-link:hover,
+.nb-drawer-link.active {
+  color: var(--accent-gold);
+  background-color: var(--bg-secondary);
+  padding-inline-start: 0.85rem;
+}
+
+/* Mobile Accordion Dropdowns */
+.nb-drawer-toggle-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-family: inherit;
+  text-align: inherit;
+}
+
+.nb-drawer-toggle-icon {
+  font-size: 0.8rem;
+  transition: transform var(--transition-fast);
+}
+
+.nb-drawer-subnav {
+  list-style: none;
+  margin: 0;
+  padding-inline-start: 1.25rem;
+  padding-bottom: 0.5rem;
+  display: none;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.nb-drawer-subnav.active {
+  display: flex;
+}
+
+.nb-drawer-sublink {
+  display: block;
+  padding: 0.5rem 0.5rem;
+  font-size: 0.92rem;
+  font-weight: 400;
+  color: var(--text-secondary);
+  border-radius: 4px;
+  transition: all var(--transition-fast);
+}
+
+.nb-drawer-sublink:hover,
+.nb-drawer-sublink.active {
+  color: var(--accent-gold);
+  background-color: var(--bg-secondary);
+  padding-inline-start: 0.85rem;
+}
+
+/* Drawer Footer Controls */
+.nb-drawer-footer {
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  flex-shrink: 0;
+}
+
+.nb-drawer-toggles-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.nb-drawer-toggle-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-main);
+  background: none;
+  border: 1px solid var(--border-color);
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  flex: 1;
+  justify-content: center;
+  transition: all var(--transition-fast);
+}
+
+.nb-drawer-toggle-item:hover {
+  background-color: var(--bg-secondary);
+  border-color: var(--accent-gold);
+}
+
+.nb-drawer-cta {
+  width: 100%;
+  text-align: center;
+  padding: 0.9rem;
+}
+
+/* --------------------------------------------------------------------------
+   8. SHARED FOOTER
+   -------------------------------------------------------------------------- */
+.nb-footer {
+  background-color: var(--footer-bg);
+  color: var(--footer-text);
+  padding-top: 5.5rem;
+  padding-bottom: 2.5rem;
+  position: relative;
+  border-top: 1px solid var(--footer-border);
+  margin-top: auto;
+}
+
+.nb-footer-container {
+  max-width: 1440px;
+  margin-inline: auto;
+  padding-inline: 2rem;
+}
+
+.nb-footer-top {
+  display: grid;
+  grid-template-columns: 1.8fr 1fr 1fr 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+
+@media (max-width: 1199px) {
+  .nb-footer-top {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .nb-footer-top {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
+
+.nb-footer-brand-col {
+  max-width: 360px;
+}
+
+.nb-footer-logo {
+  height: 42px;
+  width: auto;
+  margin-bottom: 1.25rem;
+}
+
+.nb-footer-tagline {
+  font-family: var(--font-body);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-muted-gold);
+  margin-bottom: 1rem;
+}
+
+.nb-footer-desc {
+  font-size: 0.92rem;
+  line-height: 1.7;
+  color: var(--footer-text);
+  margin-bottom: 1.5rem;
+}
+
+.nb-footer-col-title {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--footer-heading);
+  margin-bottom: 1.35rem;
+  letter-spacing: 0.02em;
+}
+
+.nb-footer-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.nb-footer-link {
+  font-size: 0.9rem;
+  color: var(--footer-text);
+  transition: color var(--transition-fast), padding var(--transition-fast);
+  display: inline-block;
+}
+
+.nb-footer-link:hover {
+  color: #FFFFFF;
+  padding-inline-start: 4px;
+}
+
+/* Newsletter Section Inside Footer */
+.nb-footer-newsletter-card {
+  background-color: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--footer-border);
+  border-radius: 8px;
+  padding: 2.25rem;
+  margin-bottom: 3.5rem;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+@media (max-width: 900px) {
+  .nb-footer-newsletter-card {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1.75rem;
+  }
+}
+
+.nb-newsletter-heading {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  color: var(--footer-heading);
+  margin-bottom: 0.5rem;
+}
+
+.nb-newsletter-desc {
+  font-size: 0.92rem;
+  color: var(--footer-text);
+  margin-bottom: 0;
+}
+
+.nb-newsletter-form {
+  display: flex;
+  gap: 0.65rem;
+  flex-wrap: wrap;
+}
+
+.nb-newsletter-input {
+  flex: 1;
+  min-width: 220px;
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  padding: 0.8rem 1.15rem;
+  font-size: 0.9rem;
+  color: #FFFFFF;
+  outline: none;
+  transition: border-color var(--transition-fast);
+}
+
+.nb-newsletter-input:focus {
+  border-color: var(--color-muted-gold);
+}
+
+.nb-newsletter-input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.nb-newsletter-btn {
+  background-color: var(--color-muted-gold);
+  color: #FFFFFF;
+  border: none;
+  border-radius: 4px;
+  padding: 0.8rem 1.4rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color var(--transition-fast);
+}
+
+.nb-newsletter-btn:hover {
+  background-color: var(--color-muted-gold-hover);
+}
+
+.nb-newsletter-notice {
+  width: 100%;
+  font-size: 0.78rem;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 0.4rem;
+  display: none;
+}
+
+/* Social & Bottom Bar */
+.nb-footer-middle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 1.5rem;
+  border-top: 1px solid var(--footer-border);
+  border-bottom: 1px solid var(--footer-border);
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.nb-social-group {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.nb-social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--footer-border);
+  color: var(--footer-text);
+  transition: all var(--transition-fast);
+}
+
+.nb-social-link:hover {
+  background-color: var(--color-muted-gold);
+  border-color: var(--color-muted-gold);
+  color: #FFFFFF;
+  transform: translateY(-2px);
+}
+
+.nb-footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: var(--footer-text);
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.nb-footer-legal-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.nb-back-to-top {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--footer-text);
+  font-weight: 500;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 0.85rem;
+  transition: color var(--transition-fast);
+}
+
+.nb-back-to-top:hover {
+  color: var(--color-muted-gold);
+}
+
+/* --------------------------------------------------------------------------
+   9. RTL LOGICAL RULES & STYLING
+   -------------------------------------------------------------------------- */
+[dir="rtl"] {
+  text-align: right;
+}
+
+[dir="rtl"] .section-heading,
+[dir="rtl"] .section-intro,
+[dir="rtl"] .cta-group-centred {
+  text-align: center;
+}
+
+[dir="rtl"] .nb-desktop-controls {
+  flex-direction: row;
+}
+
+[dir="rtl"] .nb-footer-link:hover {
+  padding-inline-start: 4px;
+}
+
+/* Logical mirror for SVG icons with directional significance */
+[dir="rtl"] .icon-flip-rtl {
+  transform: scaleX(-1);
+}

@@ -1,0 +1,800 @@
+/* ==========================================================================
+   NORTHBRIDGE VALUATION & ADVISORY — ABOUT PAGE STYLESHEET
+   Unique styling for about.html (Corporate profile & brand philosophy)
+   Zero repetition from Home 1 and Home 2:
+   - Editorial brand introduction hero with wide letterbox photo below title
+   - Two-column typographic identity statement with fine gold divider
+   - Statement-led philosophy section on Deep Navy #172B4D
+   - Refined 5-row guiding principles layout with architectural columns
+   - Central visual + 4 connected dimensions for Business Value Perspective
+   - Document-inspired 4-column working approach
+   - Interactive 5-question editorial accordion
+   - Minimal sculptural stone wall signature closing CTA
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   SECTION 01: #about-hero (Editorial Brand Introduction Hero)
+   -------------------------------------------------------------------------- */
+#about-hero {
+  background-color: var(--bg-primary);
+  padding-top: clamp(4rem, 7vw, 6.5rem);
+  padding-bottom: clamp(4rem, 6.5vw, 6rem);
+  border-bottom: 1px solid var(--border-color);
+  text-align: center;
+}
+
+.about-hero-header {
+  max-width: 860px;
+  margin-inline: auto;
+  margin-bottom: 2.5rem;
+}
+
+.about-hero-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2.4rem, 4.3vw, 3.8rem);
+  font-weight: 400;
+  line-height: 1.18;
+  color: var(--text-heading);
+  margin-bottom: 1.25rem;
+  letter-spacing: -0.015em;
+}
+
+.about-hero-desc {
+  font-family: var(--font-body);
+  font-size: clamp(1.05rem, 1.35vw, 1.22rem);
+  line-height: 1.75;
+  color: var(--text-secondary);
+  max-width: 700px;
+  margin-inline: auto;
+  margin-bottom: 2rem;
+}
+
+.about-hero-tagline {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent-gold);
+  margin-bottom: 2rem;
+  display: block;
+}
+
+/* Wide Horizontal Letterbox Image Below Title */
+.about-hero-media-wrap {
+  max-width: 1200px;
+  margin-inline: auto;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border-color);
+  aspect-ratio: 21 / 9;
+  background-color: var(--bg-secondary);
+  margin-bottom: 2.5rem;
+}
+
+.about-hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .about-hero-media-wrap {
+    aspect-ratio: 16 / 9;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 02: #our-identity (Our Identity)
+   Background: White. Typographic brand identity statement.
+   Two editorial blocks (Purpose & Perspective) + asymmetric material photo.
+   -------------------------------------------------------------------------- */
+#our-identity {
+  background-color: var(--bg-surface);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.identity-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: clamp(2.5rem, 5vw, 4.5rem);
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.identity-content-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.identity-block {
+  padding-block: 1.75rem;
+}
+
+.identity-block:first-child {
+  padding-top: 0;
+}
+
+.identity-block:last-child {
+  padding-bottom: 0;
+}
+
+.identity-block-divider {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, var(--accent-gold), rgba(185, 154, 98, 0.2));
+  margin-block: 1rem;
+}
+
+.identity-block-label {
+  font-family: var(--font-body);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent-gold);
+  margin-bottom: 0.65rem;
+}
+
+.identity-block-title {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  color: var(--text-heading);
+  margin-bottom: 0.85rem;
+  line-height: 1.3;
+}
+
+.identity-block-desc {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.identity-media-col {
+  position: relative;
+}
+
+.identity-img-frame {
+  position: relative;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-md);
+  aspect-ratio: 4 / 3;
+}
+
+.identity-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-smooth);
+}
+
+.identity-img-frame:hover .identity-img {
+  transform: scale(1.03);
+}
+
+@media (max-width: 991px) {
+  .identity-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 03: #our-philosophy (Our Philosophy)
+   Background: Deep Navy #172B4D. Statement-led philosophy section.
+   -------------------------------------------------------------------------- */
+#our-philosophy {
+  background-color: var(--color-primary-navy);
+  color: #FFFFFF;
+  border-bottom: 1px solid rgba(225, 229, 234, 0.1);
+}
+
+#our-philosophy .section-heading {
+  color: #FFFFFF;
+}
+
+#our-philosophy .section-intro {
+  color: #EAF0F7;
+  opacity: 0.9;
+}
+
+.philosophy-grid {
+  display: grid;
+  grid-template-columns: 1.25fr 0.85fr;
+  gap: clamp(2.5rem, 5vw, 4.5rem);
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.philosophy-statements-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.philosophy-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(185, 154, 98, 0.25);
+  border-radius: 6px;
+  transition: transform var(--transition-fast), border-color var(--transition-fast), background-color var(--transition-fast);
+}
+
+.philosophy-card:hover {
+  transform: translateX(6px);
+  border-color: var(--accent-gold);
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+[dir="rtl"] .philosophy-card:hover {
+  transform: translateX(-6px);
+}
+
+.philosophy-num {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(185, 154, 98, 0.15);
+  border: 1px solid var(--accent-gold);
+  color: var(--accent-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-body);
+  font-size: 0.92rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.philosophy-body {
+  flex: 1;
+}
+
+.philosophy-title {
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  color: #FFFFFF;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.04em;
+}
+
+.philosophy-desc {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #EAF0F7;
+  margin: 0;
+  opacity: 0.9;
+}
+
+.philosophy-media-col {
+  position: relative;
+}
+
+.philosophy-img-frame {
+  position: relative;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid rgba(185, 154, 98, 0.3);
+  box-shadow: var(--shadow-lg);
+  aspect-ratio: 4 / 3;
+}
+
+.philosophy-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 991px) {
+  .philosophy-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 04: #guiding-principles (Our Guiding Principles)
+   Background: Soft Ivory #F7F7F3.
+   5 numbered editorial rows + architectural columns photo.
+   -------------------------------------------------------------------------- */
+#guiding-principles {
+  background-color: var(--bg-primary);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.principles-layout-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: clamp(2.5rem, 5vw, 4.5rem);
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.principles-rows-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.principle-row-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding-block: 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+  transition: padding-inline-start var(--transition-fast);
+}
+
+.principle-row-item:first-child {
+  padding-top: 0;
+}
+
+.principle-row-item:last-child {
+  border-bottom: none;
+}
+
+.principle-row-item:hover {
+  padding-inline-start: 6px;
+}
+
+.principle-num {
+  font-family: var(--font-body);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--accent-gold);
+  line-height: 1.2;
+  flex-shrink: 0;
+}
+
+.principle-body {
+  flex: 1;
+}
+
+.principle-title {
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  color: var(--text-heading);
+  margin-bottom: 0.35rem;
+}
+
+.principle-desc {
+  font-size: 0.94rem;
+  line-height: 1.65;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.principles-media-col {
+  position: relative;
+}
+
+.principles-img-frame {
+  position: relative;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-md);
+  aspect-ratio: 4 / 3;
+}
+
+.principles-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-smooth);
+}
+
+.principles-img-frame:hover .principles-img {
+  transform: scale(1.03);
+}
+
+@media (max-width: 991px) {
+  .principles-layout-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 05: #business-value-perspective (How We Think About Business Value)
+   Background: White.
+   Central top-down analyst desk photo with 4 surrounding connected dimensions.
+   -------------------------------------------------------------------------- */
+#business-value-perspective {
+  background-color: var(--bg-surface);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.dimensions-infographic-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.dimensions-col {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.dimension-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 1.75rem;
+  box-shadow: var(--shadow-xs);
+  transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
+  position: relative;
+}
+
+.dimension-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent-gold);
+  box-shadow: var(--shadow-sm);
+}
+
+.dimension-badge {
+  font-family: var(--font-body);
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent-gold);
+  margin-bottom: 0.5rem;
+}
+
+.dimension-title {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  color: var(--text-heading);
+  margin-bottom: 0.5rem;
+  line-height: 1.35;
+}
+
+.dimension-desc {
+  font-size: 0.92rem;
+  line-height: 1.65;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+/* Center Image Frame */
+.dimensions-center-media {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-md);
+  aspect-ratio: 1 / 1;
+}
+
+.dimensions-center-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-smooth);
+}
+
+.dimensions-center-media:hover .dimensions-center-img {
+  transform: scale(1.03);
+}
+
+.dimensions-center-caption {
+  position: absolute;
+  bottom: 1.25rem;
+  inset-inline-start: 1.25rem;
+  inset-inline-end: 1.25rem;
+  background-color: rgba(23, 43, 77, 0.92);
+  backdrop-filter: blur(8px);
+  padding: 0.85rem 1.25rem;
+  border-radius: 4px;
+  border-inline-start: 3px solid var(--accent-gold);
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.dimensions-caption-text {
+  font-size: 0.84rem;
+  font-weight: 500;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+@media (max-width: 991px) {
+  .dimensions-infographic-wrap {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .dimensions-center-media {
+    order: -1;
+    aspect-ratio: 16 / 9;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 06: #working-approach (Our Working Approach)
+   Background: Pale Blue #EAF0F7.
+   4 vertical columns with a connecting document-inspired line + documents photo.
+   -------------------------------------------------------------------------- */
+#working-approach {
+  background-color: var(--color-pale-blue);
+  border-bottom: 1px solid var(--border-color);
+}
+
+[data-theme="dark"] #working-approach {
+  background-color: #172438;
+}
+
+.approach-document-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.75rem;
+  margin-top: 2rem;
+  margin-bottom: 3.5rem;
+  position: relative;
+}
+
+.approach-doc-col {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.approach-doc-col:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent-gold);
+  box-shadow: var(--shadow-sm);
+}
+
+.approach-step-indicator {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 4px;
+  background-color: var(--accent-gold);
+  color: #FFFFFF;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+}
+
+.approach-doc-title {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  color: var(--text-heading);
+  margin-bottom: 0.75rem;
+  line-height: 1.35;
+}
+
+.approach-doc-desc {
+  font-size: 0.92rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+/* Supporting Working Approach Document Image */
+.approach-media-banner {
+  max-width: 1080px;
+  margin-inline: auto;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-md);
+  aspect-ratio: 21 / 9;
+}
+
+.approach-media-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 991px) {
+  .approach-document-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .approach-document-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .approach-media-banner {
+    aspect-ratio: 16 / 9;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 07: #key-questions (The Questions We Help Explore)
+   Background: Soft Ivory #F7F7F3.
+   Refined interactive 5-question accordion with smooth transitions.
+   -------------------------------------------------------------------------- */
+#key-questions {
+  background-color: var(--bg-primary);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.questions-accordion-container {
+  max-width: 860px;
+  margin-inline: auto;
+  margin-top: 2rem;
+  margin-bottom: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.qa-item {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  overflow: hidden;
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.qa-item.active {
+  border-color: var(--accent-gold);
+  box-shadow: var(--shadow-sm);
+}
+
+.qa-trigger-btn {
+  width: 100%;
+  text-align: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+  padding: 1.35rem 1.75rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text-heading);
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  line-height: 1.35;
+  transition: color var(--transition-fast);
+}
+
+.qa-trigger-btn:hover {
+  color: var(--color-professional-blue);
+}
+
+[data-theme="dark"] .qa-trigger-btn:hover {
+  color: var(--accent-gold);
+}
+
+.qa-toggle-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  color: var(--accent-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.15rem;
+  font-weight: 600;
+  flex-shrink: 0;
+  transition: transform var(--transition-fast), background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.qa-item.active .qa-toggle-icon {
+  transform: rotate(45deg);
+  background-color: var(--accent-gold);
+  color: #FFFFFF;
+}
+
+.qa-answer-panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s cubic-bezier(0.16, 1, 0.3, 1), padding 0.35s ease;
+  padding-inline: 1.75rem;
+  padding-bottom: 0;
+}
+
+.qa-item.active .qa-answer-panel {
+  padding-bottom: 1.5rem;
+}
+
+.qa-answer-text {
+  font-size: 0.98rem;
+  line-height: 1.75;
+  color: var(--text-secondary);
+  margin: 0;
+  border-top: 1px solid var(--border-subtle);
+  padding-top: 1rem;
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 08: #about-closing (Brand Closing Statement)
+   Background: Deep Navy #101E35.
+   Quiet architectural interior with sculptural stone wall, natural light.
+   -------------------------------------------------------------------------- */
+#about-closing {
+  position: relative;
+  background-color: #101E35;
+  color: #FFFFFF;
+  padding-block: clamp(6rem, 9vw, 9rem);
+  overflow: hidden;
+}
+
+.about-closing-bg-layer {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.about-closing-bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.18;
+}
+
+.about-closing-overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(16, 30, 53, 0.88) 0%, rgba(10, 18, 32, 0.97) 100%);
+  z-index: 2;
+}
+
+.about-closing-content {
+  position: relative;
+  z-index: 3;
+  max-width: 820px;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.about-closing-eyebrow {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--accent-gold);
+  margin-bottom: 1.25rem;
+  display: block;
+}
+
+.about-closing-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2.2rem, 4vw, 3.5rem);
+  font-weight: 400;
+  color: #FFFFFF;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.015em;
+}
+
+.about-closing-desc {
+  font-size: clamp(1.05rem, 1.35vw, 1.2rem);
+  line-height: 1.75;
+  color: #EAF0F7;
+  max-width: 680px;
+  margin-inline: auto;
+  margin-bottom: 2.75rem;
+  opacity: 0.95;
+}

@@ -1,0 +1,913 @@
+/* ==========================================================================
+   NORTHBRIDGE VALUATION & ADVISORY — SERVICES PAGE STYLESHEET
+   Unique styling for services.html (Service Portfolio & Advisory Capabilities)
+   Zero repetition from Home 1, Home 2, or About:
+   - Deep navy hero with vertical architectural photograph & index motif
+   - Numbered service directory catalogue (2-column editorial layout)
+   - Asymmetric business valuation feature with report-style cards
+   - Buy-side vs Sell-side opposing perspectives with central meeting table
+   - Document-led financial due diligence analytical rows
+   - Side-by-side financial analysis & modelling dual-panel showcase
+   - Deep navy transaction support with horizontal information rows
+   - Abstract architectural layered materials closing consultation
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   GLOBAL SECTION HEADER & CENTRED CTA RULES FOR SERVICES PAGE
+   -------------------------------------------------------------------------- */
+.nb-section-header {
+  text-align: center;
+  max-width: 820px;
+  margin-inline: auto;
+  margin-bottom: 3rem;
+}
+
+.nb-section-header .section-heading,
+.nb-section-header .section-intro {
+  text-align: center;
+  margin-inline: auto;
+}
+
+.section-cta-group,
+.cta-group-centred {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-inline: auto;
+  text-align: center;
+  width: 100%;
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 01: #services-hero (Service Directory Hero)
+   -------------------------------------------------------------------------- */
+#services-hero {
+  background-color: var(--color-primary-navy);
+  color: #FFFFFF;
+  padding-top: clamp(4.5rem, 7.5vw, 6.5rem);
+  padding-bottom: clamp(4rem, 6.5vw, 6rem);
+  border-bottom: 1px solid rgba(225, 229, 234, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.services-hero-grid {
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr;
+  gap: clamp(2.5rem, 5vw, 4.5rem);
+  align-items: center;
+}
+
+.services-hero-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.services-hero-eyebrow {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent-gold);
+  margin-bottom: 1.25rem;
+}
+
+.services-hero-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2.3rem, 4.2vw, 3.8rem);
+  font-weight: 400;
+  line-height: 1.18;
+  color: #FFFFFF;
+  margin-bottom: 1.35rem;
+  letter-spacing: -0.015em;
+}
+
+.services-hero-desc {
+  font-family: var(--font-body);
+  font-size: clamp(1.05rem, 1.35vw, 1.2rem);
+  line-height: 1.75;
+  color: #EAF0F7;
+  max-width: 660px;
+  margin-bottom: 2.25rem;
+  opacity: 0.95;
+}
+
+/* Service Quick Index Motif */
+.services-hero-index-motif {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-bottom: 2.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(185, 154, 98, 0.25);
+}
+
+.hero-index-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0.9rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(185, 154, 98, 0.3);
+  border-radius: 4px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: #EAF0F7;
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+
+.hero-index-pill:hover {
+  background-color: var(--accent-gold);
+  border-color: var(--accent-gold);
+  color: #101E35;
+  transform: translateY(-1px);
+}
+
+.hero-index-pill-num {
+  font-weight: 700;
+  color: var(--accent-gold);
+  font-size: 0.75rem;
+}
+
+.hero-index-pill:hover .hero-index-pill-num {
+  color: #101E35;
+}
+
+/* Vertical Architectural Image (Right) */
+.services-hero-media {
+  position: relative;
+}
+
+.services-hero-img-frame {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid rgba(185, 154, 98, 0.3);
+  box-shadow: var(--shadow-lg);
+  aspect-ratio: 3 / 4;
+}
+
+.services-hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 991px) {
+  .services-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .services-hero-content {
+    text-align: center;
+    align-items: center;
+  }
+
+  .services-hero-index-motif {
+    justify-content: center;
+  }
+
+  .services-hero-img-frame {
+    max-width: 480px;
+    margin-inline: auto;
+    aspect-ratio: 16 / 10;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 02: #service-directory (Service Directory Catalogue)
+   Background: Soft Ivory #F7F7F3.
+   Two-column editorial directory with large gold numbers.
+   -------------------------------------------------------------------------- */
+#service-directory {
+  background-color: var(--bg-primary);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.service-directory-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.75rem;
+  margin-top: 2rem;
+}
+
+.dir-card-item {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: clamp(1.5rem, 2.5vw, 2.25rem);
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  text-decoration: none;
+  color: inherit;
+  transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.dir-card-item:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent-gold);
+  box-shadow: var(--shadow-sm);
+  color: inherit;
+}
+
+.dir-num {
+  font-family: var(--font-body);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--accent-gold);
+  line-height: 1;
+  padding-top: 0.15rem;
+  flex-shrink: 0;
+}
+
+.dir-body {
+  flex: 1;
+}
+
+.dir-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.65rem;
+}
+
+.dir-title {
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  color: var(--text-heading);
+  margin: 0;
+  line-height: 1.3;
+}
+
+.dir-arrow {
+  color: var(--accent-gold);
+  font-size: 1.1rem;
+  transition: transform var(--transition-fast);
+}
+
+.dir-card-item:hover .dir-arrow {
+  transform: translateX(4px);
+}
+
+[dir="rtl"] .dir-card-item:hover .dir-arrow {
+  transform: translateX(-4px);
+}
+
+.dir-desc {
+  font-size: 0.94rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .service-directory-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 03: #business-valuation (Business Valuation Feature)
+   Background: White. Asymmetric financial report-inspired layout.
+   -------------------------------------------------------------------------- */
+#business-valuation {
+  background-color: var(--bg-surface);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.service-feature-grid {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: clamp(2.5rem, 5vw, 4.5rem);
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 3.5rem;
+}
+
+.service-feature-media {
+  position: relative;
+}
+
+.service-feature-img-frame {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-md);
+  aspect-ratio: 4 / 3;
+}
+
+.service-feature-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-smooth);
+}
+
+.service-feature-img-frame:hover .service-feature-img {
+  transform: scale(1.03);
+}
+
+.service-feature-badge {
+  position: absolute;
+  bottom: 1.25rem;
+  inset-inline-start: 1.25rem;
+  background-color: rgba(23, 43, 77, 0.92);
+  backdrop-filter: blur(8px);
+  padding: 0.75rem 1.25rem;
+  border-radius: 4px;
+  border-inline-start: 3px solid var(--accent-gold);
+  color: #FFFFFF;
+}
+
+.service-badge-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent-gold);
+  margin-bottom: 0.15rem;
+}
+
+.service-badge-text {
+  font-size: 0.84rem;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.service-feature-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.service-subheading {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  color: var(--text-heading);
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.service-points-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.service-point-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 1.25rem;
+  transition: border-color var(--transition-fast);
+}
+
+.service-point-card:hover {
+  border-color: var(--accent-gold);
+}
+
+.service-point-title {
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--color-primary-navy);
+  margin-bottom: 0.35rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+[data-theme="dark"] .service-point-title {
+  color: var(--accent-gold);
+}
+
+.service-point-desc {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+/* Relevant Situations Pills */
+.service-situations-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 2rem;
+}
+
+.service-situation-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.84rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  background-color: var(--bg-secondary);
+  padding: 0.4rem 0.85rem;
+  border-radius: 4px;
+}
+
+.service-situation-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--accent-gold);
+}
+
+@media (max-width: 991px) {
+  .service-feature-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .service-points-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 04: #ma-advisory (Mergers & Acquisitions Advisory)
+   Background: Pale Blue #EAF0F7.
+   Two opposing perspectives: Buy-side vs Sell-side + meeting table photo.
+   -------------------------------------------------------------------------- */
+#ma-advisory {
+  background-color: var(--color-pale-blue);
+  border-bottom: 1px solid var(--border-color);
+}
+
+[data-theme="dark"] #ma-advisory {
+  background-color: #172438;
+}
+
+.ma-perspectives-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.ma-side-panel {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: clamp(1.75rem, 3vw, 2.5rem);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+}
+
+.ma-side-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+  margin-bottom: 1.25rem;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.ma-side-title {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  color: var(--text-heading);
+  margin: 0;
+}
+
+.ma-side-tag {
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent-gold);
+  background-color: var(--bg-secondary);
+  padding: 0.25rem 0.65rem;
+  border-radius: 3px;
+}
+
+.ma-checklist {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.ma-check-item {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+}
+
+.ma-check-icon {
+  color: var(--accent-gold);
+  flex-shrink: 0;
+}
+
+/* M&A Center Photo Banner */
+.ma-banner-wrap {
+  max-width: 1080px;
+  margin-inline: auto;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-md);
+  aspect-ratio: 21 / 9;
+  margin-bottom: 3rem;
+}
+
+.ma-banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .ma-perspectives-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ma-banner-wrap {
+    aspect-ratio: 16 / 9;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 05: #financial-due-diligence (Financial Due Diligence)
+   Background: White.
+   Document-led 5 information rows + accounting workspace photo.
+   -------------------------------------------------------------------------- */
+#financial-due-diligence {
+  background-color: var(--bg-surface);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.diligence-layout-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: clamp(2.5rem, 5vw, 4.5rem);
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 3.5rem;
+}
+
+.diligence-rows-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.diligence-row-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  padding: 1.25rem 1.5rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.diligence-row-card:hover {
+  transform: translateX(6px);
+  border-color: var(--accent-gold);
+  box-shadow: var(--shadow-sm);
+}
+
+[dir="rtl"] .diligence-row-card:hover {
+  transform: translateX(-6px);
+}
+
+.diligence-num {
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--accent-gold);
+  line-height: 1.2;
+  flex-shrink: 0;
+}
+
+.diligence-body {
+  flex: 1;
+}
+
+.diligence-title {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  color: var(--text-heading);
+  margin-bottom: 0.35rem;
+  line-height: 1.3;
+}
+
+.diligence-desc {
+  font-size: 0.92rem;
+  line-height: 1.65;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+@media (max-width: 991px) {
+  .diligence-layout-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 06: #financial-analysis (Financial Analysis & Modelling)
+   Background: Soft Ivory #F7F7F3.
+   Side-by-side dual panel showcase with contrasting images.
+   -------------------------------------------------------------------------- */
+#financial-analysis {
+  background-color: var(--bg-primary);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.analysis-dual-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.25rem;
+  margin-top: 2rem;
+  margin-bottom: 3.5rem;
+}
+
+.analysis-panel-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-base);
+}
+
+.analysis-panel-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--accent-gold);
+}
+
+.analysis-panel-media {
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  position: relative;
+}
+
+.analysis-panel-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-smooth);
+}
+
+.analysis-panel-card:hover .analysis-panel-img {
+  transform: scale(1.03);
+}
+
+.analysis-panel-body {
+  padding: clamp(1.75rem, 3vw, 2.5rem);
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.analysis-panel-cat {
+  font-family: var(--font-body);
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent-gold);
+  margin-bottom: 0.65rem;
+}
+
+.analysis-panel-title {
+  font-family: var(--font-heading);
+  font-size: 1.45rem;
+  color: var(--text-heading);
+  margin-bottom: 0.85rem;
+  line-height: 1.3;
+}
+
+.analysis-panel-desc {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.analysis-considerations-box {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  border-radius: 6px;
+  padding: 1.25rem;
+  margin-top: auto;
+}
+
+.analysis-considerations-title {
+  font-family: var(--font-body);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent-gold);
+  margin-bottom: 0.65rem;
+}
+
+.analysis-considerations-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.analysis-consideration-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+}
+
+.analysis-bullet {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--accent-gold);
+  flex-shrink: 0;
+}
+
+@media (max-width: 900px) {
+  .analysis-dual-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 07: #transaction-support (Transaction Support)
+   Background: Deep Navy #172B4D.
+   4 horizontal information rows + document folder photo.
+   -------------------------------------------------------------------------- */
+#transaction-support {
+  background-color: var(--color-primary-navy);
+  color: #FFFFFF;
+  border-bottom: 1px solid rgba(225, 229, 234, 0.1);
+}
+
+#transaction-support .section-heading {
+  color: #FFFFFF;
+}
+
+#transaction-support .section-intro {
+  color: #EAF0F7;
+  opacity: 0.9;
+}
+
+.support-layout-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: clamp(2.5rem, 5vw, 4.5rem);
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 3.5rem;
+}
+
+.support-rows-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.support-row-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.35rem;
+  padding: 1.35rem 1.6rem;
+  background-color: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(185, 154, 98, 0.25);
+  border-radius: 6px;
+  transition: transform var(--transition-fast), border-color var(--transition-fast), background-color var(--transition-fast);
+}
+
+.support-row-item:hover {
+  transform: translateX(6px);
+  border-color: var(--accent-gold);
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+[dir="rtl"] .support-row-item:hover {
+  transform: translateX(-6px);
+}
+
+.support-num {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(185, 154, 98, 0.15);
+  border: 1px solid var(--accent-gold);
+  color: var(--accent-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.support-body {
+  flex: 1;
+}
+
+.support-title {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  color: #FFFFFF;
+  margin-bottom: 0.4rem;
+  letter-spacing: 0.04em;
+}
+
+.support-desc {
+  font-size: 0.92rem;
+  line-height: 1.65;
+  color: #EAF0F7;
+  margin: 0;
+  opacity: 0.9;
+}
+
+@media (max-width: 991px) {
+  .support-layout-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 08: #services-consultation (Final Service Consultation)
+   Background: Soft Ivory #F7F7F3.
+   Centered content with abstract architectural layered composition.
+   -------------------------------------------------------------------------- */
+#services-consultation {
+  background-color: var(--bg-primary);
+  border-bottom: 1px solid var(--border-color);
+  padding-block: clamp(5rem, 8vw, 7.5rem);
+}
+
+#services-consultation .section-eyebrow {
+  color: var(--accent-gold) !important;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+#services-consultation .section-heading {
+  color: var(--text-heading) !important;
+  margin-bottom: 1.25rem;
+}
+
+#services-consultation .section-intro {
+  color: var(--text-secondary) !important;
+  max-width: 720px;
+  margin-inline: auto;
+  opacity: 1 !important;
+}
+
+.services-closing-frame {
+  max-width: 920px;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.closing-media-banner {
+  max-width: 720px;
+  margin-inline: auto;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-md);
+  aspect-ratio: 16 / 9;
+  margin-top: 2rem;
+  margin-bottom: 2.75rem;
+}
+
+.closing-media-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}

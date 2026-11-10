@@ -1,0 +1,1621 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frequently Asked Questions | Northbridge Valuation &amp; Advisory</title>
+  <meta name="description" content="Find clear, authoritative answers to frequently asked questions regarding business valuation methodologies, M&amp;A advisory, financial due diligence, and financial modelling.">
+
+  <!-- Open Graph Metadata -->
+  <meta property="og:title" content="Frequently Asked Questions | Northbridge Valuation &amp; Advisory">
+  <meta property="og:description" content="Explore detailed answers to common inquiries on private company valuation, M&amp;A deal structures, due diligence scopes, and working with Northbridge.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/faq/faq-knowledge-hero.webp">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/brand/favicon.svg">
+
+  <!-- Pre-render Theme & Direction Script (Prevents flash of unstyled theme/direction) -->
+  <script>
+    (function () {
+      try {
+        var theme = localStorage.getItem('northbridge_theme');
+        var dir = localStorage.getItem('northbridge_direction');
+        if (theme === 'dark') {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        } else {
+          document.documentElement.removeAttribute('data-theme');
+        }
+        if (dir === 'rtl') {
+          document.documentElement.setAttribute('dir', 'rtl');
+          document.documentElement.setAttribute('lang', 'ar');
+        } else {
+          document.documentElement.setAttribute('dir', 'ltr');
+          document.documentElement.setAttribute('lang', 'en');
+        }
+      } catch (e) {}
+    })();
+  </script>
+
+  <!-- Local Stylesheets Only (Offline Ready, No External CDN) -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/tailwind.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/faq.css">
+</head>
+<body>
+
+  <!-- ======================================================================
+       HEADER / SHARED STICKY NAVBAR (EXACT SAME AS INDEX.HTML)
+       Height: Desktop 88px | Tablet 78px | Mobile 72px
+       ====================================================================== -->
+  <header class="nb-header" role="banner">
+    <div class="nb-navbar-container">
+      
+      <!-- Brand Logo (Left) -->
+      <a href="index.html" class="nb-brand-link" aria-label="Northbridge Valuation &amp; Advisory Homepage">
+        <img src="assets/images/brand/logo.svg" alt="Northbridge Valuation &amp; Advisory" class="nb-brand-logo logo-light-mode" width="230" height="38">
+        <img src="assets/images/brand/logo-white.svg" alt="Northbridge Valuation &amp; Advisory" class="nb-brand-logo logo-dark-mode" width="230" height="38">
+      </a>
+
+      <!-- Desktop Navigation Menu (Centre - 1281px+) -->
+      <nav class="nb-desktop-nav" aria-label="Primary Navigation">
+        <!-- 1. Home Dropdown -->
+        <div class="nb-nav-item nb-dropdown">
+          <a href="index.html" class="nb-nav-link" id="homeDropdown" aria-haspopup="true" aria-expanded="false">
+            <span>Home</span>
+            <span class="nb-dropdown-icon" aria-hidden="true">&#9662;</span>
+          </a>
+          <ul class="nb-dropdown-menu" aria-labelledby="homeDropdown">
+            <li class="nb-dropdown-item"><a href="index.html" class="nb-dropdown-link">Home 1</a></li>
+            <li class="nb-dropdown-item"><a href="home2.html" class="nb-dropdown-link">Home 2</a></li>
+          </ul>
+        </div>
+
+        <!-- 2. About -->
+        <div class="nb-nav-item">
+          <a href="about.html" class="nb-nav-link">About</a>
+        </div>
+
+        <!-- 3. Services (Direct link, NO dropdown, NO dropdown arrow) -->
+        <div class="nb-nav-item">
+          <a href="services.html" class="nb-nav-link">Services</a>
+        </div>
+
+        <!-- 4. Case Studies -->
+        <div class="nb-nav-item">
+          <a href="case-studies.html" class="nb-nav-link">Case Studies</a>
+        </div>
+
+        <!-- 5. Insights Dropdown -->
+        <div class="nb-nav-item nb-dropdown">
+          <a href="blog.html" class="nb-nav-link" id="insightsDropdown" aria-haspopup="true" aria-expanded="false">
+            <span>Insights</span>
+            <span class="nb-dropdown-icon" aria-hidden="true">&#9662;</span>
+          </a>
+          <ul class="nb-dropdown-menu" aria-labelledby="insightsDropdown">
+            <li class="nb-dropdown-item"><a href="blog.html" class="nb-dropdown-link">Latest Insights / Blog</a></li>
+            <li class="nb-dropdown-item"><a href="resources.html" class="nb-dropdown-link">Business Resources</a></li>
+          </ul>
+        </div>
+
+        <!-- 6. FAQ (Active on this page) -->
+        <div class="nb-nav-item">
+          <a href="faq.html" class="nb-nav-link active" aria-current="page">FAQ</a>
+        </div>
+
+        <!-- 7. Contact -->
+        <div class="nb-nav-item">
+          <a href="contact.html" class="nb-nav-link">Contact</a>
+        </div>
+      </nav>
+
+      <!-- Desktop Right Controls (EXACT ORDER: 1. LTR/RTL, 2. Dark/Light, 3. Book a Consultation) -->
+      <div class="nb-desktop-controls">
+        <!-- 1. LTR / RTL Toggle -->
+        <button type="button" class="nb-icon-btn dir-toggle-btn" id="dir-toggle" aria-label="Switch to RTL layout">
+          <span class="nb-dir-label">RTL</span>
+        </button>
+
+        <!-- 2. Dark Mode / Light Mode Toggle -->
+        <button type="button" class="nb-icon-btn theme-toggle-btn" id="theme-toggle" aria-label="Switch to dark mode">
+          <!-- Sun Icon (for dark theme active) -->
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <!-- Moon Icon (for light theme active) -->
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- 3. BOOK A CONSULTATION Button -->
+        <a href="contact.html#consultation" class="nb-nav-cta">Book a Consultation</a>
+      </div>
+
+      <!-- Mobile & Tablet Controls Bar (Logo on left, Dark + RTL + Hamburger on right) -->
+      <div class="nb-mobile-controls">
+        <button type="button" class="nb-icon-btn dir-toggle-btn" aria-label="Toggle text direction">
+          <span class="nb-dir-label">RTL</span>
+        </button>
+        <button type="button" class="nb-icon-btn theme-toggle-btn" aria-label="Toggle dark mode">
+          <svg class="icon-sun" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="icon-moon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+        <button type="button" class="nb-hamburger-btn" aria-label="Open navigation drawer" aria-expanded="false" aria-controls="mobileDrawer">
+          <span class="nb-hamburger-bar"></span>
+          <span class="nb-hamburger-bar"></span>
+          <span class="nb-hamburger-bar"></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ======================================================================
+       MOBILE & TABLET FULL NAVIGATION DRAWER
+       Contains ALL navigation items, dropdowns, controls & consultation button
+       ====================================================================== -->
+  <div class="nb-drawer-backdrop" aria-hidden="true"></div>
+  <aside class="nb-drawer" id="mobileDrawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation Menu">
+    <div class="nb-drawer-header">
+      <a href="index.html" class="nb-brand-link" aria-label="Northbridge Valuation &amp; Advisory Homepage">
+        <img src="assets/images/brand/logo.svg" alt="Northbridge Valuation &amp; Advisory" class="nb-brand-logo logo-light-mode" width="190" height="32">
+        <img src="assets/images/brand/logo-white.svg" alt="Northbridge Valuation &amp; Advisory" class="nb-brand-logo logo-dark-mode" width="190" height="32">
+      </a>
+      <button type="button" class="nb-drawer-close-btn" aria-label="Close navigation menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <div class="nb-drawer-body">
+      <ul class="nb-drawer-nav">
+        <!-- Home Accordion -->
+        <li class="nb-drawer-item">
+          <button type="button" class="nb-drawer-link nb-drawer-toggle-btn" data-target="drawerHomeSubnav" aria-expanded="false">
+            <span>Home</span>
+            <span class="nb-drawer-toggle-icon" aria-hidden="true">&#9662;</span>
+          </button>
+          <ul class="nb-drawer-subnav" id="drawerHomeSubnav">
+            <li><a href="index.html" class="nb-drawer-sublink">Home 1</a></li>
+            <li><a href="home2.html" class="nb-drawer-sublink">Home 2</a></li>
+          </ul>
+        </li>
+
+        <!-- About -->
+        <li class="nb-drawer-item">
+          <a href="about.html" class="nb-drawer-link">About</a>
+        </li>
+
+        <!-- Services (Direct Link) -->
+        <li class="nb-drawer-item">
+          <a href="services.html" class="nb-drawer-link">Services</a>
+        </li>
+
+        <!-- Case Studies -->
+        <li class="nb-drawer-item">
+          <a href="case-studies.html" class="nb-drawer-link">Case Studies</a>
+        </li>
+
+        <!-- Insights Accordion -->
+        <li class="nb-drawer-item">
+          <button type="button" class="nb-drawer-link nb-drawer-toggle-btn" data-target="drawerInsightsSubnav" aria-expanded="false">
+            <span>Insights</span>
+            <span class="nb-drawer-toggle-icon" aria-hidden="true">&#9662;</span>
+          </button>
+          <ul class="nb-drawer-subnav" id="drawerInsightsSubnav">
+            <li><a href="blog.html" class="nb-drawer-sublink">Latest Insights / Blog</a></li>
+            <li><a href="resources.html" class="nb-drawer-sublink">Business Resources</a></li>
+          </ul>
+        </li>
+
+        <!-- FAQ (Active on this page) -->
+        <li class="nb-drawer-item">
+          <a href="faq.html" class="nb-drawer-link active" aria-current="page">FAQ</a>
+        </li>
+
+        <!-- Contact -->
+        <li class="nb-drawer-item">
+          <a href="contact.html" class="nb-drawer-link">Contact</a>
+        </li>
+      </ul>
+
+      <!-- Drawer Controls & Action Buttons -->
+      <div class="nb-drawer-footer">
+        <div class="nb-drawer-toggles-row">
+          <button type="button" class="nb-drawer-toggle-item dir-toggle-btn" aria-label="Toggle layout direction">
+            <span class="dir-text-label">RTL Layout</span>
+          </button>
+          <button type="button" class="nb-drawer-toggle-item theme-toggle-btn" aria-label="Toggle dark mode">
+            <span class="theme-text-label">Dark Mode</span>
+          </button>
+        </div>
+        <a href="contact.html#consultation" class="nb-btn nb-btn-gold nb-drawer-cta">Book a Consultation</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ======================================================================
+       MAIN CONTENT: FREQUENTLY ASKED QUESTIONS (EXACTLY 9 UNIQUE SECTIONS)
+       ====================================================================== -->
+  <main id="main-content">
+
+    <!-- --------------------------------------------------------------------
+         SECTION 01: #faq-hero (Financial Clarity Desk Hero)
+         Soft ivory background, search input with button, label, framed photo
+         and topic index overlay.
+         -------------------------------------------------------------------- -->
+    <section id="faq-hero" aria-labelledby="faqHeroTitle">
+      <div class="container-custom">
+        <div class="faq-hero-grid">
+          
+          <!-- Left Hero Content -->
+          <div class="faq-hero-content">
+            <div class="faq-hero-eyebrow">KNOWLEDGE &amp; TRANSACTION ADVISORY FAQ</div>
+            <h1 id="faqHeroTitle" class="faq-hero-title">Clear Answers to Complex Valuation &amp; Transaction Questions</h1>
+            <p class="faq-hero-desc">
+              Explore detailed answers to frequently asked questions surrounding private company business valuation methodologies, M&amp;A deal structures, financial due diligence scopes, dynamic three-statement financial models, and our structured engagement process.
+            </p>
+
+            <!-- Search Form -->
+            <form id="faqSearchForm" class="faq-hero-search-form" role="search" aria-label="Search advisory questions">
+              <svg class="faq-search-glass-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+              <input 
+                type="search" 
+                id="faqSearchInput" 
+                class="faq-hero-search-input" 
+                placeholder="Search questions by keyword or topic (e.g. EBITDA, DCF, QofE)..." 
+                aria-label="Search frequently asked questions"
+                autocomplete="off"
+              >
+              <button type="submit" class="nb-btn nb-btn-primary faq-hero-search-btn" id="faqSearchBtn">Search Answers</button>
+            </form>
+
+            <!-- Topic Quick Tags -->
+            <div class="flex flex-wrap items-center gap-2 mt-2">
+              <span class="faq-hero-tags-label">Frequent Topics:</span>
+              <a href="#valuation-faq" class="nb-badge">DCF Valuation</a>
+              <a href="#ma-faq" class="nb-badge">M&amp;A Process</a>
+              <a href="#due-diligence-faq" class="nb-badge">Quality of Earnings</a>
+              <a href="#analysis-modelling-faq" class="nb-badge">Sensitivity Models</a>
+              <a href="#working-with-northbridge-faq" class="nb-badge">Confidentiality</a>
+            </div>
+          </div>
+
+          <!-- Right Hero Media -->
+          <div class="faq-hero-media">
+            <div class="faq-hero-frame">
+              <img 
+                src="assets/images/faq/faq-knowledge-hero.webp" 
+                alt="Advisory partner reviewing comprehensive valuation schedules and transaction documentation at Northbridge office desk" 
+                class="faq-hero-img" 
+                width="700" 
+                height="900"
+                loading="eager"
+              >
+              <div class="faq-hero-topic-index">
+                <div class="faq-topic-index-title">Advisory Knowledge Base</div>
+                <div class="faq-topic-index-list">
+                  <span>• 5 Advisory Practices</span>
+                  <span>• 29 Structured Answers</span>
+                  <span>• Rigorous Methodology</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------
+         SECTION 02: #faq-categories (Quick Question Categories & Toolbar)
+         6 category selectors + All Questions, toolbar with Expand/Collapse/Clear
+         -------------------------------------------------------------------- -->
+    <section id="faq-categories" class="py-16 md:py-20" aria-labelledby="faqCategoriesHeading">
+      <div class="container-custom">
+        
+        <!-- Section Header -->
+        <div class="nb-section-header">
+          <span class="section-tag">BROWSE BY SPECIALISATION</span>
+          <h2 id="faqCategoriesHeading" class="section-heading">Explore Questions by Advisory Practice</h2>
+          <p class="section-intro">
+            Select an advisory area below to review targeted guidance, or utilize our interactive search and toolbar controls to inspect specific transaction questions.
+          </p>
+        </div>
+
+        <!-- Category Nav Cards Grid -->
+        <div class="faq-category-nav-grid" role="tablist" aria-label="FAQ Category Selector">
+          
+          <!-- Category 1: All Questions -->
+          <button type="button" class="faq-category-card-btn active" data-category="all" data-target="valuation-faq" role="tab" aria-selected="true">
+            <span class="cat-btn-num">Directory 00</span>
+            <span class="cat-btn-title">All Questions</span>
+            <p class="cat-btn-desc">Browse our comprehensive directory of 29 valuation, M&amp;A, and due diligence questions.</p>
+          </button>
+
+          <!-- Category 2: Business Valuation -->
+          <button type="button" class="faq-category-card-btn" data-category="valuation" data-target="valuation-faq" role="tab" aria-selected="false">
+            <span class="cat-btn-num">Category 01</span>
+            <span class="cat-btn-title">Business Valuation</span>
+            <p class="cat-btn-desc">Methodologies, EBITDA adjustments, DCF modeling, and valuation opinion frameworks.</p>
+          </button>
+
+          <!-- Category 3: M&A Advisory -->
+          <button type="button" class="faq-category-card-btn" data-category="ma" data-target="ma-faq" role="tab" aria-selected="false">
+            <span class="cat-btn-num">Category 02</span>
+            <span class="cat-btn-title">M&amp;A Advisory</span>
+            <p class="cat-btn-desc">Sell-side readiness, acquirer screening, deal structures, earn-outs, and CIM documents.</p>
+          </button>
+
+          <!-- Category 4: Financial Due Diligence -->
+          <button type="button" class="faq-category-card-btn" data-category="due-diligence" data-target="due-diligence-faq" role="tab" aria-selected="false">
+            <span class="cat-btn-num">Category 03</span>
+            <span class="cat-btn-title">Due Diligence</span>
+            <p class="cat-btn-desc">Quality of Earnings (QofE), working capital pegs, churn risks, and deal red flags.</p>
+          </button>
+
+          <!-- Category 5: Financial Analysis & Modelling -->
+          <button type="button" class="faq-category-card-btn" data-category="analysis-modelling" data-target="analysis-modelling-faq" role="tab" aria-selected="false">
+            <span class="cat-btn-num">Category 04</span>
+            <span class="cat-btn-title">Analysis &amp; Modelling</span>
+            <p class="cat-btn-desc">Three-statement models, scenario tables, sensitivity testing, and DSCR stress tests.</p>
+          </button>
+
+          <!-- Category 6: Working with Northbridge -->
+          <button type="button" class="faq-category-card-btn" data-category="working-with-northbridge" data-target="working-with-northbridge-faq" role="tab" aria-selected="false">
+            <span class="cat-btn-num">Category 05</span>
+            <span class="cat-btn-title">Working with Us</span>
+            <p class="cat-btn-desc">Client confidentiality, fee arrangements, senior engagement leadership, and protocols.</p>
+          </button>
+
+        </div>
+
+        <!-- FAQ Action Toolbar -->
+        <div class="faq-action-toolbar" aria-label="FAQ View and Search Controls">
+          <div class="faq-status-text" id="faqStatusText">
+            Showing all 29 questions across 5 advisory categories
+          </div>
+          <div class="faq-toolbar-controls">
+            <button type="button" class="faq-tool-btn" id="faqExpandAllBtn" aria-label="Expand all visible questions">Expand All</button>
+            <button type="button" class="faq-tool-btn" id="faqCollapseAllBtn" aria-label="Collapse all questions">Collapse All</button>
+            <button type="button" class="faq-tool-btn" id="faqClearSearchBtn" aria-label="Clear active search query">Clear Search</button>
+          </div>
+        </div>
+
+        <!-- No Results Empty State Box -->
+        <div class="faq-search-no-results" id="faqNoResults" role="region" aria-live="polite">
+          <h3 class="no-results-title">No Matching Questions Found</h3>
+          <p class="no-results-desc">
+            We couldn't locate any questions matching "<span class="no-results-term font-semibold text-primary"></span>". Please try an alternative keyword, clear the search, or contact our advisory team directly.
+          </p>
+          <button type="button" class="nb-btn nb-btn-gold" id="faqResetSearchBtn">Reset Search Filters</button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------
+         SECTION 03: #valuation-faq (Business Valuation Questions)
+         Soft ivory background, 7 detailed questions + side detail card
+         -------------------------------------------------------------------- -->
+    <section id="valuation-faq" class="py-20 md:py-24" aria-labelledby="valuationFaqHeading">
+      <div class="container-custom">
+        
+        <!-- Centered Header -->
+        <div class="nb-section-header">
+          <span class="section-tag">ADVISORY PRACTICE 01</span>
+          <h2 id="valuationFaqHeading" class="section-heading">Business Valuation Methodologies &amp; Analysis</h2>
+          <p class="section-intro">
+            Comprehensive answers addressing how privately held enterprises, operating assets, and shareholdings are objectively evaluated under internationally recognized valuation principles.
+          </p>
+        </div>
+
+        <!-- Layout Grid: Side Card + Accordion List -->
+        <div class="valuation-faq-grid">
+          
+          <!-- Sticky Side Information Card -->
+          <div class="valuation-faq-side">
+            <div class="valuation-side-card">
+              <div class="valuation-side-media">
+                <img 
+                  src="assets/images/faq/faq-valuation-detail.webp" 
+                  alt="Financial analyst examining discounted cash flow spreadsheets and market transaction multiples" 
+                  class="valuation-side-img" 
+                  width="600" 
+                  height="450"
+                  loading="lazy"
+                >
+              </div>
+              <div class="valuation-side-body">
+                <h3 class="valuation-side-title">Independent Valuation Frameworks</h3>
+                <p class="valuation-side-desc">
+                  Our valuation opinions apply rigorous income, market, and asset-based methodologies to withstand transaction negotiations, tax evaluations, and judicial review.
+                </p>
+                <a href="services.html#business-valuation" class="nb-card-link font-semibold text-sm">
+                  Explore Valuation Services
+                  <svg class="nb-arrow-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Accordion Question List (7 Questions) -->
+          <div class="faq-accordion-group" role="region" aria-label="Business Valuation Questions">
+            
+            <!-- Valuation Q1 -->
+            <div class="faq-item" data-category="valuation" id="q-val-1">
+              <button type="button" class="faq-question-btn" aria-expanded="false" aria-controls="val-ans-1">
+                <div class="faq-question-left">
+                  <span class="faq-q-num">Q01</span>
+                  <span class="faq-q-text">How do you determine the appropriate valuation methodology for a privately held business?</span>
+                </div>
+                <span class="faq-toggle-icon" aria-hidden="true">+</span>
+              </button>
+              <div id="val-ans-1" class="faq-answer-panel" role="region">
+                <div class="faq-answer-content">
+                  <p>
+                    Valuation methodology selection is governed by the company’s operating profile, earnings stability, capital structure, and the underlying purpose of the valuation. At Northbridge, we typically triangulate value across three primary disciplines:
+                  </p>
+                  <ul class="list-disc pl-5 mt-2 space-y-1">
+                    <li><strong>Income Approach (Discounted Cash Flow):</strong> Applied when a business demonstrates predictable multi-year free cash flows or distinct growth trajectories, discounting future cash flows at a risk-adjusted Weighted Average Cost of Capital (WACC).</li>
+                    <li><strong>Market Approach (Comparable Multiples):</strong> Utilized for businesses with established operating benchmarks, benchmarking Enterprise Value against guideline public companies and recent precedent M&amp;A transactions across EV/EBITDA, EV/EBIT, or EV/Revenue.</li>
+                    <li><strong>Asset-Based Approach:</strong> Employed primarily for asset-heavy enterprises, holding companies, early-stage operations, or situations where orderly liquidation value represents the economic floor.</li>
+                  </ul>
+                  <p class="mt-2">
+                    In practice, our concluded valuation synthesizes multiple methodologies, applying weighted significance based on data reliability and industry norms.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Valuation Q2 -->
+            <div class="faq-item" data-category="valuation" id="q-val-2">
+              <button type="button" class="faq-question-btn" aria-expanded="false" aria-controls="val-ans-2">
+                <div class="faq-question-left">
+                  <span class="faq-q-num">Q02</span>
+                  <span class="faq-q-text">What is the distinction between Enterprise Value (EV) and Equity Value?</span>
+                </div>
+                <span class="faq-toggle-icon" aria-hidden="true">+</span>
+              </button>
+              <div id="val-ans-2" class="faq-answer-panel" role="region">
+                <div class="faq-answer-content">
+                  <p>
+                    Understanding the bridge between Enterprise Value and Equity Value is essential for both buyers and sellers:
+                  </p>
+                  <p class="mt-2">
+                    <strong>Enterprise Value (EV)</strong> represents the total economic value of the operating entity as a whole, independent of its capital structure. It reflects the core operational enterprise accessible to all capital providers (both debt holders and equity shareholders).
+                  </p>
+                  <p class="mt-2">
+                    <strong>Equity Value</strong> represents the net value attributable specifically to equity shareholders after accounting for the company’s net debt position.
+                  </p>
+                  <p class="mt-2 font-mono text-xs p-3 bg-opacity-10 bg-gray-500 rounded border border-gray-200">
+                    Equity Value = Enterprise Value &minus; Total Debt &plus; Cash &amp; Cash Equivalents &plus; Non-Operating Assets &minus; Minority Interests
+                  </p>
+                  <p class="mt-2">
+                    Most M&amp;A offers are expressed on a "cash-free, debt-free" basis at the Enterprise Value level, which is subsequently adjusted for working capital and net cash at financial closing.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Valuation Q3 -->
+            <div class="faq-item" data-category="valuation" id="q-val-3">
+              <button type="button" class="faq-question-btn" aria-expanded="false" aria-controls="val-ans-3">
+                <div class="faq-question-left">
+                  <span class="faq-q-num">Q03</span>
+                  <span class="faq-q-text">What financial documents and historical data are required to initiate a formal valuation?</span>
+                </div>
+                <span class="faq-toggle-icon" aria-hidden="true">+</span>
+              </button>
+              <div id="val-ans-3" class="faq-answer-panel" role="region">
+                <div class="faq-answer-content">
+                  <p>
+                    To ensure analytical rigor and defensibility, our valuation team typically reviews the following documentation:
+                  </p>
+                  <ul class="list-disc pl-5 mt-2 space-y-1">
+                    <li>Three to five years of historical audited, reviewed, or management financial statements (Income Statement, Balance Sheet, Cash Flow Statement).</li>
+                    <li>Year-to-date interim financial statements alongside corresponding prior-year comparative periods.</li>
+                    <li>Detailed breakdown of owner/director compensation, non-operating expenses, and discretionary personal items.</li>
+                    <li>Management financial forecasts, operating budgets, and capital expenditure schedules.</li>
+                    <li>Customer concentration reports, supplier dependency schedules, and employee headcount breakdowns.</li>
+                    <li>Current capitalization table, debt instruments, lease commitments, and shareholder agreements.</li>
+                  </ul>
+                  <p class="mt-2">
+                    All sensitive documentation is received under a binding Non-Disclosure Agreement (NDA) and housed within secure, encrypted data repositories.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Valuation Q4 -->
+            <div class="faq-item" data-category="valuation" id="q-val-4">
+              <button type="button" class="faq-question-btn" aria-expanded="false" aria-controls="val-ans-4">
+                <div class="faq-question-left">
+                  <span class="faq-q-num">Q04</span>
+                  <span class="faq-q-text">How do normalised earnings (EBITDA adjustments) impact the final business valuation?</span>
+                </div>
+                <span class="faq-toggle-icon" aria-hidden="true">+</span>
+              </button>
+              <div id="val-ans-4" class="faq-answer-panel" role="region">
+                <div class="faq-answer-content">
+                  <p>
+                    Reported financial statements of privately owned businesses frequently reflect tax-minimization strategies, non-recurring expenses, or shareholder-specific costs that do not represent true ongoing operational earning power.
+                  </p>
+                  <p class="mt-2">
+                    Earnings normalisation (calculating Adjusted or Normalized EBITDA) bridges reported accounting numbers to repeatable cash-generating capability by adjusting for:
+                  </p>
+                  <ul class="list-disc pl-5 mt-2 space-y-1">
+                    <li>Excess or below-market owner remuneration benchmarked to commercial executive replacement costs.</li>
+                    <li>One-off professional fees (litigation settlements, M&amp;A setup costs, restructuring charges).</li>
+                    <li>Related-party property leases adjusted to independent fair market rent.</li>
+                    <li>Non-operating assets, discretionary travel, or non-commercial corporate overhead.</li>
+                  </ul>
+                  <p class="mt-2">
+                    Because valuation multiples apply directly to Adjusted EBITDA, an adjustment of \$100,000 at a 6.0x multiple creates a \$600,000 variance in implied Enterprise Value.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Valuation Q5 -->
+            <div class="faq-item" data-category="valuation" id="q-val-5">
+              <button type="button" class="faq-question-btn" aria-expanded="false" aria-controls="val-ans-5">
+                <div class="faq-question-left">
+                  <span class="faq-q-num">Q05</span>
+                  <span class="faq-q-text">Why might two independent valuation analysts arrive at different concluded value ranges?</span>
+                </div>
+                <span class="faq-toggle-icon" aria-hidden="true">+</span>
+              </button>
+              <div id="val-ans-5" class="faq-answer-panel" role="region">
+                <div class="faq-answer-content">
+                  <p>
+                    Business valuation combines scientific financial mathematics with qualitative professional judgment. Differences between professional opinions typically stem from distinct analytical inputs:
+                  </p>
+                  <ul class="list-disc pl-5 mt-2 space-y-1">
+                    <li><strong>Discount Rate Assumptions:</strong> Variations in company-specific risk premiums, size premiums, or cost of equity determinations within the WACC framework.</li>
+                    <li><strong>Earnings Normalisation:</strong> Differing treatment of non-recurring expenses, owner remuneration levels, and sustainable working capital requirements.</li>
+                    <li><strong>Peer Group Selection:</strong> Differing criteria applied when filtering comparable public entities or precedent M&amp;A transactions.</li>
+                    <li><strong>Growth &amp; Margin Trajectories:</strong> Divergent perspectives on long-term terminal growth rates and margin sustainability amidst competitive headwinds.</li>
+                  </ul>
+                  <p class="mt-2">
+                    Northbridge produces transparent sensitivity tables alongside concluded valuation ranges, demonstrating explicitly how key inputs alter value outcomes.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Valuation Q6 -->
+            <div class="faq-item" data-category="valuation" id="q-val-6">
+              <button type="button" class="faq-question-btn" aria-expanded="false" aria-controls="val-ans-6">
+                <div class="faq-question-left">
+                  <span class="faq-q-num">Q06</span>
+                  <span class="faq-q-text">Can you provide independent valuation opinions for partnership disputes or minority buyouts?</span>
+                </div>
+                <span class="faq-toggle-icon" aria-hidden="true">+</span>
+              </button>
+              <div id="val-ans-6" class="faq-answer-panel" role="region">
+                <div class="faq-answer-content">
+                  <p>
+                    Yes. Northbridge frequently serves as an independent, unbiased valuation advisor in shareholder transactions, partner exits, corporate restructuring, and commercial dispute resolutions.
+                  </p>
+                  <p class="mt-2">
+                    In minority interest situations, we provide specialized analysis of applicable valuation discounts, including:
+                  </p>
+                  <ul class="list-disc pl-5 mt-2 space-y-1">
+                    <li><strong>Discount for Lack of Control (DLOC):</strong> Reflecting the reduced economic sovereignty associated with non-controlling equity positions.</li>
+                    <li><strong>Discount for Lack of Marketability (DLOM):</strong> Quantifying the liquidity impairment inherent in unlisted private equity securities compared to public equities.</li>
+                  </ul>
+                  <p class="mt-2">
+                    Our reports are structured to withstand cross-examination, tax authority scrutiny, and legal arbitrations.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Valuation Q7 -->
+            <div class="faq-item" data-category="valuation" id="q-val-7">
+              <button type="button" class="faq-question-btn" aria-expanded="false" aria-controls="val-ans-7">
+                <div class="faq-question-left">
+                  <span class="faq-q-num">Q07</span>
+                  <span class="faq-q-text">How long does a comprehensive business valuation engagement typically take?</span>
+                </div>
+                <span class="faq-toggle-icon" aria-hidden="true">+</span>
+              </button>
+              <div id="val-ans-7" class="faq-answer-panel" role="region">
+                <div class="faq-answer-content">
+                  <p>
+                    A standard comprehensive valuation engagement typically requires <strong>three to five weeks</strong> from receipt of complete financial information:
+                  </p>
+                  <ul class="list-disc pl-5 mt-2 space-y-1">
+                    <li><strong>Weeks 1–2:</strong> Information intake, initial data verification, management diagnostic interview, and normalisation schedule formulation.</li>
+                    <li><strong>Weeks 2–3:</strong> Financial modeling, DCF formulation, comparable company and precedent transaction multiple benchmarking.</li>
+                    <li><strong>Weeks 3–4:</strong> Senior partner peer review, sensitivity testing, draft valuation report assembly, and preliminary findings discussion.</li>
+                    <li><strong>Week 5:</strong> Final deliverable finalization, executive presentation, and delivery of formal signed valuation memorandum.</li>
+                  </ul>
+                  <p class="mt-2">
+                    Expedited turnaround timelines are available for time-sensitive transactions or pending regulatory deadlines.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Centered Section CTA -->
+        <div class="section-cta-group mt-12">
+          <a href="contact.html#valuation" class="nb-btn nb-btn-gold">Inquire About Business Valuation</a>
+          <a href="services.html#business-valuation" class="nb-btn nb-btn-secondary">View Valuation Services</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------
+         SECTION 04: #ma-faq (M&A Advisory Questions)
+         Deep Navy background (#172B4D), 2-column grid with 6 questions
+         -------------------------------------------------------------------- -->
+    <section id="ma-faq" class="py-20 md:py-24" aria-labelledby="maFaqHeading">
+      <div class="container-custom">
+        
+        <!-- Centered Header -->
+        <div class="nb-section-header">
+          <span class="section-tag">ADVISORY PRACTICE 02</span>
+          <h2 id="maFaqHeading" class="section-heading">Mergers, Acquisitions &amp; Transaction Strategy</h2>
+          <p class="section-intro">
+            Strategic answers for business founders, corporate boards, and acquisition teams preparing for corporate divestitures, acquisitions, and confidential negotiations.
+          </p>
+        </div>
+
+        <!-- 2-Column Grid of M&A Accordion Items -->
+        <div class="ma-faq-columns-grid">
+          
+          <!-- Column 1 Items -->
+          <div class="faq-accordion-group" role="region" aria-label="M&A Advisory Column 1">
+            
+            <!-- MA Q1 -->
+            <div class="faq-item" data-category="ma" id="q-ma-1">
+              <button type="button" class="faq-question-btn" aria-expanded="false" aria-controls="ma-ans-1">
+                <div class="faq-question-left">
+                  <span class="faq-q-num">Q01</span>
+                  <span class="faq-q-text">What role does an M&amp;A financial advisor play in a business sale?</span>
+                </div>
+                <span class="faq-toggle-icon" aria-hidden="true">+</span>
+              </button>
+              <div id="ma-ans-1" class="faq-answer-panel" role="region">
+                <div class="faq-answer-content">
+                  <p>
+                    An M&amp;A advisor guides business owners through the entire transaction lifecycle to maximize proceeds, protect deal terms, and manage transaction risks:
+                  </p>
+                  <ul class="list-disc pl-5 mt-2 space-y-1">
+                    <li>Evaluating baseline transaction readiness and establishing realistic valuation parameters.</li>
+                    <li>Preparing institutional-grade marketing materials (Blind Profile Teaser and Confidential Information Memorandum).</li>
+                    <li>Conducting targeted buyer identification across strategic acquirers and private equity sponsors.</li>
+                    <li>Structuring a competitive bidding process to create negotiation leverage.</li>
+                    <li>Coordinating confirmatory due diligence within secure virtual data rooms (VDR).</li>
+                    <li>Negotiating commercial purchase terms, working capital pegs, and indemnification caps alongside legal counsel.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- MA Q2 -->
+            <div class="faq-item" data-category="ma" id="q-ma-2">
+              <button type="button" class="faq-question-btn" aria-expanded="false" aria-controls="ma-ans-2">
+                <div class="faq-question-left">
+                  <span class="faq-q-num">Q02</span>
+                  <span class="faq-q-text">When is the right time to begin preparing a business for exit?</span>
+                </div>
+                <span class="faq-toggle-icon" aria-hidden="true">+</span>
+              </button>
+              <div id="ma-ans-2" class="faq-answer-panel" role="region">
+                <div class="faq-answer-content">
+                  <p>
+                    Optimal exit planning should ideally begin <strong>12 to 24 months</strong> prior to entering the market. Advance preparation allows shareholders to:
+                  </p>
+                  <ul class="list-disc pl-5 mt-2 space-y-1">
+                    <li>Remediate customer or supplier concentration vulnerabilities.</li>
+                    <li>Transition critical client relationships and operational dependencies away from owner-operators to secondary leadership.</li>
+                    <li>Clean up historical accounting records and transition to audited or reviewed statements.</li>
+                    <li>Document internal operating systems, intellectual property rights, and commercial employment agreements.</li>
+                    <li>Demonstrate consistent financial margin expansion rather than attempting to justify speculative future projections.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- MA Q3 -->
+            <div class="faq-item" data-category="ma" id="q-ma-3">
+              <button type="button" class="faq-question-btn" aria-expanded="false" aria-controls="ma-ans-3">
+                <div class="faq-question-left">
+                  <span class="faq-q-num">Q03</span>
+                  <span class="faq-q-text">How do you identify and qualify prospective acquirers?</span>
+                </div>
+                <span class="faq-toggle-icon" aria-hidden="true">+</span>
+              </button>
+              <div id="ma-ans-3" class="faq-answer-panel" role="region">
+                <div class="faq-answer-content">
+                  <p>
+                    We construct a bespoke buyer universe tailored to the company's size, sector, and strategic strengths, categorizing targets into:
+                  </p>
+                  <ul class="list-disc pl-5 mt-2 space-y-1">
+                    <li><strong>Strategic Acquirers:</strong> Industry competitors, complementary service providers, or vertical supply chain partners capable of achieving operational synergies.</li>
+                    <li><strong>Financial Sponsors:</strong> Private equity funds, family offices, and independent sponsors with active investment theses and available platform capital.</li>
+                  </ul>
+                  <p class="mt-2">
+                    Every prospect is screened for financial capacity, transaction track record, and cultural compatibility before receiving initial anonymous marketing teasers.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Column 2 Items -->
+          <div class="faq-accordion-group" role="region" aria-label="M&A Advisory Column 2">
+
+            <!-- MA Q4 -->
+            <div class="faq-item" data-category="ma" id="q-ma-4">
+              <button type="button" class="faq-question-btn" aria-expanded="false" aria-controls="ma-ans-4">
+                <div class="faq-question-left">
+                  <span class="faq-q-num">Q04</span>
+                  <span class="faq-q-text">What is a Confidential Information Memorandum (CIM)?</span>
+                </div>
+                <span class="faq-toggle-icon" aria-hidden="true">+</span>
+              </button>
+              <div id="ma-ans-4" class="faq-answer-panel" role="region">
+                <div class="faq-answer-content">
+                  <p>
+                    A Confidential Information Memorandum (CIM), also known as an Information Memorandum, is the definitive comprehensive marketing document provided to qualified acquirers after execution of an NDA.
+                  </p>
+                  <p class="mt-2">
+                    A Northbridge CIM provides a detailed, institutional-level narrative covering:
+                  </p>
+                  <ul class="list-disc pl-5 mt-2 space-y-1">
+                    <li>Executive summary and core investment thesis highlights.</li>
+                    <li>Industry dynamics, addressable market scale, and competitive positioning.</li>
+                    <li>Detailed products, services, operational infrastructure, and technology stack.</li>
+                    <li>Detailed financial analysis, historical normalized EBITDA bridges, and forecast models.</li>
+                    <li>Organizational hierarchy, key personnel, and post-transaction governance plans.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- MA Q5 -->
+            <div class="faq-item" data-category="ma" id="q-ma-5">
+              <button type="button" class="faq-question-btn" aria-expanded="false" aria-controls="ma-ans-5">
+                <div class="faq-question-left">
+                  <span class="faq-q-num">Q05</span>
+                  <span class="faq-q-text">How do deal structures like earn-outs and vendor notes affect net proceeds?</span>
+                </div>
+                <span class="faq-toggle-icon" aria-hidden="true">+</span>
+              </button>
+              <div id="ma-ans-5" class="faq-answer-panel" role="region">
+                <div class="faq-answer-content">
+                  <p>
+                    A headline transaction valuation is only as valuable as the structural terms governing payment. Common consideration components include:
+                  </p>
+                  <ul class="list-disc pl-5 mt-2 space-y-1">
+                    <li><strong>Cash at Closing:</strong> Guaranteed proceeds received at settlement, representing risk-free liquidity.</li>
+                    <li><strong>Vendor Note (Seller Financing):</strong> A deferred loan from seller to buyer, bearing interest over a 2–5 year term; provides yields but carries subordination risk.</li>
+                    <li><strong>Earn-Out:</strong> Contingent payments tied to post-closing EBITDA or gross revenue milestones; bridges valuation expectations but demands strict operational controls.</li>
+                    <li><strong>Rollover Equity:</strong> Retaining 10%–30% minority interest in the recapitalized entity, offering upside during a subsequent institutional secondary exit.</li>
+                  </ul>
+                  <p class="mt-2">
+                    Our advisors model every deal structure on a risk-adjusted after-tax basis before negotiating final terms.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- MA Q6 -->
+            <div class="faq-item" data-category="ma" id="q-ma-6">
+              <button type="button" class="faq-question-btn" aria-expanded="false" aria-controls="ma-ans-6">
+                <div class="faq-question-left">
+                  <span class="faq-q-num">Q06</span>
+                  <span class="faq-q-text">How is client confidentiality maintained during transaction outreach?</span>
+                </div>
+                <span class="faq-toggle-icon" aria-hidden="true">+</span>
+              </button>
+              <div id="ma-ans-6" class="faq-answer-panel" role="region">
+                <div class="faq-answer-content">
+                  <p>
+                    Uncontrolled market rumors can disrupt client relationships, destabilize employees, and alert competitors. We protect confidentiality through rigid protocols:
+                  </p>
+                  <ul class="list-disc pl-5 mt-2 space-y-1">
+                    <li>Initial market outreach is strictly conducted on a "no-name" anonymous basis using an anonymized One-Page Executive Teaser.</li>
+                    <li>The identity of the business is only disclosed after prospective buyers sign a customized Non-Disclosure Agreement pre-approved by the seller.</li>
+                    <li>Granular data, contracts, and customer names are staged within encrypted Virtual Data Rooms with watermarking and access restrictions.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Centered CTA -->
+        <div class="section-cta-group">
+          <a href="contact.html#ma" class="nb-btn nb-btn-gold">Discuss Your M&amp;A Strategy</a>
+          <a href="services.html#ma-advisory" class="nb-btn nb-btn-secondary">Explore M&amp;A Services</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------
+         SECTION 05: #due-diligence-faq (Financial Due Diligence Questions)
+         White background, 5 questions + side media frame with badge
+         -------------------------------------------------------------------- -->
+    <section id="due-diligence-faq" class="py-20 md:py-24" aria-labelledby="dueDiligenceFaqHeading">
+      <div class="container-custom">
+        
+        <!-- Centered Header -->
+        <div class="nb-section-header">
+          <span class="section-tag">ADVISORY PRACTICE 03</span>
+          <h2 id="dueDiligenceFaqHeading" class="section-heading">Financial Due Diligence &amp; Quality of Earnings</h2>
+          <p class="section-intro">
+            Analytical clarity on pre-transaction verification, accounting reconciliations, working capital targets, and validating cash flow sustainability.
+          </p>
+        </div>
+
+        <!-- Layout: Accordion List + Side Image -->
+        <div class="due-diligence-layout">
+          
+          <!-- Accordion Questions (5 Questions) -->
+          <div class="faq-accordion-group" role="region" aria-label="Due Diligence Questions">
+            
+            <!-- DD Q1 -->
+            <div class="faq-item" data-category="due-diligence" id="q-dd-1">
+              <button type="button" class="faq-question-btn" aria-expanded="false" aria-controls="dd-ans-1">
+                <div class="faq-question-left">
+                  <span class="faq-q-num">Q01</span>
+                  <span class="faq-q-text">What is the difference between a statutory audit and a Quality of Earnings (QofE) review?</span>
+                </div>
+                <span class="faq-toggle-icon" aria-hidden="true">+</span>
+              </button>
+              <div id="dd-ans-1" class="faq-answer-panel" role="region">
+                <div class="faq-answer-content">
+                  <p>
+                    While a statutory audit verifies historical compliance with GAAP or IFRS accounting standards, a Quality of Earnings review is specifically engineered to evaluate the <strong>sustainability, quality, and cash conversion</strong> of operating earnings for transaction purposes:
+                  </p>
+                  <ul class="list-disc pl-5 mt-2 space-y-1">
+                    <li>An audit confirms whether past balances are materially correct; a QofE assesses whether historical earnings can realistically be expected to recur in future periods.</li>
+                    <li>QofE dissects customer and product-level gross margins, monthly revenue seasonality, and cash collection cycles.</li>
+                    <li>QofE identifies run-rate adjustments (e.g. annualized impact of mid-year contract wins or price adjustments) that statutory audits do not evaluate.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- DD Q2 -->
+            <div class="faq-item" data-category="due-diligence" id="q-dd-2">
+              <button type="button" class="faq-question-btn" aria-expanded="false" aria-controls="dd-ans-2">
+                <div class="faq-question-left">
+                  <span class="faq-q-num">Q02</span>
+                  <span class="faq-q-text">What are working capital pegs and adjustments in M&amp;A transactions?</span>
+                </div>
+                <span class="faq-toggle-icon" aria-hidden="true">+</span>
+              </button>
+              <div id="dd-ans-2" class="faq-answer-panel" role="region">
+                <div class="faq-answer-content">
+                  <p>
+                    In transactions executed on a "debt-free, cash-free" basis, the buyer expects to receive a sufficient level of Net Working Capital (NWC) at closing to operate the business uninterrupted.
+                  </p>
+                  <p class="mt-2">
+                    The <strong>Working Capital Peg (or Target)</strong> is the agreed baseline level of normalized working capital established during negotiations (typically based on a trailing 12-month average). At closing:
+                  </p>
+                  <ul class="list-disc pl-5 mt-2 space-y-1">
+                    <li>If closing NWC exceeds the agreed peg, the purchase price is adjusted upward in favor of the seller.</li>
+                    <li>If closing NWC falls below the agreed peg, the buyer receives a downward purchase price adjustment or escrow release.</li>
+                  </ul>
+                  <p class="mt-2">
+                    Our due diligence team performs trailing monthly analyses to prevent seasonal cash distortions from eroding seller equity value.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- DD Q3 -->
+            <div class="faq-item" data-category="due-diligence" id="q-dd-3">
+              <button type="button" class="faq-question-btn" aria-expanded="false" aria-controls="dd-ans-3">
+                <div class="faq-question-left">
+                  <span class="faq-q-num">Q03</span>
+                  <span class="faq-q-text">How does customer concentration affect transaction pricing and terms?</span>
+                </div>
+                <span class="faq-toggle-icon" aria-hidden="true">+</span>
+              </button>
+              <div id="dd-ans-3" class="faq-answer-panel" role="region">
+                <div class="faq-answer-content">
+                  <p>
+                    When a single customer accounts for more than 15% to 20% of total revenue, buyers and lenders perceive heightened cash flow vulnerability.
+                  </p>
+                  <p class="mt-2">
+                    During due diligence, we evaluate contract duration, historical order consistency, switching costs, and customer relationship tenure. To mitigate buyer concerns, deals involving high concentration often incorporate structured milestone earn-outs, escrow holdbacks, or vendor financing tied to client retention.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- DD Q4 -->
+            <div class="faq-item" data-category="due-diligence" id="q-dd-4">
+              <button type="button" class="faq-question-btn" aria-expanded="false" aria-controls="dd-ans-4">
+                <div class="faq-question-left">
+                  <span class="faq-q-num">Q04</span>
+                  <span class="faq-q-text">Can Northbridge perform sell-side vendor due diligence prior to market launch?</span>
+                </div>
+                <span class="faq-toggle-icon" aria-hidden="true">+</span>
+              </button>
+              <div id="dd-ans-4" class="faq-answer-panel" role="region">
+                <div class="faq-answer-content">
+                  <p>
+                    Yes. Sell-side vendor due diligence (VDD) is one of the highest ROI investments a business owner can make prior to transaction launch.
+                  </p>
+                  <p class="mt-2">
+                    By commissioning an independent quality of earnings review upfront, sellers can proactively uncover accounting inconsistencies, formalize defensible EBITDA adjustments, verify revenue recognition policies, and eliminate unexpected buyer re-trading during exclusivity.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- DD Q5 -->
+            <div class="faq-item" data-category="due-diligence" id="q-dd-5">
+              <button type="button" class="faq-question-btn" aria-expanded="false" aria-controls="dd-ans-5">
+                <div class="faq-question-left">
+                  <span class="faq-q-num">Q05</span>
+                  <span class="faq-q-text">What red flags commonly cause transactions to stall or re-trade during due diligence?</span>
+                </div>
+                <span class="faq-toggle-icon" aria-hidden="true">+</span>
+              </button>
+              <div id="dd-ans-5" class="faq-answer-panel" role="region">
+                <div class="faq-answer-content">
+                  <p>
+                    Transactions rarely fail due to commercial disagreement; they typically stall when confirmatory diligence reveals unaddressed operational or accounting discrepancies:
+                  </p>
+                  <ul class="list-disc pl-5 mt-2 space-y-1">
+                    <li>Unreconciled revenue recognition practices between cash and accrual accounting.</li>
+                    <li>Unfunded employee leave entitlements or contingent liabilities omitted from management accounts.</li>
+                    <li>Sudden deterioration in gross margin performance during the final pre-closing months.</li>
+                    <li>Incomplete documentation of proprietary intellectual property or software ownership.</li>
+                    <li>Failure to agree on normalized working capital definitions prior to final legal agreements.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Side Media Frame -->
+          <div class="due-diligence-media-frame">
+            <img 
+              src="assets/images/faq/faq-due-diligence.webp" 
+              alt="Advisory professional verifying financial audit schedules, accounting ledgers, and transaction documentation" 
+              class="due-diligence-img" 
+              width="600" 
+              height="800"
+              loading="lazy"
+            >
+            <div class="due-diligence-img-badge">
+              <div class="dd-badge-label">CONFIRMATORY DILIGENCE</div>
+              <p class="dd-badge-text">Rigorous verification protecting valuation credibility.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Centered CTA -->
+        <div class="section-cta-group mt-12">
+          <a href="contact.html#consultation" class="nb-btn nb-btn-gold">Request Due Diligence Support</a>
+          <a href="services.html#financial-due-diligence" class="nb-btn nb-btn-secondary">Explore Diligence Practice</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------
+         SECTION 06: #analysis-modelling-faq (Analysis & Modelling Questions)
+         Pale Blue background (#EAF0F7), 5 questions + dual thumb stack
+         -------------------------------------------------------------------- -->
+    <section id="analysis-modelling-faq" class="py-20 md:py-24" aria-labelledby="analysisModellingFaqHeading">
+      <div class="container-custom">
+        
+        <!-- Centered Header -->
+        <div class="nb-section-header">
+          <span class="section-tag">ADVISORY PRACTICE 04</span>
+          <h2 id="analysisModellingFaqHeading" class="section-heading">Financial Modelling, Forecasting &amp; Strategic Sensitivity</h2>
+          <p class="section-intro">
+            Practical explanations on dynamic three-statement models, debt service coverage covenants, downside scenario tables, and institutional forecasting standards.
+          </p>
+        </div>
+
+        <!-- Layout: Questions + Side Dual Stack -->
+        <div class="analysis-modelling-wrap">
+          
+          <!-- Accordion Question List (5 Questions) -->
+          <div class="faq-accordion-group" role="region" aria-label="Financial Analysis & Modelling Questions">
+            
+            <!-- Model Q1 -->
+            <div class="faq-item" data-category="analysis-modelling" id="q-mod-1">
+              <button type="button" class="faq-question-btn" aria-expanded="false" aria-controls="mod-ans-1">
+                <div class="faq-question-left">
+                  <span class="faq-q-num">Q01</span>
+                  <span class="faq-q-text">What distinguishes an institutional three-statement financial model from management budgets?</span>
+                </div>
+                <span class="faq-toggle-icon" aria-hidden="true">+</span>
+              </button>
+              <div id="mod-ans-1" class="faq-answer-panel" role="region">
+                <div class="faq-answer-content">
+                  <p>
+                    Simple management budgets typically isolate profit and loss forecasts without mathematically connecting them to working capital movements, debt servicing, and cash flow generation.
+                  </p>
+                  <p class="mt-2">
+                    An institutional-grade three-statement financial model fully integrates the <strong>Income Statement, Balance Sheet, and Cash Flow Statement</strong> through dynamic formulaic links:
+                  </p>
+                  <ul class="list-disc pl-5 mt-2 space-y-1">
+                    <li>Net Income automatically flows into Retained Earnings on the Balance Sheet and anchors the operating cash flow statement.</li>
+                    <li>Working capital requirements (DSO, DIO, DPO) dynamically determine cash consumption as sales fluctuate.</li>
+                    <li>Capital expenditures update fixed asset depreciation schedules and book balances.</li>
+                    <li>Cash surplus or shortfall drives automated debt sweeps and interest expense calculations.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Model Q2 -->
+            <div class="faq-item" data-category="analysis-modelling" id="q-mod-2">
+              <button type="button" class="faq-question-btn" aria-expanded="false" aria-controls="mod-ans-2">
+                <div class="faq-question-left">
+                  <span class="faq-q-num">Q02</span>
+                  <span class="faq-q-text">How do scenario testing and sensitivity tables help boards evaluate transaction risk?</span>
+                </div>
+                <span class="faq-toggle-icon" aria-hidden="true">+</span>
+              </button>
+              <div id="mod-ans-2" class="faq-answer-panel" role="region">
+                <div class="faq-answer-content">
+                  <p>
+                    Transactions rarely fail under base-case conditions; boards need to understand capital resilience under severe downside shocks.
+                  </p>
+                  <p class="mt-2">
+                    We construct automated sensitivity matrices evaluating two-variable combinations (e.g. revenue contraction vs. raw material cost inflation) to highlight breakeven thresholds, liquidity stress points, and debt covenant headroom before closing.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Model Q3 -->
+            <div class="faq-item" data-category="analysis-modelling" id="q-mod-3">
+              <button type="button" class="faq-question-btn" aria-expanded="false" aria-controls="mod-ans-3">
+                <div class="faq-question-left">
+                  <span class="faq-q-num">Q03</span>
+                  <span class="faq-q-text">Can dynamic financial models be updated post-transaction for ongoing operations?</span>
+                </div>
+                <span class="faq-toggle-icon" aria-hidden="true">+</span>
+              </button>
+              <div id="mod-ans-3" class="faq-answer-panel" role="region">
+                <div class="faq-answer-content">
+                  <p>
+                    Yes. All financial models built by Northbridge are delivered as fully unlocked, transparent client assets with modular input schedules.
+                  </p>
+                  <p class="mt-2">
+                    Executive management and board directors routinely utilize our models post-closing as rolling 12-month operational forecasting tools, tracking monthly actuals against acquisition investment theses.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Model Q4 -->
+            <div class="faq-item" data-category="analysis-modelling" id="q-mod-4">
+              <button type="button" class="faq-question-btn" aria-expanded="false" aria-controls="mod-ans-4">
+                <div class="faq-question-left">
+                  <span class="faq-q-num">Q04</span>
+                  <span class="faq-q-text">How do you stress-test Debt Service Coverage Ratios (DSCR) for acquisitions?</span>
+                </div>
+                <span class="faq-toggle-icon" aria-hidden="true">+</span>
+              </button>
+              <div id="mod-ans-4" class="faq-answer-panel" role="region">
+                <div class="faq-answer-content">
+                  <p>
+                    Commercial lenders typically mandate a minimum Debt Service Coverage Ratio (e.g. 1.25x to 1.50x) alongside maximum senior leverage covenants (e.g. 2.5x to 3.0x EBITDA).
+                  </p>
+                  <p class="mt-2">
+                    Our debt modeling incorporates detailed amortization schedules, cash flow sweeps, benchmark interest rate fluctuations, and simulated operational margin compressions to establish safe borrowing capacity.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Model Q5 -->
+            <div class="faq-item" data-category="analysis-modelling" id="q-mod-5">
+              <button type="button" class="faq-question-btn" aria-expanded="false" aria-controls="mod-ans-5">
+                <div class="faq-question-left">
+                  <span class="faq-q-num">Q05</span>
+                  <span class="faq-q-text">What modelling conventions and quality standards does Northbridge follow?</span>
+                </div>
+                <span class="faq-toggle-icon" aria-hidden="true">+</span>
+              </button>
+              <div id="mod-ans-5" class="faq-answer-panel" role="region">
+                <div class="faq-answer-content">
+                  <p>
+                    We follow international financial modeling best practices (such as the FAST standard): strict separation of assumptions, calculations, and financial statement outputs; standardized font color coding (blue for hardcoded inputs, black for formulas, green for external links); elimination of circular references; and comprehensive internal balance checks.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Side Dual Thumbnails Stack -->
+          <div class="dual-thumb-stack">
+            
+            <div class="thumb-card">
+              <div class="thumb-media">
+                <img 
+                  src="assets/images/faq/faq-financial-analysis.webp" 
+                  alt="Financial analysis dashboard displaying variance analysis and growth metrics" 
+                  class="thumb-img" 
+                  width="120" 
+                  height="90"
+                  loading="lazy"
+                >
+              </div>
+              <div class="thumb-content">
+                <div class="thumb-cat">ANALYTICAL RIGOR</div>
+                <h3 class="thumb-title">Operational Margin &amp; Cash Flow Analysis</h3>
+              </div>
+            </div>
+
+            <div class="thumb-card">
+              <div class="thumb-media">
+                <img 
+                  src="assets/images/faq/faq-modelling-detail.webp" 
+                  alt="Dynamic financial model spreadsheet with integrated sensitivity tables and debt covenants" 
+                  class="thumb-img" 
+                  width="120" 
+                  height="90"
+                  loading="lazy"
+                >
+              </div>
+              <div class="thumb-content">
+                <div class="thumb-cat">DECISION SUPPORT</div>
+                <h3 class="thumb-title">Dynamic Three-Statement Sensitivity Models</h3>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Centered CTA -->
+        <div class="section-cta-group mt-12">
+          <a href="services.html#financial-modelling" class="nb-btn nb-btn-gold">Explore Financial Modelling Services</a>
+          <a href="contact.html#consultation" class="nb-btn nb-btn-secondary">Request Model Review</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------
+         SECTION 07: #working-with-northbridge-faq (Working with Northbridge)
+         Warm Soft-Ivory background (#F7F7F3), 6 questions in pathway format
+         -------------------------------------------------------------------- -->
+    <section id="working-with-northbridge-faq" class="py-20 md:py-24" aria-labelledby="workingWithHeading">
+      <div class="container-custom">
+        
+        <!-- Centered Header -->
+        <div class="nb-section-header">
+          <span class="section-tag">ENGAGEMENT STANDARDS 05</span>
+          <h2 id="workingWithHeading" class="section-heading">Working with Northbridge Valuation &amp; Advisory</h2>
+          <p class="section-intro">
+            Transparent expectations regarding client confidentiality, fee structures, senior partner project leadership, and collaborative multidisciplinary execution.
+          </p>
+        </div>
+
+        <!-- Pathway Q&A List (6 Questions) -->
+        <div class="pathway-qa-list" role="region" aria-label="Working with Northbridge Questions">
+          
+          <!-- WWN Q1 -->
+          <div class="faq-item" data-category="working-with-northbridge" id="q-wwn-1">
+            <button type="button" class="faq-question-btn" aria-expanded="false" aria-controls="wwn-ans-1">
+              <div class="faq-question-left">
+                <span class="faq-q-num">Q01</span>
+                <span class="faq-q-text">How does Northbridge safeguard sensitive financial records and trade secrets?</span>
+              </div>
+              <span class="faq-toggle-icon" aria-hidden="true">+</span>
+            </button>
+            <div id="wwn-ans-1" class="faq-answer-panel" role="region">
+              <div class="faq-answer-content">
+                <p>
+                  Confidentiality is the bedrock of our firm. Before reviewing any non-public client financial documentation, we execute a legally binding bilateral Non-Disclosure Agreement (NDA). All electronic documents are secured within encrypted, SOC-2 compliant repositories with restricted engagement team permissions.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- WWN Q2 -->
+          <div class="faq-item" data-category="working-with-northbridge" id="q-wwn-2">
+            <button type="button" class="faq-question-btn" aria-expanded="false" aria-controls="wwn-ans-2">
+              <div class="faq-question-left">
+                <span class="faq-q-num">Q02</span>
+                <span class="faq-q-text">What fee structures do you utilize for valuation and advisory engagements?</span>
+              </div>
+              <span class="faq-toggle-icon" aria-hidden="true">+</span>
+            </button>
+            <div id="wwn-ans-2" class="faq-answer-panel" role="region">
+              <div class="faq-answer-content">
+                <p>
+                  We believe in complete pricing transparency aligned with client outcomes:
+                </p>
+                <ul class="list-disc pl-5 mt-2 space-y-1">
+                  <li><strong>Business Valuation &amp; Financial Modelling:</strong> Typically quoted on a fixed-fee milestone basis, ensuring clarity with no unexpected hourly overages.</li>
+                  <li><strong>Due Diligence Reviews:</strong> Structured as fixed scope engagements based on business scale and historical record complexity.</li>
+                  <li><strong>M&amp;A Transaction Advisory:</strong> Structured with a monthly advisory retainer combined with a tiered success fee contingent upon successful transaction closing.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- WWN Q3 -->
+          <div class="faq-item" data-category="working-with-northbridge" id="q-wwn-3">
+            <button type="button" class="faq-question-btn" aria-expanded="false" aria-controls="wwn-ans-3">
+              <div class="faq-question-left">
+                <span class="faq-q-num">Q03</span>
+                <span class="faq-q-text">Who executes the engagement work — senior advisors or junior analysts?</span>
+              </div>
+              <span class="faq-toggle-icon" aria-hidden="true">+</span>
+            </button>
+            <div id="wwn-ans-3" class="faq-answer-panel" role="region">
+              <div class="faq-answer-content">
+                <p>
+                  At Northbridge, engagements are led directly by senior corporate finance directors and partners who actively lead client meetings, build core valuation hypotheses, and handle negotiations. We intentionally maintain an agile, senior-heavy staffing model so clients always interact with experienced advisors.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- WWN Q4 -->
+          <div class="faq-item" data-category="working-with-northbridge" id="q-wwn-4">
+            <button type="button" class="faq-question-btn" aria-expanded="false" aria-controls="wwn-ans-4">
+              <div class="faq-question-left">
+                <span class="faq-q-num">Q04</span>
+                <span class="faq-q-text">Can Northbridge collaborate with our existing accountants, attorneys, and wealth managers?</span>
+              </div>
+              <span class="faq-toggle-icon" aria-hidden="true">+</span>
+            </button>
+            <div id="wwn-ans-4" class="faq-answer-panel" role="region">
+              <div class="faq-answer-content">
+                <p>
+                  Absolutely. We regularly operate alongside our clients’ trusted long-term legal counsel, CPA tax advisors, and private wealth managers. Our role is strictly focused on commercial valuation, transaction structuring, and financial due diligence, harmonizing with legal drafting and tax planning.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- WWN Q5 -->
+          <div class="faq-item" data-category="working-with-northbridge" id="q-wwn-5">
+            <button type="button" class="faq-question-btn" aria-expanded="false" aria-controls="wwn-ans-5">
+              <div class="faq-question-left">
+                <span class="faq-q-num">Q05</span>
+                <span class="faq-q-text">How do we get started and what happens during the initial consultation?</span>
+              </div>
+              <span class="faq-toggle-icon" aria-hidden="true">+</span>
+            </button>
+            <div id="wwn-ans-5" class="faq-answer-panel" role="region">
+              <div class="faq-answer-content">
+                <p>
+                  Getting started begins with an introductory 30-minute discovery call conducted under mutual confidentiality. During this conversation, we discuss your corporate timeline, current financial structure, and advisory objectives. Following the call, we provide a structured engagement proposal outlining exact scope, timeline, deliverables, and fees.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- WWN Q6 -->
+          <div class="faq-item" data-category="working-with-northbridge" id="q-wwn-6">
+            <button type="button" class="faq-question-btn" aria-expanded="false" aria-controls="wwn-ans-6">
+              <div class="faq-question-left">
+                <span class="faq-q-num">Q06</span>
+                <span class="faq-q-text">Do you advise clients across multiple industries and geographic locations?</span>
+              </div>
+              <span class="faq-toggle-icon" aria-hidden="true">+</span>
+            </button>
+            <div id="wwn-ans-6" class="faq-answer-panel" role="region">
+              <div class="faq-answer-content">
+                <p>
+                  Yes. Our advisory practice advises middle-market private enterprises across commercial manufacturing, B2B technology and SaaS, healthcare services, specialized distribution, logistics, and professional business services across domestic and cross-border jurisdictions.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Centered CTA -->
+        <div class="section-cta-group">
+          <a href="about.html#approach" class="nb-btn nb-btn-gold">Review Our Advisory Philosophy</a>
+          <a href="contact.html#consultation" class="nb-btn nb-btn-secondary">Schedule Initial Discussion</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------
+         SECTION 08: #still-have-questions (Still Have a Question?)
+         White background, consultation room photo + advisory consultation panel
+         -------------------------------------------------------------------- -->
+    <section id="still-have-questions" class="py-20 md:py-24" aria-labelledby="stillQuestionsHeading">
+      <div class="container-custom">
+        
+        <div class="still-questions-grid">
+          
+          <!-- Left Media Frame -->
+          <div class="still-media-frame">
+            <img 
+              src="assets/images/faq/faq-consultation-room.webp" 
+              alt="Northbridge private executive consultation conference room prepared for client strategic discussions" 
+              class="still-media-img" 
+              width="800" 
+              height="600"
+              loading="lazy"
+            >
+          </div>
+
+          <!-- Right Content Panel -->
+          <div class="still-content-panel">
+            <span class="section-tag">TAILORED ADVISORY</span>
+            <h2 id="stillQuestionsHeading" class="still-panel-title">Have a Question Specific to Your Company?</h2>
+            <p class="still-panel-desc">
+              Every corporate decision carries unique operational dynamics, capitalization tables, shareholder objectives, and strategic timelines that cannot be fully captured in standard FAQs.
+            </p>
+            
+            <div class="space-y-3 mb-6">
+              <div class="flex items-start gap-3">
+                <span class="text-accent-gold font-bold text-lg leading-none">&#10003;</span>
+                <span class="text-secondary text-sm">Confidential valuation readiness assessment for private shareholders.</span>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="text-accent-gold font-bold text-lg leading-none">&#10003;</span>
+                <span class="text-secondary text-sm">Targeted acquisition screening criteria and buy-side strategic planning.</span>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="text-accent-gold font-bold text-lg leading-none">&#10003;</span>
+                <span class="text-secondary text-sm">Custom Quality of Earnings review scoping and financial due diligence timeline.</span>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="text-accent-gold font-bold text-lg leading-none">&#10003;</span>
+                <span class="text-secondary text-sm">Three-statement financial model architecture and debt covenant stress-testing.</span>
+              </div>
+            </div>
+
+            <div>
+              <a href="contact.html#consultation" class="nb-btn nb-btn-gold">Request Private Consultation</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------
+         SECTION 09: #faq-closing-cta (Final FAQ Closing CTA)
+         Midnight Blue background (#101E35), centered header, architectural banner, CTAs
+         -------------------------------------------------------------------- -->
+    <section id="faq-closing-cta" aria-labelledby="closingCtaHeading">
+      <div class="container-custom text-center">
+        
+        <!-- Centered Header -->
+        <div class="nb-section-header">
+          <span class="section-tag">TRANSACTION READINESS</span>
+          <h2 id="closingCtaHeading" class="section-heading">Gain Analytical Confidence Before Your Next Decision</h2>
+          <p class="section-intro">
+            Whether you are preparing for a confidential business divestiture, evaluating an acquisition target, or requiring an independent valuation opinion for governance, our senior advisors are ready to deliver institutional clarity.
+          </p>
+        </div>
+
+        <!-- Architectural Detail Banner -->
+        <div class="faq-closing-banner">
+          <img 
+            src="assets/images/faq/faq-closing-detail.webp" 
+            alt="Modern corporate financial district architecture representing strategic vision and financial clarity" 
+            class="faq-closing-img" 
+            width="1200" 
+            height="700"
+            loading="lazy"
+          >
+        </div>
+
+        <!-- Centered CTA Buttons -->
+        <div class="cta-group-centred">
+          <a href="contact.html#consultation" class="nb-btn nb-btn-gold">Schedule Advisory Discussion</a>
+          <a href="case-studies.html" class="nb-btn nb-btn-secondary">Explore Client Case Studies</a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================================================================
+       FOOTER (EXACT SAME AS INDEX.HTML)
+       4-Column Corporate Layout with Logo, Navigation, Services, Newsletter, Socials
+       ====================================================================== -->
+  <footer class="nb-footer" role="contentinfo">
+    <div class="nb-footer-container">
+      
+      <!-- Top 4 Columns & Brand Column -->
+      <div class="nb-footer-top">
+        
+        <!-- Brand Info Column -->
+        <div class="nb-footer-brand-col">
+          <a href="index.html" aria-label="Northbridge Valuation &amp; Advisory Homepage">
+            <img src="assets/images/brand/logo-white.svg" alt="Northbridge Valuation &amp; Advisory" class="nb-footer-logo" width="220" height="36" loading="lazy">
+          </a>
+          <p class="nb-footer-tagline">CLARITY IN VALUE. CONFIDENCE IN EVERY DECISION.</p>
+          <p class="nb-footer-desc">
+            Independent thinking, financial insight and strategic guidance for important business valuation and transaction decisions.
+          </p>
+        </div>
+
+        <!-- Column 1: Quick Links -->
+        <div>
+          <h3 class="nb-footer-col-title">Quick Links</h3>
+          <ul class="nb-footer-links">
+            <li><a href="index.html" class="nb-footer-link">Home</a></li>
+            <li><a href="home2.html" class="nb-footer-link">Home 2</a></li>
+            <li><a href="about.html" class="nb-footer-link">About Us</a></li>
+            <li><a href="services.html" class="nb-footer-link">Services</a></li>
+            <li><a href="case-studies.html" class="nb-footer-link">Case Studies</a></li>
+            <li><a href="contact.html" class="nb-footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 2: Our Services -->
+        <div>
+          <h3 class="nb-footer-col-title">Our Services</h3>
+          <ul class="nb-footer-links">
+            <li><a href="services.html#business-valuation" class="nb-footer-link">Business Valuation</a></li>
+            <li><a href="services.html#ma-advisory" class="nb-footer-link">M&amp;A Advisory</a></li>
+            <li><a href="services.html#financial-due-diligence" class="nb-footer-link">Financial Due Diligence</a></li>
+            <li><a href="services.html#financial-analysis" class="nb-footer-link">Financial Analysis</a></li>
+            <li><a href="services.html#financial-modelling" class="nb-footer-link">Financial Modelling</a></li>
+            <li><a href="services.html#transaction-support" class="nb-footer-link">Transaction Support</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Insights -->
+        <div>
+          <h3 class="nb-footer-col-title">Insights</h3>
+          <ul class="nb-footer-links">
+            <li><a href="blog.html" class="nb-footer-link">Latest Insights</a></li>
+            <li><a href="blog.html#valuation" class="nb-footer-link">Valuation Insights</a></li>
+            <li><a href="blog.html#ma" class="nb-footer-link">M&amp;A Insights</a></li>
+            <li><a href="resources.html" class="nb-footer-link">Business Resources</a></li>
+            <li><a href="faq.html" class="nb-footer-link">Frequently Asked Questions</a></li>
+            <li><a href="about.html#approach" class="nb-footer-link">Our Approach</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Get In Touch -->
+        <div>
+          <h3 class="nb-footer-col-title">Get In Touch</h3>
+          <ul class="nb-footer-links">
+            <li><a href="contact.html#enquiries" class="nb-footer-link">General Enquiries</a></li>
+            <li><a href="contact.html#valuation" class="nb-footer-link">Valuation Enquiries</a></li>
+            <li><a href="contact.html#ma" class="nb-footer-link">M&amp;A Enquiries</a></li>
+            <li><a href="contact.html#consultation" class="nb-footer-link">Consultation Requests</a></li>
+            <li><a href="contact.html" class="nb-footer-link">Contact Us</a></li>
+            <li><a href="contact.html#consultation" class="nb-footer-link">Book a Consultation</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Newsletter Card -->
+      <div class="nb-footer-newsletter-card">
+        <div>
+          <h3 class="nb-newsletter-heading">STAY INFORMED.</h3>
+          <p class="nb-newsletter-desc">
+            Receive occasional perspectives on valuation, transactions and business strategy.
+          </p>
+        </div>
+        <div>
+          <form class="nb-newsletter-form" action="#" method="post">
+            <input 
+              type="email" 
+              class="nb-newsletter-input" 
+              placeholder="Your professional email address" 
+              required 
+              aria-label="Professional email address for newsletter"
+            >
+            <button type="submit" class="nb-newsletter-btn">Subscribe</button>
+            <span class="nb-newsletter-notice" role="status"></span>
+          </form>
+        </div>
+      </div>
+
+      <!-- Social Media Links & Divider Bar -->
+      <div class="nb-footer-middle">
+        <div class="nb-social-group">
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com" class="nb-social-link" target="_blank" rel="noopener noreferrer" aria-label="Northbridge on LinkedIn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+            </svg>
+          </a>
+          <!-- Instagram -->
+          <a href="https://www.instagram.com" class="nb-social-link" target="_blank" rel="noopener noreferrer" aria-label="Northbridge on Instagram">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+          </a>
+          <!-- Facebook -->
+          <a href="https://www.facebook.com" class="nb-social-link" target="_blank" rel="noopener noreferrer" aria-label="Northbridge on Facebook">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.374 14.5 5 15.5 5H18V0h-3.808C10.595 0 9 1.583 9 4.615V8z"/>
+            </svg>
+          </a>
+          <!-- YouTube -->
+          <a href="https://www.youtube.com" class="nb-social-link" target="_blank" rel="noopener noreferrer" aria-label="Northbridge on YouTube">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Bottom Bar: Copyright & Legal -->
+      <div class="nb-footer-bottom">
+        <div>
+          &copy; 2026 Northbridge Valuation &amp; Advisory. All rights reserved.
+        </div>
+        <div class="nb-footer-legal-links">
+          <a href="privacy.html" class="nb-footer-link">Privacy Policy</a>
+          <a href="terms.html" class="nb-footer-link">Terms &amp; Conditions</a>
+          <a href="cookies.html" class="nb-footer-link">Cookie Policy</a>
+          <button type="button" class="nb-back-to-top" aria-label="Scroll back to top of page">
+            <span>Back to Top</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="18 15 12 9 6 15"></polyline>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Local Scripts (Bootstrap Bundle, Shared Main JS, FAQ Interactive JS) -->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/faq.js"></script>
+</body>
+</html>

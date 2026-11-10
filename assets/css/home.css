@@ -1,0 +1,961 @@
+/* ==========================================================================
+   NORTHBRIDGE VALUATION & ADVISORY — HOMEPAGE SPECIFIC STYLESHEET
+   Unique styling for each of the 8 distinct homepage sections.
+   Mandatory: Centred Headings, Centred Intros, Centred CTA Groups.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   HOMEPAGE CONTAINER WRAPPER
+   -------------------------------------------------------------------------- */
+.nb-section {
+  padding-block: clamp(4.5rem, 7vw, 6.5rem);
+  position: relative;
+  overflow: hidden;
+}
+
+.nb-container {
+  max-width: 1320px;
+  margin-inline: auto;
+  padding-inline: clamp(1.25rem, 3.5vw, 2.5rem);
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 01: #home-hero
+   Two-column premium hero on desktop, soft ivory background, navy typography,
+   small muted-gold decorative accent, generous whitespace.
+   -------------------------------------------------------------------------- */
+#home-hero {
+  background-color: var(--bg-primary);
+  padding-top: clamp(3rem, 5.5vw, 5rem);
+  padding-bottom: clamp(4rem, 6.5vw, 6rem);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.95fr;
+  align-items: center;
+  gap: clamp(2.5rem, 5vw, 4.5rem);
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-eyebrow-wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.hero-gold-line {
+  width: 28px;
+  height: 2px;
+  background-color: var(--accent-gold);
+}
+
+.hero-eyebrow {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent-gold);
+}
+
+.hero-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2.35rem, 4.2vw, 3.75rem);
+  font-weight: 400;
+  line-height: 1.16;
+  color: var(--color-primary-navy);
+  margin-bottom: 1.35rem;
+  letter-spacing: -0.02em;
+}
+
+[data-theme="dark"] .hero-title {
+  color: #F2F5FA;
+}
+
+.hero-description {
+  font-size: clamp(1.05rem, 1.3vw, 1.2rem);
+  line-height: 1.75;
+  color: var(--text-secondary);
+  max-width: 580px;
+  margin-bottom: 2rem;
+}
+
+/* Centred Hero CTA group */
+.hero-cta-wrapper {
+  margin-bottom: 2rem;
+}
+
+.hero-supporting-line {
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.hero-supporting-dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: var(--accent-gold);
+}
+
+.hero-image-frame {
+  position: relative;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-card);
+}
+
+.hero-image {
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  display: block;
+  transition: transform var(--transition-smooth);
+}
+
+.hero-image-frame:hover .hero-image {
+  transform: scale(1.02);
+}
+
+.hero-badge {
+  position: absolute;
+  bottom: 1.5rem;
+  inset-inline-start: 1.5rem;
+  background-color: rgba(23, 43, 77, 0.92);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 0.85rem 1.35rem;
+  border-radius: 4px;
+  border-inline-start: 3px solid var(--accent-gold);
+  color: #FFFFFF;
+}
+
+.hero-badge-title {
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent-gold);
+  margin-bottom: 0.2rem;
+}
+
+.hero-badge-sub {
+  font-size: 0.86rem;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 500;
+}
+
+@media (max-width: 991px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .hero-content {
+    text-align: center;
+    align-items: center;
+  }
+
+  .hero-supporting-line {
+    justify-content: center;
+  }
+
+  .hero-image {
+    height: 400px;
+  }
+}
+
+@media (max-width: 575px) {
+  .hero-image {
+    height: 320px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 02: #our-perspective
+   Introduction / Value Proposition
+   Background: White. Centred Intro + 3 Clean Content Blocks.
+   Image-and-text compositions or elegant horizontal blocks (not generic cards).
+   -------------------------------------------------------------------------- */
+#our-perspective {
+  background-color: var(--bg-surface);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.perspective-list {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1.5rem, 2.5vw, 2rem);
+  margin-top: 1.5rem;
+}
+
+.perspective-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 3.5rem;
+  padding: 1.75rem;
+  border-radius: 6px;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  transition: box-shadow var(--transition-base), border-color var(--transition-base);
+}
+
+.perspective-block:hover {
+  box-shadow: var(--shadow-sm);
+  border-color: var(--accent-gold);
+}
+
+.perspective-block.reversed {
+  direction: rtl;
+}
+
+.perspective-block.reversed > * {
+  direction: ltr;
+}
+
+[dir="rtl"] .perspective-block.reversed {
+  direction: ltr;
+}
+
+[dir="rtl"] .perspective-block.reversed > * {
+  direction: rtl;
+}
+
+.perspective-image-wrap {
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+  aspect-ratio: 16 / 10;
+}
+
+.perspective-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-smooth);
+}
+
+.perspective-block:hover .perspective-image {
+  transform: scale(1.03);
+}
+
+.perspective-text {
+  display: flex;
+  flex-direction: column;
+  padding-inline: 1rem;
+}
+
+.perspective-step-num {
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  color: var(--accent-gold);
+  margin-bottom: 0.65rem;
+  text-transform: uppercase;
+}
+
+.perspective-heading {
+  font-family: var(--font-heading);
+  font-size: clamp(1.6rem, 2.2vw, 2.15rem);
+  font-weight: 400;
+  color: var(--text-heading);
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+.perspective-desc {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: var(--text-secondary);
+  margin-bottom: 1.25rem;
+}
+
+@media (max-width: 900px) {
+  .perspective-block {
+    grid-template-columns: 1fr;
+    gap: 1.85rem;
+    padding: 1.25rem;
+  }
+
+  .perspective-block.reversed {
+    direction: ltr;
+  }
+
+  .perspective-text {
+    padding-inline: 0;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 03: #featured-services
+   Core Services (5 items)
+   Background: Soft Ivory #F7F7F3
+   Refined Asymmetric Layout: 3 items in 1st row, 2 balanced in 2nd row (desktop)
+   Tablet: 2 columns. Mobile: 1 column.
+   -------------------------------------------------------------------------- */
+#featured-services {
+  background-color: var(--bg-primary);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 3.5rem;
+}
+
+.services-grid-row-two {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 920px;
+  margin-inline: auto;
+  margin-bottom: 3.5rem;
+}
+
+.service-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-base);
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--accent-gold);
+}
+
+.service-card-media {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background-color: var(--bg-muted);
+}
+
+.service-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-smooth);
+}
+
+.service-card:hover .service-card-img {
+  transform: scale(1.04);
+}
+
+.service-card-body {
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.service-card-title {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--text-heading);
+  margin-bottom: 0.75rem;
+  line-height: 1.35;
+}
+
+.service-card-desc {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  flex: 1;
+}
+
+@media (max-width: 1024px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .services-grid-row-two {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 680px) {
+  .services-grid,
+  .services-grid-row-two {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 04: #why-valuation-matters
+   Two-column editorial layout.
+   Left: Large professional photograph.
+   Right: Heading, explanation, 4 points.
+   -------------------------------------------------------------------------- */
+#why-valuation-matters {
+  background-color: var(--bg-surface);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.matters-editorial-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: clamp(2.5rem, 5vw, 4.5rem);
+  align-items: center;
+}
+
+.matters-image-col {
+  position: relative;
+}
+
+.matters-image-frame {
+  position: relative;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border-color);
+}
+
+.matters-image {
+  width: 100%;
+  height: 580px;
+  object-fit: cover;
+  display: block;
+}
+
+.matters-gold-accent-box {
+  position: absolute;
+  top: -12px;
+  inset-inline-start: -12px;
+  width: 80px;
+  height: 80px;
+  border-top: 3px solid var(--accent-gold);
+  border-inline-start: 3px solid var(--accent-gold);
+  pointer-events: none;
+}
+
+.matters-content-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.matters-points-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.75rem;
+  margin-top: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.matters-point-item {
+  border-top: 2px solid var(--border-color);
+  padding-top: 1.15rem;
+  transition: border-color var(--transition-fast);
+}
+
+.matters-point-item:hover {
+  border-top-color: var(--accent-gold);
+}
+
+.matters-point-num {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  color: var(--accent-gold);
+  margin-bottom: 0.4rem;
+}
+
+.matters-point-title {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  color: var(--text-heading);
+  margin-bottom: 0.45rem;
+  line-height: 1.35;
+}
+
+.matters-point-desc {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  margin: 0;
+}
+
+@media (max-width: 991px) {
+  .matters-editorial-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .matters-image {
+    height: 400px;
+  }
+}
+
+@media (max-width: 600px) {
+  .matters-points-list {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 05: #our-approach
+   Pale Blue #EAF0F7 (dark: #172438).
+   Four-step horizontal timeline with elegant numbered markers & connecting line.
+   Tablet: 2 columns. Mobile: vertical timeline.
+   -------------------------------------------------------------------------- */
+#our-approach {
+  background-color: var(--color-pale-blue);
+  border-bottom: 1px solid var(--border-color);
+}
+
+[data-theme="dark"] #our-approach {
+  background-color: #172438;
+}
+
+.approach-timeline-wrap {
+  position: relative;
+  margin-top: 2rem;
+  margin-bottom: 3.5rem;
+}
+
+/* Connecting Line */
+.approach-timeline-line {
+  position: absolute;
+  top: 32px;
+  inset-inline-start: 10%;
+  inset-inline-end: 10%;
+  height: 2px;
+  background-color: var(--border-color);
+  z-index: 1;
+}
+
+.approach-steps-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  position: relative;
+  z-index: 2;
+}
+
+.approach-step-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1.25rem 1rem;
+}
+
+.approach-step-marker {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: var(--bg-surface);
+  border: 2px solid var(--accent-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-body);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--accent-gold);
+  margin-bottom: 1.5rem;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-fast), background-color var(--transition-fast);
+}
+
+.approach-step-card:hover .approach-step-marker {
+  transform: scale(1.08);
+  background-color: var(--accent-gold);
+  color: #FFFFFF;
+}
+
+.approach-step-title {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  color: var(--text-heading);
+  margin-bottom: 0.75rem;
+}
+
+.approach-step-desc {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin: 0;
+}
+
+@media (max-width: 991px) {
+  .approach-timeline-line {
+    display: none;
+  }
+
+  .approach-steps-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .approach-step-card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 2rem 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .approach-steps-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 06: #featured-insights
+   Background: White. Editorial magazine-style 3 columns.
+   -------------------------------------------------------------------------- */
+#featured-insights {
+  background-color: var(--bg-surface);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.insights-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 3.5rem;
+}
+
+.insight-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-base);
+}
+
+.insight-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--accent-gold);
+}
+
+.insight-card-media {
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+}
+
+.insight-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-smooth);
+}
+
+.insight-card:hover .insight-card-img {
+  transform: scale(1.04);
+}
+
+.insight-card-body {
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.insight-card-cat {
+  font-family: var(--font-body);
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent-gold);
+  margin-bottom: 0.65rem;
+}
+
+.insight-card-title {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  color: var(--text-heading);
+  line-height: 1.35;
+  margin-bottom: 0.85rem;
+}
+
+.insight-card-desc {
+  font-size: 0.94rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  flex: 1;
+}
+
+@media (max-width: 991px) {
+  .insights-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 680px) {
+  .insights-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 07: #business-resources
+   Background: Soft Ivory #F7F7F3. Clean split layout.
+   Left: Business Valuation Preparation.
+   Right: 3 resource links with simple outline icons, descriptions, subtle divider.
+   -------------------------------------------------------------------------- */
+#business-resources {
+  background-color: var(--bg-primary);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.resources-split-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: clamp(2rem, 4vw, 3.5rem);
+  margin-bottom: 3.5rem;
+  align-items: stretch;
+}
+
+.resource-feature-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: clamp(2rem, 3.5vw, 3rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  border-inline-start: 4px solid var(--accent-gold);
+  box-shadow: var(--shadow-sm);
+}
+
+.resource-feature-badge {
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent-gold);
+  margin-bottom: 0.85rem;
+}
+
+.resource-feature-title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.6rem, 2.3vw, 2.2rem);
+  color: var(--text-heading);
+  line-height: 1.3;
+  margin-bottom: 1rem;
+}
+
+.resource-feature-desc {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  line-height: 1.75;
+  margin-bottom: 2rem;
+}
+
+.resources-links-column {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: clamp(1.5rem, 2.5vw, 2.5rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: var(--shadow-sm);
+}
+
+.resource-link-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  padding-block: 1.5rem;
+  border-bottom: 1px solid var(--border-subtle);
+  transition: background-color var(--transition-fast), padding-inline-start var(--transition-fast);
+}
+
+.resource-link-row:last-child {
+  border-bottom: none;
+}
+
+.resource-icon-wrap {
+  width: 44px;
+  height: 44px;
+  border-radius: 6px;
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  color: var(--color-professional-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all var(--transition-fast);
+}
+
+[data-theme="dark"] .resource-icon-wrap {
+  color: var(--accent-gold);
+}
+
+.resource-link-row:hover .resource-icon-wrap {
+  background-color: var(--accent-gold);
+  border-color: var(--accent-gold);
+  color: #FFFFFF;
+}
+
+.resource-info {
+  flex: 1;
+}
+
+.resource-item-title {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  color: var(--text-heading);
+  margin-bottom: 0.35rem;
+  line-height: 1.35;
+}
+
+.resource-item-desc {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 0.6rem;
+}
+
+@media (max-width: 991px) {
+  .resources-split-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 08: #home-consultation
+   Final Consultation CTA
+   Background: Deep Navy #172B4D. Subtle decorative gold lines.
+   Image background overlay: home-final-cta.webp.
+   Centred content, white heading, soft ivory paragraph, gold primary button,
+   transparent outlined secondary button.
+   -------------------------------------------------------------------------- */
+#home-consultation {
+  background-color: #172B4D;
+  color: #FFFFFF;
+  position: relative;
+  padding-block: clamp(5.5rem, 8vw, 8rem);
+}
+
+.cta-bg-image-layer {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.cta-bg-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.16;
+}
+
+.cta-overlay-gradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(23, 43, 77, 0.95) 0%, rgba(16, 30, 53, 0.97) 100%);
+  z-index: 2;
+}
+
+.cta-inner-frame {
+  position: relative;
+  z-index: 3;
+  max-width: 860px;
+  margin-inline: auto;
+  text-align: center;
+  padding: clamp(2.5rem, 5vw, 4.5rem) clamp(1.5rem, 3vw, 3rem);
+  border: 1px solid rgba(185, 154, 98, 0.28);
+  border-radius: 8px;
+  background-color: rgba(23, 43, 77, 0.6);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* Subtle Decorative Gold Lines */
+.cta-deco-line-top,
+.cta-deco-line-bottom {
+  position: absolute;
+  inset-inline-start: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #B99A62, transparent);
+}
+
+.cta-deco-line-top {
+  top: -1px;
+}
+
+.cta-deco-line-bottom {
+  bottom: -1px;
+}
+
+.cta-eyebrow {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #B99A62;
+  margin-bottom: 1.25rem;
+}
+
+.cta-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2.1rem, 3.8vw, 3.25rem);
+  font-weight: 400;
+  color: #FFFFFF;
+  line-height: 1.22;
+  margin-bottom: 1.35rem;
+  letter-spacing: -0.015em;
+}
+
+.cta-desc {
+  font-family: var(--font-body);
+  font-size: clamp(1.05rem, 1.3vw, 1.18rem);
+  line-height: 1.75;
+  color: #F7F7F3;
+  max-width: 680px;
+  margin-inline: auto;
+  margin-bottom: 2.5rem;
+  opacity: 0.95;
+}
+
+@media (max-width: 575px) {
+  .cta-inner-frame {
+    padding-inline: 1.25rem;
+  }
+}

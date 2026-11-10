@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Northbridge Valuation &amp; Advisory | Strategic Business Valuation &amp; M&amp;A</title>
+  <meta name="description" content="Explore business valuation, mergers and acquisitions advisory, financial analysis and transaction perspectives with Northbridge Valuation &amp; Advisory.">
+
+  <!-- Open Graph Metadata -->
+  <meta property="og:title" content="Northbridge Valuation &amp; Advisory | Strategic Business Valuation &amp; M&amp;A">
+  <meta property="og:description" content="Explore business valuation, mergers and acquisitions advisory, financial analysis and transaction perspectives with Northbridge Valuation &amp; Advisory.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/home2/home2-hero.webp">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/brand/favicon.svg">
+
+  <!-- Pre-render Theme & Direction Script (Prevents flash of unstyled theme/direction) -->
+  <script>
+    (function () {
+      try {
+        var theme = localStorage.getItem('northbridge_theme');
+        var dir = localStorage.getItem('northbridge_direction');
+        if (theme === 'dark') {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        } else {
+          document.documentElement.removeAttribute('data-theme');
+        }
+        if (dir === 'rtl') {
+          document.documentElement.setAttribute('dir', 'rtl');
+          document.documentElement.setAttribute('lang', 'ar');
+        } else {
+          document.documentElement.setAttribute('dir', 'ltr');
+          document.documentElement.setAttribute('lang', 'en');
+        }
+      } catch (e) {}
+    })();
+  </script>
+
+  <!-- Local Stylesheets Only (Offline Ready, No External CDN) -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/tailwind.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/home2.css">
+</head>
+<body>
+
+  <!-- ======================================================================
+       HEADER / SHARED STICKY NAVBAR (EXACT SAME AS INDEX.HTML)
+       Height: Desktop 88px | Tablet 78px | Mobile 72px
+       ====================================================================== -->
+  <header class="nb-header" role="banner">
+    <div class="nb-navbar-container">
+      
+      <!-- Brand Logo (Left) -->
+      <a href="index.html" class="nb-brand-link" aria-label="Northbridge Valuation &amp; Advisory Homepage">
+        <img src="assets/images/brand/logo.svg" alt="Northbridge Valuation &amp; Advisory" class="nb-brand-logo logo-light-mode" width="230" height="38">
+        <img src="assets/images/brand/logo-white.svg" alt="Northbridge Valuation &amp; Advisory" class="nb-brand-logo logo-dark-mode" width="230" height="38">
+      </a>
+
+      <!-- Desktop Navigation Menu (Centre - 1281px+) -->
+      <nav class="nb-desktop-nav" aria-label="Primary Navigation">
+        <!-- 1. Home Dropdown (Home 2 active) -->
+        <div class="nb-nav-item nb-dropdown">
+          <a href="home2.html" class="nb-nav-link active" id="homeDropdown" aria-haspopup="true" aria-expanded="false">
+            <span>Home</span>
+            <span class="nb-dropdown-icon" aria-hidden="true">&#9662;</span>
+          </a>
+          <ul class="nb-dropdown-menu" aria-labelledby="homeDropdown">
+            <li class="nb-dropdown-item"><a href="index.html" class="nb-dropdown-link">Home 1</a></li>
+            <li class="nb-dropdown-item"><a href="home2.html" class="nb-dropdown-link active">Home 2</a></li>
+          </ul>
+        </div>
+
+        <!-- 2. About -->
+        <div class="nb-nav-item">
+          <a href="about.html" class="nb-nav-link">About</a>
+        </div>
+
+        <!-- 3. Services (Direct link, NO dropdown, NO dropdown arrow) -->
+        <div class="nb-nav-item">
+          <a href="services.html" class="nb-nav-link">Services</a>
+        </div>
+
+        <!-- 4. Case Studies -->
+        <div class="nb-nav-item">
+          <a href="case-studies.html" class="nb-nav-link">Case Studies</a>
+        </div>
+
+        <!-- 5. Insights Dropdown -->
+        <div class="nb-nav-item nb-dropdown">
+          <a href="blog.html" class="nb-nav-link" id="insightsDropdown" aria-haspopup="true" aria-expanded="false">
+            <span>Insights</span>
+            <span class="nb-dropdown-icon" aria-hidden="true">&#9662;</span>
+          </a>
+          <ul class="nb-dropdown-menu" aria-labelledby="insightsDropdown">
+            <li class="nb-dropdown-item"><a href="blog.html" class="nb-dropdown-link">Latest Insights / Blog</a></li>
+            <li class="nb-dropdown-item"><a href="resources.html" class="nb-dropdown-link">Business Resources</a></li>
+          </ul>
+        </div>
+
+        <!-- 6. FAQ -->
+        <div class="nb-nav-item">
+          <a href="faq.html" class="nb-nav-link">FAQ</a>
+        </div>
+
+        <!-- 7. Contact -->
+        <div class="nb-nav-item">
+          <a href="contact.html" class="nb-nav-link">Contact</a>
+        </div>
+      </nav>
+
+      <!-- Desktop Right Controls (EXACT ORDER: 1. LTR/RTL, 2. Dark/Light, 3. Book a Consultation) -->
+      <div class="nb-desktop-controls">
+        <!-- 1. LTR / RTL Toggle -->
+        <button type="button" class="nb-icon-btn dir-toggle-btn" id="dir-toggle" aria-label="Switch to RTL layout">
+          <span class="nb-dir-label">RTL</span>
+        </button>
+
+        <!-- 2. Dark Mode / Light Mode Toggle -->
+        <button type="button" class="nb-icon-btn theme-toggle-btn" id="theme-toggle" aria-label="Switch to dark mode">
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- 3. BOOK A CONSULTATION Button -->
+        <a href="contact.html#consultation" class="nb-nav-cta">Book a Consultation</a>
+      </div>
+
+      <!-- Mobile & Tablet Controls Bar (Logo on left, Dark + RTL + Hamburger on right) -->
+      <div class="nb-mobile-controls">
+        <button type="button" class="nb-icon-btn dir-toggle-btn" aria-label="Toggle text direction">
+          <span class="nb-dir-label">RTL</span>
+        </button>
+        <button type="button" class="nb-icon-btn theme-toggle-btn" aria-label="Toggle dark mode">
+          <svg class="icon-sun" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="icon-moon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+        <button type="button" class="nb-hamburger-btn" aria-label="Open navigation drawer" aria-expanded="false" aria-controls="mobileDrawer">
+          <span class="nb-hamburger-bar"></span>
+          <span class="nb-hamburger-bar"></span>
+          <span class="nb-hamburger-bar"></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ======================================================================
+       MOBILE & TABLET FULL NAVIGATION DRAWER (EXACT SAME AS INDEX.HTML)
+       ====================================================================== -->
+  <div class="nb-drawer-backdrop" aria-hidden="true"></div>
+  <aside class="nb-drawer" id="mobileDrawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation Menu">
+    <div class="nb-drawer-header">
+      <a href="index.html" class="nb-brand-link" aria-label="Northbridge Valuation &amp; Advisory Homepage">
+        <img src="assets/images/brand/logo.svg" alt="Northbridge Valuation &amp; Advisory" class="nb-brand-logo logo-light-mode" width="190" height="32">
+        <img src="assets/images/brand/logo-white.svg" alt="Northbridge Valuation &amp; Advisory" class="nb-brand-logo logo-dark-mode" width="190" height="32">
+      </a>
+      <button type="button" class="nb-drawer-close-btn" aria-label="Close navigation menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <div class="nb-drawer-body">
+      <ul class="nb-drawer-nav">
+        <!-- Home Accordion -->
+        <li class="nb-drawer-item">
+          <button type="button" class="nb-drawer-link nb-drawer-toggle-btn" data-target="drawerHomeSubnav" aria-expanded="false">
+            <span>Home</span>
+            <span class="nb-drawer-toggle-icon" aria-hidden="true">&#9662;</span>
+          </button>
+          <ul class="nb-drawer-subnav" id="drawerHomeSubnav">
+            <li><a href="index.html" class="nb-drawer-sublink">Home 1</a></li>
+            <li><a href="home2.html" class="nb-drawer-sublink active">Home 2</a></li>
+          </ul>
+        </li>
+
+        <!-- About -->
+        <li class="nb-drawer-item">
+          <a href="about.html" class="nb-drawer-link">About</a>
+        </li>
+
+        <!-- Services (Direct Link) -->
+        <li class="nb-drawer-item">
+          <a href="services.html" class="nb-drawer-link">Services</a>
+        </li>
+
+        <!-- Case Studies -->
+        <li class="nb-drawer-item">
+          <a href="case-studies.html" class="nb-drawer-link">Case Studies</a>
+        </li>
+
+        <!-- Insights Accordion -->
+        <li class="nb-drawer-item">
+          <button type="button" class="nb-drawer-link nb-drawer-toggle-btn" data-target="drawerInsightsSubnav" aria-expanded="false">
+            <span>Insights</span>
+            <span class="nb-drawer-toggle-icon" aria-hidden="true">&#9662;</span>
+          </button>
+          <ul class="nb-drawer-subnav" id="drawerInsightsSubnav">
+            <li><a href="blog.html" class="nb-drawer-sublink">Latest Insights / Blog</a></li>
+            <li><a href="resources.html" class="nb-drawer-sublink">Business Resources</a></li>
+          </ul>
+        </li>
+
+        <!-- FAQ -->
+        <li class="nb-drawer-item">
+          <a href="faq.html" class="nb-drawer-link">FAQ</a>
+        </li>
+
+        <!-- Contact -->
+        <li class="nb-drawer-item">
+          <a href="contact.html" class="nb-drawer-link">Contact</a>
+        </li>
+      </ul>
+
+      <!-- Drawer Controls & Action Buttons -->
+      <div class="nb-drawer-footer">
+        <div class="nb-drawer-toggles-row">
+          <button type="button" class="nb-drawer-toggle-item dir-toggle-btn" aria-label="Toggle layout direction">
+            <span class="dir-text-label">RTL Layout</span>
+          </button>
+          <button type="button" class="nb-drawer-toggle-item theme-toggle-btn" aria-label="Toggle dark mode">
+            <span class="theme-text-label">Dark Mode</span>
+          </button>
+        </div>
+        <a href="contact.html#consultation" class="nb-btn nb-btn-gold nb-drawer-cta">Book a Consultation</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ======================================================================
+       HOME 2 MAIN CONTENT — EIGHT COMPLETELY NEW SECTIONS
+       Zero Repetition from Home 1:
+       01: #home2-hero (Cinematic Full-Width Hero)
+       02: #decision-landscape (Financial Decision Landscape)
+       03: #valuation-specialisations (Interactive Vertical Service Selector)
+       04: #transaction-journey (Midnight Blue Transaction Journey)
+       05: #industry-perspectives (Image-Led Editorial Mosaic)
+       06: #business-scenarios (Illustrative Business Scenario Panels)
+       07: #home2-insight-library (The Northbridge Journal Publication Layout)
+       08: #home2-contact (Signature Soaring Bridge Closing CTA)
+       ====================================================================== -->
+  <main id="main-content">
+
+    <!-- --------------------------------------------------------------------
+         SECTION 01: #home2-hero (Cinematic Full-Width Hero)
+         Full-width architectural photographic background, dark navy overlay,
+         large text lower-left, gold eyebrow, 2 CTAs, scroll indicator.
+         -------------------------------------------------------------------- -->
+    <section id="home2-hero" aria-labelledby="hero2-heading">
+      <div class="hero2-bg-layer" aria-hidden="true">
+        <img 
+          src="assets/images/home2/home2-hero.webp" 
+          alt="Modern architectural corporate headquarters with geometric glass and steel facade in evening light" 
+          class="hero2-bg-img"
+          width="1920"
+          height="1080"
+          loading="eager"
+          fetchpriority="high"
+        >
+      </div>
+      <div class="hero2-overlay" aria-hidden="true"></div>
+
+      <div class="hero2-container">
+        <div class="hero2-content-wrap">
+          <div class="hero2-eyebrow-row">
+            <span class="hero2-vertical-accent" aria-hidden="true"></span>
+            <span class="hero2-eyebrow">STRATEGIC FINANCIAL &amp; TRANSACTION ADVISORY</span>
+          </div>
+
+          <h1 id="hero2-heading" class="hero2-title">
+            See Beyond the Numbers.<br>Understand What Comes Next.
+          </h1>
+
+          <p class="hero2-desc">
+            Business decisions deserve more than surface-level financial information. Explore value, evaluate opportunities and approach important transactions with a clearer strategic perspective.
+          </p>
+
+          <div class="hero2-cta-group">
+            <a href="services.html" class="nb-btn nb-btn-gold">Explore Our Expertise</a>
+            <a href="contact.html#consultation" class="nb-btn nb-btn-outline-white">Start a Conversation</a>
+          </div>
+
+          <div>
+            <a href="#decision-landscape" class="hero2-scroll-indicator" aria-label="Scroll to decision landscape section">
+              <span>Explore Landscape</span>
+              <span class="hero2-scroll-line" aria-hidden="true"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------
+         SECTION 02: #decision-landscape (Financial Decision Landscape)
+         Background: Soft Ivory #F7F7F3.
+         Asymmetrical layout: 3 wide editorial statements + aerial photo showcase.
+         -------------------------------------------------------------------- -->
+    <section id="decision-landscape" class="nb-section" aria-labelledby="landscape-heading">
+      <div class="nb-container">
+        
+        <!-- Centred Section Header -->
+        <div class="text-center">
+          <span class="section-eyebrow">THE BUSINESS LANDSCAPE</span>
+          <h2 id="landscape-heading" class="section-heading">Every Important Decision Has a Bigger Picture.</h2>
+          <p class="section-intro">
+            A business decision can influence ownership, growth, investment and long-term direction. Understanding the financial context helps decision-makers consider what matters before moving forward.
+          </p>
+        </div>
+
+        <div class="landscape-grid">
+          
+          <!-- Left Column: 3 Wide Editorial Statements -->
+          <div class="landscape-statements-list">
+            
+            <!-- Statement 01 -->
+            <article class="landscape-statement-row">
+              <span class="landscape-num">01</span>
+              <div class="landscape-statement-body">
+                <h3 class="landscape-statement-title">VALUE IS MORE THAN A NUMBER</h3>
+                <p class="landscape-statement-desc">
+                  Financial performance, business structure, market position and future considerations all contribute to understanding business value.
+                </p>
+              </div>
+            </article>
+
+            <!-- Statement 02 -->
+            <article class="landscape-statement-row">
+              <span class="landscape-num">02</span>
+              <div class="landscape-statement-body">
+                <h3 class="landscape-statement-title">TRANSACTIONS REQUIRE PERSPECTIVE</h3>
+                <p class="landscape-statement-desc">
+                  A potential acquisition, ownership transition or sale involves financial, commercial and strategic questions.
+                </p>
+              </div>
+            </article>
+
+            <!-- Statement 03 -->
+            <article class="landscape-statement-row">
+              <span class="landscape-num">03</span>
+              <div class="landscape-statement-body">
+                <h3 class="landscape-statement-title">CLARITY STARTS WITH UNDERSTANDING</h3>
+                <p class="landscape-statement-desc">
+                  Organised information and structured analysis help bring relevant considerations into focus.
+                </p>
+              </div>
+            </article>
+
+          </div>
+
+          <!-- Right Column: Asymmetric Aerial Architectural Photography Showcase -->
+          <div class="landscape-media-wrap">
+            <div class="landscape-img-frame">
+              <img 
+                src="assets/images/home2/decision-landscape.webp" 
+                alt="Aerial architectural view of modern corporate financial district and metropolitan infrastructure" 
+                class="landscape-img"
+                width="600"
+                height="400"
+                loading="lazy"
+              >
+              <div class="landscape-caption-badge">
+                <div class="landscape-caption-title">Commercial Environment</div>
+                <p class="landscape-caption-sub">Contextual Market &amp; Valuation Analysis</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------
+         SECTION 03: #valuation-specialisations (Interactive Service Index)
+         Background: White.
+         Left: Vertical selectable tabs. Right: Interactive image and detail panel.
+         -------------------------------------------------------------------- -->
+    <section id="valuation-specialisations" class="nb-section" aria-labelledby="specialisations-heading">
+      <div class="nb-container">
+        
+        <!-- Centred Section Header -->
+        <div class="text-center">
+          <span class="section-eyebrow">OUR ADVISORY CAPABILITIES</span>
+          <h2 id="specialisations-heading" class="section-heading">A Focused Perspective on Complex Financial Matters.</h2>
+          <p class="section-intro">
+            Explore the areas where financial analysis and strategic insight can help inform important business decisions.
+          </p>
+        </div>
+
+        <div class="specialisations-wrapper">
+          
+          <!-- Left Column: Vertical Selectable Service Tabs -->
+          <div class="spec-nav-col" role="tablist" aria-label="Advisory specialisations list">
+            <ul class="spec-nav-list">
+              
+              <!-- Tab 01 -->
+              <li>
+                <button type="button" class="spec-tab-btn active" role="tab" id="tab-valuation" aria-selected="true" aria-controls="specDetailPanel">
+                  <div class="spec-tab-content-left">
+                    <span class="spec-tab-num">01</span>
+                    <h3 class="spec-tab-title">Business Valuation</h3>
+                  </div>
+                  <span class="spec-tab-arrow" aria-hidden="true">&#8594;</span>
+                </button>
+              </li>
+
+              <!-- Tab 02 -->
+              <li>
+                <button type="button" class="spec-tab-btn" role="tab" id="tab-ma" aria-selected="false" aria-controls="specDetailPanel" tabindex="-1">
+                  <div class="spec-tab-content-left">
+                    <span class="spec-tab-num">02</span>
+                    <h3 class="spec-tab-title">Mergers &amp; Acquisitions</h3>
+                  </div>
+                  <span class="spec-tab-arrow" aria-hidden="true">&#8594;</span>
+                </button>
+              </li>
+
+              <!-- Tab 03 -->
+              <li>
+                <button type="button" class="spec-tab-btn" role="tab" id="tab-diligence" aria-selected="false" aria-controls="specDetailPanel" tabindex="-1">
+                  <div class="spec-tab-content-left">
+                    <span class="spec-tab-num">03</span>
+                    <h3 class="spec-tab-title">Financial Due Diligence</h3>
+                  </div>
+                  <span class="spec-tab-arrow" aria-hidden="true">&#8594;</span>
+                </button>
+              </li>
+
+              <!-- Tab 04 -->
+              <li>
+                <button type="button" class="spec-tab-btn" role="tab" id="tab-modelling" aria-selected="false" aria-controls="specDetailPanel" tabindex="-1">
+                  <div class="spec-tab-content-left">
+                    <span class="spec-tab-num">04</span>
+                    <h3 class="spec-tab-title">Financial Modelling &amp; Analysis</h3>
+                  </div>
+                  <span class="spec-tab-arrow" aria-hidden="true">&#8594;</span>
+                </button>
+              </li>
+
+              <!-- Tab 05 -->
+              <li>
+                <button type="button" class="spec-tab-btn" role="tab" id="tab-transaction" aria-selected="false" aria-controls="specDetailPanel" tabindex="-1">
+                  <div class="spec-tab-content-left">
+                    <span class="spec-tab-num">05</span>
+                    <h3 class="spec-tab-title">Transaction Support</h3>
+                  </div>
+                  <span class="spec-tab-arrow" aria-hidden="true">&#8594;</span>
+                </button>
+              </li>
+
+            </ul>
+          </div>
+
+          <!-- Right Column: Interactive Detail Display Panel -->
+          <div class="spec-detail-col">
+            <article class="spec-detail-panel" id="specDetailPanel" role="tabpanel" aria-labelledby="tab-valuation">
+              
+              <div class="spec-detail-media">
+                <img 
+                  id="specDetailImg"
+                  src="assets/images/home2/specialisation-valuation.webp" 
+                  alt="Quantitative business valuation models and financial performance analysis" 
+                  class="spec-detail-img"
+                  width="600"
+                  height="375"
+                  loading="lazy"
+                >
+              </div>
+
+              <div class="spec-detail-body">
+                <span class="spec-detail-badge" id="specDetailBadge">SPECIALISATION 01</span>
+                <h3 class="spec-detail-title" id="specDetailTitle">Business Valuation</h3>
+                <p class="spec-detail-desc" id="specDetailDesc">
+                  Explore financial performance, business characteristics and valuation considerations to develop an informed perspective on business value.
+                </p>
+                <div>
+                  <a href="services.html#business-valuation" class="nb-btn nb-btn-primary" id="specDetailLink">
+                    <span>View Service Details</span>
+                  </a>
+                </div>
+              </div>
+
+            </article>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------
+         SECTION 04: #transaction-journey (Transaction Journey)
+         Background: Midnight Blue #101E35.
+         Horizontal numbered journey with connecting line + geometric corridor photo.
+         -------------------------------------------------------------------- -->
+    <section id="transaction-journey" class="nb-section" aria-labelledby="journey-heading">
+      <div class="nb-container">
+        
+        <!-- Centred Section Header -->
+        <div class="text-center">
+          <span class="section-eyebrow">FROM PREPARATION TO DECISION</span>
+          <h2 id="journey-heading" class="section-heading">A Transaction Is a Journey. Every Stage Matters.</h2>
+          <p class="section-intro">
+            Important transactions involve connected stages of preparation, analysis, evaluation and decision-making.
+          </p>
+        </div>
+
+        <div class="journey-container-inner">
+          <div class="journey-timeline-track">
+            <div class="journey-line" aria-hidden="true"></div>
+
+            <div class="journey-stages-grid">
+              
+              <!-- Stage 01 -->
+              <div class="journey-stage-item">
+                <div class="journey-marker" aria-label="Stage 1">01</div>
+                <h3 class="journey-stage-title">PREPARE</h3>
+                <p class="journey-stage-desc">
+                  Understand objectives, information requirements and transaction context.
+                </p>
+              </div>
+
+              <!-- Stage 02 -->
+              <div class="journey-stage-item">
+                <div class="journey-marker" aria-label="Stage 2">02</div>
+                <h3 class="journey-stage-title">REVIEW</h3>
+                <p class="journey-stage-desc">
+                  Examine relevant financial information, business performance and key considerations.
+                </p>
+              </div>
+
+              <!-- Stage 03 -->
+              <div class="journey-stage-item">
+                <div class="journey-marker" aria-label="Stage 3">03</div>
+                <h3 class="journey-stage-title">EVALUATE</h3>
+                <p class="journey-stage-desc">
+                  Consider findings, assumptions, risks and strategic implications.
+                </p>
+              </div>
+
+              <!-- Stage 04 -->
+              <div class="journey-stage-item">
+                <div class="journey-marker" aria-label="Stage 4">04</div>
+                <h3 class="journey-stage-title">DECIDE</h3>
+                <p class="journey-stage-desc">
+                  Bring relevant insights together to support informed discussions and decisions.
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Supporting Geometric Architectural Photography Composition -->
+          <div class="journey-photo-strip">
+            <img 
+              src="assets/images/home2/transaction-journey.webp" 
+              alt="Modern corporate corridor with repeating geometric perspective lines and sophisticated natural lighting" 
+              class="journey-photo"
+              width="1080"
+              height="460"
+              loading="lazy"
+            >
+            <div class="journey-photo-overlay" aria-hidden="true"></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------
+         SECTION 05: #industry-perspectives (Industries & Business Context)
+         Background: Soft Ivory #F7F7F3.
+         Asymmetric image-led editorial mosaic (1 large featured + 3 complementary).
+         -------------------------------------------------------------------- -->
+    <section id="industry-perspectives" class="nb-section" aria-labelledby="industry-heading">
+      <div class="nb-container">
+        
+        <!-- Centred Section Header -->
+        <div class="text-center">
+          <span class="section-eyebrow">BUSINESS CONTEXT</span>
+          <h2 id="industry-heading" class="section-heading">Different Businesses. Different Value Drivers.</h2>
+          <p class="section-intro">
+            Every organisation operates within its own commercial environment. Financial and strategic considerations can vary with its industry, operating model and stage of development.
+          </p>
+        </div>
+
+        <div class="industry-mosaic-grid">
+          
+          <!-- Large Featured Mosaic Card: Technology & Digital -->
+          <article class="mosaic-card-featured">
+            <div class="mosaic-featured-media">
+              <img 
+                src="assets/images/home2/industry-technology.webp" 
+                alt="Cloud technology enterprise infrastructure and digital scalability systems" 
+                class="mosaic-featured-img"
+                width="700"
+                height="440"
+                loading="lazy"
+              >
+            </div>
+            <div class="mosaic-featured-body">
+              <span class="mosaic-cat">01 — SECTOR PERSPECTIVE</span>
+              <h3 class="mosaic-title">Technology &amp; Digital</h3>
+              <p class="mosaic-desc">
+                Consider recurring revenue, customer relationships, technology assets, scalability and growth assumptions.
+              </p>
+            </div>
+          </article>
+
+          <!-- Right Column: 3 Complementary Stacked Cards -->
+          <div class="mosaic-stack">
+            
+            <!-- Industry 02 -->
+            <article class="mosaic-mini-card">
+              <div class="mosaic-mini-media">
+                <img 
+                  src="assets/images/home2/industry-manufacturing.webp" 
+                  alt="Precision industrial production and automated manufacturing facility" 
+                  class="mosaic-mini-img"
+                  width="200"
+                  height="140"
+                  loading="lazy"
+                >
+              </div>
+              <div class="mosaic-mini-body">
+                <span class="mosaic-cat">02 — INDUSTRIAL</span>
+                <h3 class="mosaic-title">Manufacturing &amp; Industrial</h3>
+                <p class="mosaic-desc">
+                  Consider production capacity, equipment, operating performance, supply chains and capital requirements.
+                </p>
+              </div>
+            </article>
+
+            <!-- Industry 03 -->
+            <article class="mosaic-mini-card">
+              <div class="mosaic-mini-media">
+                <img 
+                  src="assets/images/home2/industry-services.webp" 
+                  alt="Professional services advisory workspace and collaborative client consulting environment" 
+                  class="mosaic-mini-img"
+                  width="200"
+                  height="140"
+                  loading="lazy"
+                >
+              </div>
+              <div class="mosaic-mini-body">
+                <span class="mosaic-cat">03 — ADVISORY &amp; SERVICES</span>
+                <h3 class="mosaic-title">Professional Services</h3>
+                <p class="mosaic-desc">
+                  Consider client relationships, service delivery, team capabilities, revenue stability and operational structure.
+                </p>
+              </div>
+            </article>
+
+            <!-- Industry 04 -->
+            <article class="mosaic-mini-card">
+              <div class="mosaic-mini-media">
+                <img 
+                  src="assets/images/home2/industry-commerce.webp" 
+                  alt="Senior corporate advisory directors and client evaluating consumer brand portfolio valuation and unit economics in boardroom" 
+                  class="mosaic-mini-img"
+                  width="200"
+                  height="140"
+                  loading="lazy"
+                >
+              </div>
+              <div class="mosaic-mini-body">
+                <span class="mosaic-cat">04 — COMMERCE</span>
+                <h3 class="mosaic-title">Consumer &amp; Commerce</h3>
+                <p class="mosaic-desc">
+                  Consider brand positioning, customer demand, distribution, margins and business performance.
+                </p>
+              </div>
+            </article>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------
+         SECTION 06: #business-scenarios (Illustrative Business Scenarios)
+         Background: White. Three distinct editorial scenario panels.
+         -------------------------------------------------------------------- -->
+    <section id="business-scenarios" class="nb-section" aria-labelledby="scenarios-heading">
+      <div class="nb-container">
+        
+        <!-- Centred Section Header -->
+        <div class="text-center">
+          <span class="section-eyebrow">DECISIONS IN CONTEXT</span>
+          <h2 id="scenarios-heading" class="section-heading">Understanding the Questions Behind Business Decisions.</h2>
+          <p class="section-intro">
+            Different business circumstances can lead to different financial and strategic questions. Consider these illustrative situations.
+          </p>
+        </div>
+
+        <div class="scenarios-grid">
+          
+          <!-- Scenario 01 -->
+          <article class="scenario-panel">
+            <div class="scenario-media">
+              <img 
+                src="assets/images/home2/scenario-ownership.webp" 
+                alt="Distinguished business founder and senior corporate finance advisor in tailored suits reviewing ownership transition schedules in an executive boardroom" 
+                class="scenario-img"
+                width="400"
+                height="250"
+                loading="lazy"
+              >
+              <span class="scenario-badge-label">SCENARIO 01</span>
+            </div>
+            <div class="scenario-body">
+              <h3 class="scenario-title">Considering a Change in Ownership</h3>
+              <p class="scenario-desc">
+                A business owner is exploring a potential ownership transition and wants to understand the financial information and valuation considerations involved.
+              </p>
+              <div class="scenario-considerations">
+                <div class="scenario-considerations-heading">Key Considerations</div>
+                <ul class="scenario-checklist">
+                  <li class="scenario-check-item">
+                    <span class="scenario-check-bullet" aria-hidden="true"></span>
+                    <span>Financial performance</span>
+                  </li>
+                  <li class="scenario-check-item">
+                    <span class="scenario-check-bullet" aria-hidden="true"></span>
+                    <span>Ownership structure</span>
+                  </li>
+                  <li class="scenario-check-item">
+                    <span class="scenario-check-bullet" aria-hidden="true"></span>
+                    <span>Business risks</span>
+                  </li>
+                  <li class="scenario-check-item">
+                    <span class="scenario-check-bullet" aria-hidden="true"></span>
+                    <span>Transaction preparation</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <!-- Scenario 02 -->
+          <article class="scenario-panel">
+            <div class="scenario-media">
+              <img 
+                src="assets/images/home2/scenario-acquisition.webp" 
+                alt="Corporate leadership evaluating financial data for strategic acquisition" 
+                class="scenario-img"
+                width="400"
+                height="250"
+                loading="lazy"
+              >
+              <span class="scenario-badge-label">SCENARIO 02</span>
+            </div>
+            <div class="scenario-body">
+              <h3 class="scenario-title">Assessing a Potential Acquisition</h3>
+              <p class="scenario-desc">
+                A business is considering an acquisition and needs to organise financial information and evaluate relevant transaction considerations.
+              </p>
+              <div class="scenario-considerations">
+                <div class="scenario-considerations-heading">Key Considerations</div>
+                <ul class="scenario-checklist">
+                  <li class="scenario-check-item">
+                    <span class="scenario-check-bullet" aria-hidden="true"></span>
+                    <span>Financial information</span>
+                  </li>
+                  <li class="scenario-check-item">
+                    <span class="scenario-check-bullet" aria-hidden="true"></span>
+                    <span>Earnings and assumptions</span>
+                  </li>
+                  <li class="scenario-check-item">
+                    <span class="scenario-check-bullet" aria-hidden="true"></span>
+                    <span>Business operations</span>
+                  </li>
+                  <li class="scenario-check-item">
+                    <span class="scenario-check-bullet" aria-hidden="true"></span>
+                    <span>Strategic fit</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <!-- Scenario 03 -->
+          <article class="scenario-panel">
+            <div class="scenario-media">
+              <img 
+                src="assets/images/home2/scenario-growth.webp" 
+                alt="Leadership team reviewing financial growth trends and capital forecasts" 
+                class="scenario-img"
+                width="400"
+                height="250"
+                loading="lazy"
+              >
+              <span class="scenario-badge-label">SCENARIO 03</span>
+            </div>
+            <div class="scenario-body">
+              <h3 class="scenario-title">Planning for the Next Stage of Growth</h3>
+              <p class="scenario-desc">
+                A leadership team is reviewing financial performance and considering the information needed for future planning.
+              </p>
+              <div class="scenario-considerations">
+                <div class="scenario-considerations-heading">Key Considerations</div>
+                <ul class="scenario-checklist">
+                  <li class="scenario-check-item">
+                    <span class="scenario-check-bullet" aria-hidden="true"></span>
+                    <span>Revenue performance</span>
+                  </li>
+                  <li class="scenario-check-item">
+                    <span class="scenario-check-bullet" aria-hidden="true"></span>
+                    <span>Cost structure</span>
+                  </li>
+                  <li class="scenario-check-item">
+                    <span class="scenario-check-bullet" aria-hidden="true"></span>
+                    <span>Financial forecasts</span>
+                  </li>
+                  <li class="scenario-check-item">
+                    <span class="scenario-check-bullet" aria-hidden="true"></span>
+                    <span>Capital requirements</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------
+         SECTION 07: #home2-insight-library (The Northbridge Journal)
+         Background: Pale Blue #EAF0F7.
+         Modern financial publication layout: 1 featured article + 2 stacked.
+         -------------------------------------------------------------------- -->
+    <section id="home2-insight-library" class="nb-section" aria-labelledby="journal-heading">
+      <div class="nb-container">
+        
+        <!-- Centred Section Header -->
+        <div class="text-center">
+          <span class="section-eyebrow">THE NORTHBRIDGE JOURNAL</span>
+          <h2 id="journal-heading" class="section-heading">Ideas and Perspectives for Informed Decisions.</h2>
+          <p class="section-intro">
+            Explore educational perspectives on business value, financial performance and transaction planning.
+          </p>
+        </div>
+
+        <div class="journal-pub-grid">
+          
+          <!-- Large Featured Article (Left) -->
+          <article class="journal-card-featured">
+            <div class="journal-featured-media">
+              <img 
+                src="assets/images/home2/journal-valuation.webp" 
+                alt="Distinguished business founder and senior valuation director reviewing valuation schedules and financial dossiers in executive advisory suite" 
+                class="journal-featured-img"
+                width="650"
+                height="430"
+                loading="lazy"
+              >
+            </div>
+            <div class="journal-featured-body">
+              <span class="journal-cat">VALUATION PERSPECTIVE</span>
+              <h3 class="journal-title-featured">What Should Business Owners Understand Before a Valuation?</h3>
+              <p class="journal-desc">
+                Explore the information, assumptions and business considerations that can contribute to a valuation exercise.
+              </p>
+              <div>
+                <a href="blog.html" class="nb-arrow-link">
+                  <span>Read Article</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-flip-rtl" aria-hidden="true">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Stacked 2 Articles (Right) -->
+          <div class="journal-stack">
+            
+            <!-- Article 02 -->
+            <article class="journal-card-secondary">
+              <div class="journal-secondary-media">
+                <img 
+                  src="assets/images/home2/journal-financial.webp" 
+                  alt="Financial records and clear reporting analysis documents" 
+                  class="journal-secondary-img"
+                  width="200"
+                  height="160"
+                  loading="lazy"
+                >
+              </div>
+              <div class="journal-secondary-body">
+                <span class="journal-cat">FINANCIAL INSIGHT</span>
+                <h3 class="journal-title-secondary">Why Financial Information Matters in Transaction Preparation</h3>
+                <p class="mosaic-desc">
+                  Understand why organised financial records and clear reporting can be important when preparing for a transaction.
+                </p>
+                <div style="margin-top: 0.85rem;">
+                  <a href="blog.html" class="nb-arrow-link">
+                    <span>Read Article</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-flip-rtl" aria-hidden="true">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Article 03 -->
+            <article class="journal-card-secondary">
+              <div class="journal-secondary-media">
+                <img 
+                  src="assets/images/home2/journal-ma.webp" 
+                  alt="Mergers and acquisitions strategic process briefing documents" 
+                  class="journal-secondary-img"
+                  width="200"
+                  height="160"
+                  loading="lazy"
+                >
+              </div>
+              <div class="journal-secondary-body">
+                <span class="journal-cat">DEAL STRATEGY</span>
+                <h3 class="journal-title-secondary">Questions to Consider Before Entering an M&amp;A Process</h3>
+                <p class="mosaic-desc">
+                  Explore strategic, financial and operational questions that may arise when considering a transaction.
+                </p>
+                <div style="margin-top: 0.85rem;">
+                  <a href="blog.html" class="nb-arrow-link">
+                    <span>Read Article</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-flip-rtl" aria-hidden="true">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+          </div>
+
+        </div>
+
+        <!-- Centred CTA group -->
+        <div class="cta-group-centred">
+          <a href="blog.html" class="nb-btn nb-btn-primary">Visit the Insights Library</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------
+         SECTION 08: #home2-contact (Signature Closing CTA)
+         Background: Dramatic modern bridge structure from below, deep navy overlay.
+         Centred content, gold primary button, white outline secondary.
+         -------------------------------------------------------------------- -->
+    <section id="home2-contact" aria-labelledby="closing-heading">
+      <div class="closing-bg-layer" aria-hidden="true">
+        <img 
+          src="assets/images/home2/home2-closing.webp" 
+          alt="Dramatic modern bridge structure with soaring architectural lines and warm natural light" 
+          class="closing-bg-img"
+          width="1920"
+          height="1080"
+          loading="lazy"
+        >
+      </div>
+      <div class="closing-overlay-gradient" aria-hidden="true"></div>
+
+      <div class="nb-container">
+        <div class="closing-content-box">
+          <span class="closing-eyebrow">YOUR NEXT STEP</span>
+          <h2 id="closing-heading" class="closing-title">
+            Bring the Right Questions to the Table.
+          </h2>
+          <p class="closing-desc">
+            Whether you are assessing business value, considering an acquisition or preparing for an ownership transition, begin with a conversation about the decisions ahead.
+          </p>
+
+          <div class="cta-group-centred">
+            <a href="contact.html#consultation" class="nb-btn nb-btn-gold">Discuss Your Objectives</a>
+            <a href="services.html" class="nb-btn nb-btn-outline-white">Explore Our Services</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================================================================
+       SHARED FOOTER (EXACT SAME AS INDEX.HTML)
+       Background: Deep Navy #172B4D. Shared across all 9 website pages.
+       ====================================================================== -->
+  <footer class="nb-footer" role="contentinfo">
+    <div class="nb-footer-container">
+      
+      <!-- Top 4 Columns & Brand Column -->
+      <div class="nb-footer-top">
+        
+        <!-- Brand Info Column -->
+        <div class="nb-footer-brand-col">
+          <a href="index.html" aria-label="Northbridge Valuation &amp; Advisory Homepage">
+            <img src="assets/images/brand/logo-white.svg" alt="Northbridge Valuation &amp; Advisory" class="nb-footer-logo" width="220" height="36">
+          </a>
+          <p class="nb-footer-tagline">CLARITY IN VALUE. CONFIDENCE IN EVERY DECISION.</p>
+          <p class="nb-footer-desc">
+            Independent thinking, financial insight and strategic guidance for important business valuation and transaction decisions.
+          </p>
+        </div>
+
+        <!-- Column 1: Quick Links -->
+        <div>
+          <h3 class="nb-footer-col-title">Quick Links</h3>
+          <ul class="nb-footer-links">
+            <li><a href="index.html" class="nb-footer-link">Home</a></li>
+            <li><a href="home2.html" class="nb-footer-link">Home 2</a></li>
+            <li><a href="about.html" class="nb-footer-link">About Us</a></li>
+            <li><a href="services.html" class="nb-footer-link">Services</a></li>
+            <li><a href="case-studies.html" class="nb-footer-link">Case Studies</a></li>
+            <li><a href="contact.html" class="nb-footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 2: Our Services -->
+        <div>
+          <h3 class="nb-footer-col-title">Our Services</h3>
+          <ul class="nb-footer-links">
+            <li><a href="services.html#business-valuation" class="nb-footer-link">Business Valuation</a></li>
+            <li><a href="services.html#ma-advisory" class="nb-footer-link">M&amp;A Advisory</a></li>
+            <li><a href="services.html#financial-due-diligence" class="nb-footer-link">Financial Due Diligence</a></li>
+            <li><a href="services.html#financial-analysis" class="nb-footer-link">Financial Analysis</a></li>
+            <li><a href="services.html#financial-modelling" class="nb-footer-link">Financial Modelling</a></li>
+            <li><a href="services.html#transaction-support" class="nb-footer-link">Transaction Support</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Insights -->
+        <div>
+          <h3 class="nb-footer-col-title">Insights</h3>
+          <ul class="nb-footer-links">
+            <li><a href="blog.html" class="nb-footer-link">Latest Insights</a></li>
+            <li><a href="blog.html#valuation" class="nb-footer-link">Valuation Insights</a></li>
+            <li><a href="blog.html#ma" class="nb-footer-link">M&amp;A Insights</a></li>
+            <li><a href="resources.html" class="nb-footer-link">Business Resources</a></li>
+            <li><a href="faq.html" class="nb-footer-link">Frequently Asked Questions</a></li>
+            <li><a href="about.html#approach" class="nb-footer-link">Our Approach</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Get In Touch -->
+        <div>
+          <h3 class="nb-footer-col-title">Get In Touch</h3>
+          <ul class="nb-footer-links">
+            <li><a href="contact.html#enquiries" class="nb-footer-link">General Enquiries</a></li>
+            <li><a href="contact.html#valuation" class="nb-footer-link">Valuation Enquiries</a></li>
+            <li><a href="contact.html#ma" class="nb-footer-link">M&amp;A Enquiries</a></li>
+            <li><a href="contact.html#consultation" class="nb-footer-link">Consultation Requests</a></li>
+            <li><a href="contact.html" class="nb-footer-link">Contact Us</a></li>
+            <li><a href="contact.html#consultation" class="nb-footer-link">Book a Consultation</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Newsletter Card -->
+      <div class="nb-footer-newsletter-card">
+        <div>
+          <h3 class="nb-newsletter-heading">STAY INFORMED.</h3>
+          <p class="nb-newsletter-desc">
+            Receive occasional perspectives on valuation, transactions and business strategy.
+          </p>
+        </div>
+        <div>
+          <form class="nb-newsletter-form" action="#" method="post">
+            <input 
+              type="email" 
+              class="nb-newsletter-input" 
+              placeholder="Your professional email address" 
+              required 
+              aria-label="Professional email address for newsletter"
+            >
+            <button type="submit" class="nb-newsletter-btn">Subscribe</button>
+            <span class="nb-newsletter-notice" role="status"></span>
+          </form>
+        </div>
+      </div>
+
+      <!-- Social Media Links & Divider Bar -->
+      <div class="nb-footer-middle">
+        <div class="nb-social-group">
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com" class="nb-social-link" target="_blank" rel="noopener noreferrer" aria-label="Northbridge on LinkedIn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+            </svg>
+          </a>
+          <!-- Instagram -->
+          <a href="https://www.instagram.com" class="nb-social-link" target="_blank" rel="noopener noreferrer" aria-label="Northbridge on Instagram">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+          </a>
+          <!-- Facebook -->
+          <a href="https://www.facebook.com" class="nb-social-link" target="_blank" rel="noopener noreferrer" aria-label="Northbridge on Facebook">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.374 14.5 5 15.5 5H18V0h-3.808C10.595 0 9 1.583 9 4.615V8z"/>
+            </svg>
+          </a>
+          <!-- YouTube -->
+          <a href="https://www.youtube.com" class="nb-social-link" target="_blank" rel="noopener noreferrer" aria-label="Northbridge on YouTube">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Bottom Bar: Copyright & Legal -->
+      <div class="nb-footer-bottom">
+        <div>
+          &copy; 2026 Northbridge Valuation &amp; Advisory. All rights reserved.
+        </div>
+        <div class="nb-footer-legal-links">
+          <a href="privacy.html" class="nb-footer-link">Privacy Policy</a>
+          <a href="terms.html" class="nb-footer-link">Terms &amp; Conditions</a>
+          <a href="cookies.html" class="nb-footer-link">Cookie Policy</a>
+          <button type="button" class="nb-back-to-top" aria-label="Scroll back to top of page">
+            <span>Back to Top</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="18 15 12 9 6 15"></polyline>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Local Scripts (Bootstrap Bundle, Shared Main JS, Home 2 JS) -->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/home2.js"></script>
+</body>
+</html>
